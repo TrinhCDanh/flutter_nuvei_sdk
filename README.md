@@ -1,15 +1,62 @@
 # flutter_nuvei_sdk
 
-A new Flutter plugin project.
+Native SDK documentation 👉 https://docs.nuvei.com/documentation/accept-payment/mobile-sdk/
 
-## Getting Started
+# iOS Configuration
+Go to https://docs.nuvei.com/documentation/accept-payment/mobile-sdk/ios-native-sdk/
+### Edit Podfile
+Go to [project]/ios/Podfile
+```
+post_install do |installer|
+  installer.pods_project.targets.each do |target|
+    flutter_additional_ios_build_settings(target)
+    
+    target.build_configurations.each do |config|
+      config.build_settings['BUILD_LIBRARY_FOR_DISTRIBUTION'] = 'YES' // Add this line     
+    end
+  end
+end
+```
 
-This project is a starting point for a Flutter
-[plug-in package](https://flutter.dev/developing-packages/),
-a specialized package that includes platform-specific implementation code for
-Android and/or iOS.
+# Android Configuration
+Go to https://docs.nuvei.com/documentation/accept-payment/mobile-sdk/android-native-sdk/
+### Step 1: Configure Android
+Go to [project]/android/app/build.gradle
+```
+android {
+    compileSdkVersion 34 // Change version number
+    
+    ...
+    ...
 
-For help getting started with Flutter development, view the
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+    packagingOptions {
+        exclude 'META-INF/DEPENDENCIES'
+        exclude 'META-INF/LICENSE.md'
+        exclude 'META-INF/NOTICE.md'
+    }
+}
+```
+Go to [project]/android/build.gradle
+```
+allprojects {
+    repositories {
+        google()
+        mavenCentral()
+        // ---> Add code below
+        maven {
+            url "https://raw.githubusercontent.com/Nuvei/nuvei-maven-android/master"
+        }
+    }
+}
+```
+### Step 2: Edit Your Manifest
+Go to [project]/android/app/src/main/AndroidManifest.xml
+```
+<application
+    ...
+    android:theme="@style/Theme.AppCompat"
+>
+```
+# Example code
 
+[example](https://github.com/TrinhCDanh/flutter_nuvei_sdk/tree/master/example)
