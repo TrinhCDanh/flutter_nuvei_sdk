@@ -1,8 +1,10 @@
 # flutter_nuvei_sdk
 
+**** Important: Note that the current package is only for testing ****
+
 Native SDK documentation 👉 https://docs.nuvei.com/documentation/accept-payment/mobile-sdk/
 
-# Install package your app
+# Install package plugin
 Go to [project]/pubspec.yaml
 ```
 flutter_nuvei_sdk:
