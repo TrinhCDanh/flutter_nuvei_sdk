@@ -2,6 +2,15 @@
 
 Native SDK documentation 👉 https://docs.nuvei.com/documentation/accept-payment/mobile-sdk/
 
+# Install package your app
+Go to [project]/pubspec.yaml
+```
+flutter_nuvei_sdk:
+    git:
+      url: https://github.com/TrinhCDanh/flutter_nuvei_sdk.git
+      ref: master
+```
+
 # iOS Configuration
 Go to https://docs.nuvei.com/documentation/accept-payment/mobile-sdk/ios-native-sdk/
 ### Edit Podfile
