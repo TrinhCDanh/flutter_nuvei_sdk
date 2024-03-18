@@ -1,0 +1,4 @@
+enum NVEnvironmentEnum {
+  staging,
+  production,
+}

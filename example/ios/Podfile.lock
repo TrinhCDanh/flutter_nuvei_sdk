@@ -1,0 +1,43 @@
+PODS:
+  - Alamofire (5.7.1)
+  - Flutter (1.0.0)
+  - flutter_nuvei_sdk (1.1.0):
+    - Alamofire (= 5.7.1)
+    - Flutter
+    - SDWebImage (= 5.15.7)
+    - SwiftyJSON (= 5.0.1)
+    - TinyConstraints (= 4.0.2)
+  - SDWebImage (5.15.7):
+    - SDWebImage/Core (= 5.15.7)
+  - SDWebImage/Core (5.15.7)
+  - SwiftyJSON (5.0.1)
+  - TinyConstraints (4.0.2)
+
+DEPENDENCIES:
+  - Flutter (from `Flutter`)
+  - flutter_nuvei_sdk (from `.symlinks/plugins/flutter_nuvei_sdk/ios`)
+
+SPEC REPOS:
+  trunk:
+    - Alamofire
+    - SDWebImage
+    - SwiftyJSON
+    - TinyConstraints
+
+EXTERNAL SOURCES:
+  Flutter:
+    :path: Flutter
+  flutter_nuvei_sdk:
+    :path: ".symlinks/plugins/flutter_nuvei_sdk/ios"
+
+SPEC CHECKSUMS:
+  Alamofire: 0123a34370cb170936ae79a8df46cc62b2edeb88
+  Flutter: f04841e97a9d0b0a8025694d0796dd46242b2854
+  flutter_nuvei_sdk: a66d3faaf8adefadbc739f5f465c5f1a335feb26
+  SDWebImage: 25bac438318faf37e35650619ebc288a9061d292
+  SwiftyJSON: 2f33a42c6fbc52764d96f13368585094bfd8aa5e
+  TinyConstraints: 7b7ccc0c485bb3bb47082138ff28bc33cd49897f
+
+PODFILE CHECKSUM: 7d195039a6eaee4ad047138f0223b3141255a6bf
+
+COCOAPODS: 1.15.2
