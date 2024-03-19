@@ -22,6 +22,10 @@ public class FlutterNuveiSdkPlugin: NSObject, FlutterPlugin {
         guard let args = call.arguments as? [String : Any] else {return}
         self.authenticate3d(result: result, args: args, controller: viewController)
         break
+      case "tokenize":
+        guard let args = call.arguments as? [String : Any] else {return}
+        self.tokenize(result: result, args: args)
+        break
       default:
         result(FlutterMethodNotImplemented)
         break
@@ -93,6 +97,47 @@ public class FlutterNuveiSdkPlugin: NSObject, FlutterPlugin {
          result(authenticate3dResponseToJson)
        }        
      }
+    
+    /* Authenticate 3D */
+    private func tokenize(result: @escaping FlutterResult, args: [String : Any]) {
+      let sessionToken = args["sessionToken"] as! String
+      let merchantId = args["merchantId"] as! String
+      let merchantSiteId = args["merchantSiteId"] as! String
+      let currency = "USD"
+      let amount = "0"
+      let cardHolderName = args["cardHolderName"] as! String
+      let cardNumber = args["cardNumber"] as! String
+      let cvv = args["cvv"] as! String
+      let monthExpiry = args["monthExpiry"] as! String
+      let yearExpiry = args["yearExpiry"] as! String
+     
+      let paymentOption = try! NVPaymentOption(
+        card: NVCardDetails(
+          cardNumber: cardNumber,
+          cardHolderName: cardHolderName,
+          cvv: cvv,
+          expirationMonth: monthExpiry,
+          expirationYear: yearExpiry
+        )
+      )
+      let input = NVInput(
+        sessionToken: sessionToken,
+        merchantId: merchantId,
+        merchantSiteId: merchantSiteId,
+        currency: currency,
+        amount: amount,
+        paymentOption: paymentOption
+      );
+           
+      NuveiSimplyConnect.tokenize(input: input) { (token: String?, error: NVFailure?) in
+        let tokenizeResponse:TokenizeResponse = TokenizeResponse(
+          token: token,
+          error: error?.description
+        )
+        let tokenizeResponseToJson = self.convertToJson(data: tokenizeResponse)
+        result(tokenizeResponseToJson)
+      }
+    }
            
     // utils function
     private func convertToJson<T: Encodable>(data: T) -> String {
@@ -122,5 +167,10 @@ struct Authenticate3dResponse: Codable {
   var errorDescription: String?
   var errCode: Int?
   var status: String?
+}
+
+struct TokenizeResponse: Codable {
+  var token: String?
+  var error: String?
 }
 

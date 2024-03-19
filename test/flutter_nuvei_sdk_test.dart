@@ -16,6 +16,11 @@ class MockFlutterNuveiSdkPlatform
   Future<bool?> setup(String environment) {
     throw UnimplementedError();
   }
+
+  @override
+  Future<String?> tokenize(Map<String, dynamic> args) {
+    throw UnimplementedError();
+  }
 }
 
 void main() {

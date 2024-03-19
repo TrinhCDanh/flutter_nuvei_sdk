@@ -29,4 +29,8 @@ abstract class FlutterNuveiSdkPlatform extends PlatformInterface {
   Future<String?> authenticate3d(Map<String, dynamic> args) {
     throw UnimplementedError('authenticate3d() has not been implemented.');
   }
+
+  Future<String?> tokenize(Map<String, dynamic> args) {
+    throw UnimplementedError('tokenize() has not been implemented.');
+  }
 }

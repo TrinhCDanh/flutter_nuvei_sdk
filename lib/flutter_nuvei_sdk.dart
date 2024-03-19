@@ -3,6 +3,8 @@ import 'package:flutter_nuvei_sdk/data/constants.dart';
 import 'package:flutter_nuvei_sdk/data/enums.dart';
 import 'package:flutter_nuvei_sdk/models/nv_authenticate3d_input.dart';
 import 'package:flutter_nuvei_sdk/models/nv_authenticate3d_output.dart';
+import 'package:flutter_nuvei_sdk/models/nv_tokenize_input.dart';
+import 'package:flutter_nuvei_sdk/models/nv_tokenize_output.dart';
 import 'flutter_nuvei_sdk_platform_interface.dart';
 
 class FlutterNuveiSdk {
@@ -28,6 +30,21 @@ class FlutterNuveiSdk {
 
     final Map<String, dynamic> outputToJson = jsonDecode(output);
     return NVAuthenticate3dOutput.fromJson(outputToJson);
+  }
+
+  static Future<NVTokenizeOutput?> tokenize(
+    NVTokenizeInput input,
+  ) async {
+    final Map<String, dynamic> args = input.toJson();
+    final String? output =
+        await FlutterNuveiSdkPlatform.instance.tokenize(args);
+
+    if (output == null) {
+      return null;
+    }
+
+    final Map<String, dynamic> outputToJson = jsonDecode(output);
+    return NVTokenizeOutput.fromJson(outputToJson);
   }
 
   static final FlutterNuveiSdk _instance = FlutterNuveiSdk._internal();

@@ -6,6 +6,7 @@ import com.google.gson.Gson
 import android.util.Log
 import androidx.annotation.NonNull
 import com.nuvei.sdk.Callback
+import com.nuvei.sdk.Error
 
 import io.flutter.embedding.engine.plugins.FlutterPlugin
 import io.flutter.plugin.common.MethodCall
@@ -14,6 +15,7 @@ import io.flutter.plugin.common.MethodChannel.MethodCallHandler
 import io.flutter.plugin.common.MethodChannel.Result
 
 import com.nuvei.sdk.NuveiSimplyConnect
+import com.nuvei.sdk.TokenizeCallback
 import com.nuvei.sdk.model.*
 import io.flutter.embedding.engine.plugins.activity.ActivityAware
 import io.flutter.embedding.engine.plugins.activity.ActivityPluginBinding
@@ -46,6 +48,9 @@ class FlutterNuveiSdkPlugin: FlutterPlugin, MethodCallHandler, ActivityAware {
       }
       "authenticate3d" -> {
         authenticate3d(result, call)
+      }
+      "tokenize" -> {
+        tokenize(result, call)
       }
       else -> {
         result.notImplemented()
@@ -128,6 +133,54 @@ class FlutterNuveiSdkPlugin: FlutterPlugin, MethodCallHandler, ActivityAware {
     )
   }
 
+  private fun tokenize(result: MethodChannel.Result, call: MethodCall) {
+    val sessionToken: String = call.argument("sessionToken")!!
+    val merchantId: String = call.argument("merchantId")!!
+    val merchantSiteId: String = call.argument("merchantSiteId")!!
+    val currency: String = "USD"
+    val amount: String = "0"
+    val cardHolderName: String = call.argument("cardHolderName")!!
+    val cardNumber: String = call.argument("cardNumber")!!
+    val cvv: String = call.argument("cvv")!!
+    val monthExpiry: String = call.argument("monthExpiry")!!
+    val yearExpiry: String = call.argument("yearExpiry")!!
+
+    val paymentOption = PaymentOption(
+      card = CardDetails(
+        cardNumber,
+        cardHolderName,
+        cvv,
+        monthExpiry,
+        yearExpiry,
+      ),
+    )
+
+    val input = NVPayment(
+      sessionToken,
+      merchantId,
+      merchantSiteId,
+      currency,
+      amount,
+      paymentOption = paymentOption,
+    )
+
+    NuveiSimplyConnect.tokenize(
+      activity = activity,
+      input = input,
+      callback = object : TokenizeCallback {
+        override fun onComplete(token: String?, error: Error?, additionalInfo: Map<String, Any>?) {
+          writeToLog(gson.toJson(additionalInfo))
+          val tokenizeResponse = TokenizeResponse(
+            token = token,
+            error = error?.name
+          )
+          val tokenizeResponseToJson = gson.toJson(tokenizeResponse)
+          result.success(tokenizeResponseToJson)
+        }
+      }
+    )
+  }
+
   private fun writeToLog(log: String) {
     Log.d("print", log)
   }
@@ -167,4 +220,9 @@ data class Authenticate3dResponse(
   val errorDescription: String?,
   val errCode: Int?,
   val status: String?,
+)
+
+data class TokenizeResponse(
+  val token: String?,
+  val error: String?,
 )

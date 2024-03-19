@@ -5,6 +5,8 @@ import 'package:flutter_nuvei_sdk/data/enums.dart';
 import 'package:flutter_nuvei_sdk/flutter_nuvei_sdk.dart';
 import 'package:flutter_nuvei_sdk/models/nv_authenticate3d_input.dart';
 import 'package:flutter_nuvei_sdk/models/nv_authenticate3d_output.dart';
+import 'package:flutter_nuvei_sdk/models/nv_tokenize_input.dart';
+import 'package:flutter_nuvei_sdk/models/nv_tokenize_output.dart';
 
 void main() {
   runApp(const MyApp());
@@ -56,6 +58,28 @@ class _MyAppState extends State<MyApp> {
     }
   }
 
+  Future<void> tokenize() async {
+    try {
+      final NVTokenizeInput input = NVTokenizeInput(
+        sessionToken: "",
+        merchantId: "",
+        merchantSiteId: "",
+        cardHolderName: "Test",
+        cardNumber: "4111111111111111",
+        cvv: "999",
+        monthExpiry: "12",
+        yearExpiry: "2026",
+      );
+      final NVTokenizeOutput? resultTokenize =
+          await FlutterNuveiSdk.tokenize(input);
+      print("=================");
+      print(resultTokenize);
+      print("=================");
+    } on PlatformException {
+      print("tokenize error");
+    }
+  }
+
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -77,6 +101,20 @@ class _MyAppState extends State<MyApp> {
                     horizontal: 20,
                   ),
                   child: const Text('authenticate3d()'),
+                ),
+              ),
+              const SizedBox(
+                height: 10,
+              ),
+              GestureDetector(
+                onTap: tokenize,
+                child: Container(
+                  color: Colors.amber,
+                  padding: const EdgeInsets.symmetric(
+                    vertical: 10,
+                    horizontal: 20,
+                  ),
+                  child: const Text('tokenize()'),
                 ),
               ),
             ],

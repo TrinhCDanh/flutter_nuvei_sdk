@@ -20,4 +20,10 @@ class MethodChannelFlutterNuveiSdk extends FlutterNuveiSdkPlatform {
         await methodChannel.invokeMethod<String>('authenticate3d', args);
     return data;
   }
+
+  @override
+  Future<String?> tokenize(Map<String, dynamic> args) async {
+    final data = await methodChannel.invokeMethod<String>('tokenize', args);
+    return data;
+  }
 }
