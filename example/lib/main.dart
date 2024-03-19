@@ -35,16 +35,16 @@ class _MyAppState extends State<MyApp> {
   Future<void> authenticate3d() async {
     try {
       final NVAuthenticate3dInput input = NVAuthenticate3dInput(
-        sessionToken: "9c7cfc1c-33bb-410d-a700-6b9680a68e93",
-        merchantId: '4099004892638267996',
-        merchantSiteId: '250858',
+        sessionToken: "",
+        merchantId: "",
+        merchantSiteId: "",
         currency: 'USD',
         amount: "151",
-        cardHolderName: "CL-BRW2",
-        cardNumber: "2221008123677736",
-        cvv: "999",
-        monthExpiry: "2",
-        yearExpiry: "2025",
+        cardHolderName: "",
+        cardNumber: "",
+        cvv: "",
+        monthExpiry: "",
+        yearExpiry: "",
       );
       final NVAuthenticate3dOutput? resultAuthenticate3d =
           await FlutterNuveiSdk.authenticate3d(input);
