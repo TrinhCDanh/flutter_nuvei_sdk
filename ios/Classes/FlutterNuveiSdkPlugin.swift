@@ -7,6 +7,10 @@ public class FlutterNuveiSdkPlugin: NSObject, FlutterPlugin {
     let channel = FlutterMethodChannel(name: "flutter_nuvei_sdk", binaryMessenger: registrar.messenger())
     let instance = FlutterNuveiSdkPlugin()
     registrar.addMethodCallDelegate(instance, channel: channel)
+      
+    // Register the platform view
+    let factory = FLNativeViewFactory(messenger: registrar.messenger())
+    registrar.register(factory, withId: "flutter_nuvei_fields")
   }
 
   public func handle(_ call: FlutterMethodCall, result: @escaping FlutterResult) {
@@ -38,9 +42,11 @@ public class FlutterNuveiSdkPlugin: NSObject, FlutterPlugin {
        switch environment {
         case PackageEnvironment.stating:
             NuveiSimplyConnect.setup(environment: NuveiSimplyConnect.Environment.integration)
+            NuveiFields.setup(environment: NuveiSimplyConnect.Environment.integration)
             break
         default:
             NuveiSimplyConnect.setup(environment: NuveiSimplyConnect.Environment.production)
+            NuveiFields.setup(environment: NuveiSimplyConnect.Environment.production)
             break
        }
          

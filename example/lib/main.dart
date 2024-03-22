@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'dart:async';
 import 'package:flutter/services.dart';
 import 'package:flutter_nuvei_sdk/data/enums.dart';
+import 'package:flutter_nuvei_sdk/flutter_nuvei_card_field.dart';
 import 'package:flutter_nuvei_sdk/flutter_nuvei_sdk.dart';
 import 'package:flutter_nuvei_sdk/models/nv_authenticate3d_input.dart';
 import 'package:flutter_nuvei_sdk/models/nv_authenticate3d_output.dart';
@@ -116,6 +117,11 @@ class _MyAppState extends State<MyApp> {
                   ),
                   child: const Text('tokenize()'),
                 ),
+              ),
+              Container(
+                width: double.infinity,
+                height: 300,
+                child: const FlutterNuveiCardField(),
               ),
             ],
           ),
