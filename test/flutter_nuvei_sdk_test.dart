@@ -1,5 +1,5 @@
-import 'package:flutter_test/flutter_test.dart';
 import 'package:flutter_nuvei_sdk/flutter_nuvei_sdk.dart';
+import 'package:flutter_test/flutter_test.dart';
 import 'package:flutter_nuvei_sdk/flutter_nuvei_sdk_platform_interface.dart';
 import 'package:flutter_nuvei_sdk/flutter_nuvei_sdk_method_channel.dart';
 import 'package:plugin_platform_interface/plugin_platform_interface.dart';
