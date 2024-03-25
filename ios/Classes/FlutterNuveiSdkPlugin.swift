@@ -30,6 +30,10 @@ public class FlutterNuveiSdkPlugin: NSObject, FlutterPlugin {
         guard let args = call.arguments as? [String : Any] else {return}
         self.tokenize(result: result, args: args)
         break
+      case "checkout":
+        guard let args = call.arguments as? [String : Any] else {return}
+        self.checkout(result: result, args: args, controller: viewController)
+        break
       default:
         result(FlutterMethodNotImplemented)
         break
@@ -144,6 +148,61 @@ public class FlutterNuveiSdkPlugin: NSObject, FlutterPlugin {
         result(tokenizeResponseToJson)
       }
     }
+    
+    /* checkout */
+    private func checkout(result: @escaping FlutterResult, args: [String : Any], controller: UIViewController) {
+      let sessionToken = args["sessionToken"] as! String
+      let merchantId = args["merchantId"] as! String
+      let merchantSiteId = args["merchantSiteId"] as! String
+      let currency = args["currency"] as! String
+      let amount = args["amount"] as! String
+      let userTokenId = args["userTokenId"] as! String
+      let clientRequestId = args["clientRequestId"] as! String
+      let customField1 = args["customField1"] as? String
+      let customField2 = args["customField2"] as? String
+      let customField3 = args["customField3"] as? String
+            
+      let input = NVInput(
+        sessionToken: sessionToken,
+        merchantId: merchantId,
+        merchantSiteId: merchantSiteId,
+        currency: currency,
+        amount: amount,
+        paymentOption:  try! NVPaymentOption(
+            card: NVCardDetails()
+        ),
+        userTokenId: userTokenId,
+        clientRequestId: clientRequestId,
+        merchantDetails: NVMerchantDetails(
+            customField1: customField1,
+            customField2: customField2,
+            customField3: customField3
+        )
+      );
+                 
+      NuveiSimplyConnect.checkout(
+        uiOwner: controller,
+        authenticate3dInput: input,
+        forceWebChallenge: true
+      ) { (output: NuveiSimplyConnectSDK.NVCreatePaymentOutput) in
+          let checkoutResponse:CheckoutResponse = CheckoutResponse(
+            result: output.result.rawValue.uppercased(),
+            errCode: output.errorCode,
+            errorDescription: output.errorDescription
+          )
+          let checkoutResponseToJson = self.convertToJson(data: checkoutResponse)
+          result(checkoutResponseToJson)
+      } declineFallbackDecision: { response, viewController, declineFallback in
+          let checkoutResponse:CheckoutResponse = CheckoutResponse(
+            result: response.result.rawValue.uppercased(),
+            errCode: response.errorCode,
+            errorDescription: response.errorDescription
+          )
+          let checkoutResponseToJson = self.convertToJson(data: checkoutResponse)
+          result(checkoutResponseToJson)
+          viewController.dismiss(animated: true)
+      }
+    }
            
     // utils function
     private func convertToJson<T: Encodable>(data: T) -> String {
@@ -179,4 +238,11 @@ struct TokenizeResponse: Codable {
   var token: String?
   var error: String?
 }
+
+struct CheckoutResponse: Codable {
+  var result: String?
+  var errCode: Int?
+  var errorDescription: String?
+}
+
 

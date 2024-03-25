@@ -1,4 +1,4 @@
-class NVAuthenticate3dOutput {
+class NVOutput {
   String? cavv;
   String? eci;
   String? dsTransID;
@@ -7,10 +7,12 @@ class NVAuthenticate3dOutput {
   String? result;
   String? transactionStatus;
   String? errorDescription;
-  int? errCode;
   String? status;
+  String? token;
+  String? error;
+  int? errCode;
 
-  NVAuthenticate3dOutput({
+  NVOutput({
     this.cavv,
     this.eci,
     this.dsTransID,
@@ -21,9 +23,11 @@ class NVAuthenticate3dOutput {
     this.errorDescription,
     this.errCode,
     this.status,
+    this.token,
+    this.error,
   });
 
-  NVAuthenticate3dOutput.fromJson(Map<String, dynamic> json) {
+  NVOutput.fromJson(Map<String, dynamic> json) {
     cavv = json['cavv'];
     eci = json['eci'];
     dsTransID = json['dsTransID'];
@@ -34,6 +38,8 @@ class NVAuthenticate3dOutput {
     errorDescription = json['errorDescription'];
     errCode = json['errCode'];
     status = json['status'];
+    token = json['token'];
+    error = json['error'];
   }
 
   Map<String, dynamic> toJson() {
@@ -48,6 +54,8 @@ class NVAuthenticate3dOutput {
     data['errorDescription'] = errorDescription;
     data['errCode'] = errCode;
     data['status'] = status;
+    data['token'] = token;
+    data['error'] = error;
     return data;
   }
 }

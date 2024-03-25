@@ -19,6 +19,7 @@ import com.nuvei.sdk.TokenizeCallback
 import com.nuvei.sdk.model.*
 import io.flutter.embedding.engine.plugins.activity.ActivityAware
 import io.flutter.embedding.engine.plugins.activity.ActivityPluginBinding
+import com.nuvei.sdk.model.CheckoutTransactionDetails
 
 /** FlutterNuveiSdkPlugin */
 class FlutterNuveiSdkPlugin: FlutterPlugin, MethodCallHandler, ActivityAware {
@@ -51,6 +52,9 @@ class FlutterNuveiSdkPlugin: FlutterPlugin, MethodCallHandler, ActivityAware {
       }
       "tokenize" -> {
         tokenize(result, call)
+      }
+      "checkout" -> {
+        checkout(result, call)
       }
       else -> {
         result.notImplemented()
@@ -181,6 +185,63 @@ class FlutterNuveiSdkPlugin: FlutterPlugin, MethodCallHandler, ActivityAware {
     )
   }
 
+  private fun checkout(result: MethodChannel.Result, call: MethodCall) {
+    val sessionToken: String = call.argument("sessionToken")!!
+    val merchantId: String = call.argument("merchantId")!!
+    val merchantSiteId: String = call.argument("merchantSiteId")!!
+    val currency: String = call.argument("currency")!!
+    val amount: String = call.argument("amount")!!
+    val userTokenId: String = call.argument("userTokenId")!!
+    val clientRequestId: String = call.argument("clientRequestId")!!
+    val customField1: String? = call.argument("customField1")
+    val customField2: String? = call.argument("customField2")
+    val customField3: String? = call.argument("customField3")
+
+    val input = NVPayment(
+      sessionToken,
+      merchantId,
+      merchantSiteId,
+      currency,
+      amount,
+      PaymentOption(),
+      userTokenId,
+      clientRequestId,
+      merchantDetails = MerchantDetails(
+        customField1,
+        customField2,
+        customField3,
+      ),
+    )
+
+    NuveiSimplyConnect.checkout(
+      activity = activity,
+      input = input,
+      forceWebChallenge = true,
+      callback = object : Callback<NVOutput> {
+        override fun onComplete(response: NVOutput) {
+          writeToLog(gson.toJson(response))
+          val checkoutResponse = CheckoutResponse(
+            result = response.result.uppercase(),
+            errCode = response.errorCode,
+            errorDescription = response.errorDescription
+          )
+          val checkoutResponseToJson = gson.toJson(checkoutResponse)
+          result.success(checkoutResponseToJson)
+        }
+      }
+    ) { response, activity, declineFallback ->
+      writeToLog(gson.toJson(response))
+      val checkoutResponse = CheckoutResponse(
+        result = response.result.uppercase(),
+        errCode = response.errorCode,
+        errorDescription = response.errorDescription
+      )
+      val checkoutResponseToJson = gson.toJson(checkoutResponse)
+      result.success(checkoutResponseToJson)
+      declineFallback(NuveiSimplyConnect.CheckoutCompletionAction.dismiss)
+    }
+  }
+
   private fun writeToLog(log: String) {
     Log.d("print", log)
   }
@@ -225,4 +286,10 @@ data class Authenticate3dResponse(
 data class TokenizeResponse(
   val token: String?,
   val error: String?,
+)
+
+data class CheckoutResponse(
+  val result: String?,
+  val errCode: Int?,
+  val errorDescription: String?,
 )

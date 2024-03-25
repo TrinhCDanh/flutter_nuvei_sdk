@@ -33,4 +33,8 @@ abstract class FlutterNuveiSdkPlatform extends PlatformInterface {
   Future<String?> tokenize(Map<String, dynamic> args) {
     throw UnimplementedError('tokenize() has not been implemented.');
   }
+
+  Future<String?> checkout(Map<String, dynamic> args) {
+    throw UnimplementedError('checkout() has not been implemented.');
+  }
 }

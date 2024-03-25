@@ -2,12 +2,11 @@ import 'package:flutter/material.dart';
 import 'dart:async';
 import 'package:flutter/services.dart';
 import 'package:flutter_nuvei_sdk/data/enums.dart';
-import 'package:flutter_nuvei_sdk/flutter_nuvei_card_field.dart';
 import 'package:flutter_nuvei_sdk/flutter_nuvei_sdk.dart';
 import 'package:flutter_nuvei_sdk/models/nv_authenticate3d_input.dart';
-import 'package:flutter_nuvei_sdk/models/nv_authenticate3d_output.dart';
+import 'package:flutter_nuvei_sdk/models/nv_checkout_input.dart';
+import 'package:flutter_nuvei_sdk/models/nv_output.dart';
 import 'package:flutter_nuvei_sdk/models/nv_tokenize_input.dart';
-import 'package:flutter_nuvei_sdk/models/nv_tokenize_output.dart';
 
 void main() {
   runApp(const MyApp());
@@ -21,6 +20,19 @@ class MyApp extends StatefulWidget {
 }
 
 class _MyAppState extends State<MyApp> {
+  final String sessionToken = "";
+  final String merchantId = "";
+  final String merchantSiteId = "";
+  final String currency = 'USD';
+  final String amount = "151";
+  final String cardHolderName = "CL-BRW2";
+  final String cardNumber = "2221008123677736";
+  final String cvv = "999";
+  final String monthExpiry = "12";
+  final String yearExpiry = "2026";
+  final String userTokenId = "117";
+  final String clientRequestId = "20240325134325";
+
   @override
   void initState() {
     super.initState();
@@ -38,18 +50,18 @@ class _MyAppState extends State<MyApp> {
   Future<void> authenticate3d() async {
     try {
       final NVAuthenticate3dInput input = NVAuthenticate3dInput(
-        sessionToken: "",
-        merchantId: "",
-        merchantSiteId: "",
-        currency: 'USD',
-        amount: "151",
-        cardHolderName: "",
-        cardNumber: "",
-        cvv: "",
-        monthExpiry: "",
-        yearExpiry: "",
+        sessionToken: sessionToken,
+        merchantId: merchantId,
+        merchantSiteId: merchantSiteId,
+        currency: currency,
+        amount: amount,
+        cardHolderName: cardHolderName,
+        cardNumber: cardNumber,
+        cvv: cvv,
+        monthExpiry: monthExpiry,
+        yearExpiry: yearExpiry,
       );
-      final NVAuthenticate3dOutput? resultAuthenticate3d =
+      final NVOutput? resultAuthenticate3d =
           await FlutterNuveiSdk.authenticate3d(input);
       print("=================");
       print(resultAuthenticate3d);
@@ -62,22 +74,41 @@ class _MyAppState extends State<MyApp> {
   Future<void> tokenize() async {
     try {
       final NVTokenizeInput input = NVTokenizeInput(
-        sessionToken: "",
-        merchantId: "",
-        merchantSiteId: "",
-        cardHolderName: "Test",
-        cardNumber: "4111111111111111",
-        cvv: "999",
-        monthExpiry: "12",
-        yearExpiry: "2026",
+        sessionToken: sessionToken,
+        merchantId: merchantId,
+        merchantSiteId: merchantSiteId,
+        cardHolderName: cardHolderName,
+        cardNumber: cardNumber,
+        cvv: cvv,
+        monthExpiry: monthExpiry,
+        yearExpiry: yearExpiry,
       );
-      final NVTokenizeOutput? resultTokenize =
-          await FlutterNuveiSdk.tokenize(input);
+      final NVOutput? resultTokenize = await FlutterNuveiSdk.tokenize(input);
       print("=================");
       print(resultTokenize);
       print("=================");
     } on PlatformException {
       print("tokenize error");
+    }
+  }
+
+  Future<void> checkout(context) async {
+    try {
+      final NVCheckoutInput input = NVCheckoutInput(
+        sessionToken: sessionToken,
+        merchantId: merchantId,
+        merchantSiteId: merchantSiteId,
+        currency: currency,
+        amount: amount,
+        userTokenId: userTokenId,
+        clientRequestId: clientRequestId,
+      );
+      final NVOutput? resultCheckout = await FlutterNuveiSdk.checkout(input);
+      print("=================");
+      print(resultCheckout);
+      print("=================");
+    } on PlatformException {
+      print("checkout error");
     }
   }
 
@@ -118,11 +149,25 @@ class _MyAppState extends State<MyApp> {
                   child: const Text('tokenize()'),
                 ),
               ),
-              Container(
-                width: double.infinity,
-                height: 300,
-                child: const FlutterNuveiCardField(),
+              const SizedBox(
+                height: 10,
               ),
+              GestureDetector(
+                onTap: () => checkout(context),
+                child: Container(
+                  color: Colors.amber,
+                  padding: const EdgeInsets.symmetric(
+                    vertical: 10,
+                    horizontal: 20,
+                  ),
+                  child: const Text('checkout()'),
+                ),
+              ),
+              // Container(
+              //   width: double.infinity,
+              //   height: 300,
+              //   child: const FlutterNuveiCardField(),
+              // ),
             ],
           ),
         ),

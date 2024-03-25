@@ -26,4 +26,10 @@ class MethodChannelFlutterNuveiSdk extends FlutterNuveiSdkPlatform {
     final data = await methodChannel.invokeMethod<String>('tokenize', args);
     return data;
   }
+
+  @override
+  Future<String?> checkout(Map<String, dynamic> args) async {
+    final data = await methodChannel.invokeMethod<String>('checkout', args);
+    return data;
+  }
 }
