@@ -206,11 +206,11 @@ class FlutterNuveiSdkPlugin: FlutterPlugin, MethodCallHandler, ActivityAware {
       PaymentOption(),
       userTokenId,
       clientRequestId,
-      merchantDetails = MerchantDetails(
-        customField1,
-        customField2,
-        customField3,
-      ),
+      // merchantDetails = MerchantDetails(
+      //   customField1,
+      //   customField2,
+      //   customField3,
+      // ),
     )
 
     NuveiSimplyConnect.checkout(
