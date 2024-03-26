@@ -2,9 +2,12 @@ import 'dart:async';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_nuvei_sdk/flutter_nuvei_sdk.dart';
+import 'package:flutter_nuvei_sdk_example/native_view_example.dart';
 
 void main() {
-  runApp(const MyApp());
+  runApp(const MaterialApp(
+    home: MyApp(),
+  ));
 }
 
 class MyApp extends StatefulWidget {
@@ -160,6 +163,22 @@ class _MyAppState extends State<MyApp> {
                     horizontal: 20,
                   ),
                   child: const Text('checkout()'),
+                ),
+              ),
+              GestureDetector(
+                onTap: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(builder: (context) => MyNativeView()),
+                  );
+                },
+                child: Container(
+                  color: Colors.amber,
+                  padding: const EdgeInsets.symmetric(
+                    vertical: 10,
+                    horizontal: 20,
+                  ),
+                  child: const Text('payment()'),
                 ),
               ),
               // Container(
