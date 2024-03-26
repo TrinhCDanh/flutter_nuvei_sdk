@@ -15,9 +15,9 @@ class MyApp extends StatefulWidget {
 }
 
 class _MyAppState extends State<MyApp> {
-  final String sessionToken = "";
-  final String merchantId = "";
-  final String merchantSiteId = "";
+  final String sessionToken = "a03b2619-917f-4d38-9fc4-061fb3a28208";
+  final String merchantId = "4099004892638267996";
+  final String merchantSiteId = "250858";
   final String currency = 'USD';
   final String amount = "151";
   final String cardHolderName = "CL-BRW2";
@@ -26,7 +26,7 @@ class _MyAppState extends State<MyApp> {
   final String monthExpiry = "12";
   final String yearExpiry = "2026";
   final String userTokenId = "117";
-  final String clientRequestId = "20240325134325";
+  final String clientRequestId = "20240326105518";
 
   @override
   void initState() {
@@ -97,6 +97,10 @@ class _MyAppState extends State<MyApp> {
         amount: amount,
         userTokenId: userTokenId,
         clientRequestId: clientRequestId,
+        firstName: "User",
+        lastName: "Test",
+        country: "US",
+        email: "usertest123@gmail.com",
       );
       final NVOutput? resultCheckout = await FlutterNuveiSdk.checkout(input);
       print("=================");

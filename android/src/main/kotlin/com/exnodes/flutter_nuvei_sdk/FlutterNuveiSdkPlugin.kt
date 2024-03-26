@@ -193,6 +193,10 @@ class FlutterNuveiSdkPlugin: FlutterPlugin, MethodCallHandler, ActivityAware {
     val amount: String = call.argument("amount")!!
     val userTokenId: String = call.argument("userTokenId")!!
     val clientRequestId: String = call.argument("clientRequestId")!!
+    val firstName: String = call.argument("firstName")!!
+    val lastName: String = call.argument("lastName")!!
+    val country: String = call.argument("country")!!
+    val email: String = call.argument("email")!!
     val customField1: String? = call.argument("customField1")
     val customField2: String? = call.argument("customField2")
     val customField3: String? = call.argument("customField3")
@@ -206,6 +210,12 @@ class FlutterNuveiSdkPlugin: FlutterPlugin, MethodCallHandler, ActivityAware {
       PaymentOption(),
       userTokenId,
       clientRequestId,
+      billingAddress = BillingAddress(
+        firstName = firstName,
+        lastName = lastName,
+        country = country,
+        email = email,
+      ),
       merchantDetails = MerchantDetails(
         customField1,
         customField2,

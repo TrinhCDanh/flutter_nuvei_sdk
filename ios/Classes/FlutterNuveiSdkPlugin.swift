@@ -158,6 +158,10 @@ public class FlutterNuveiSdkPlugin: NSObject, FlutterPlugin {
       let amount = args["amount"] as! String
       let userTokenId = args["userTokenId"] as! String
       let clientRequestId = args["clientRequestId"] as! String
+      let firstName = args["firstName"] as! String
+      let lastName = args["lastName"] as! String
+      let country = args["country"] as! String
+      let email = args["email"] as! String
       let customField1 = args["customField1"] as? String
       let customField2 = args["customField2"] as? String
       let customField3 = args["customField3"] as? String
@@ -173,6 +177,12 @@ public class FlutterNuveiSdkPlugin: NSObject, FlutterPlugin {
         ),
         userTokenId: userTokenId,
         clientRequestId: clientRequestId,
+        billingAddress: NVBillingAddress(
+            firstName: firstName,
+            lastName: lastName,
+            country: country,
+            email: email
+        ),
         merchantDetails: NVMerchantDetails(
             customField1: customField1,
             customField2: customField2,
