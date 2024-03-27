@@ -37,4 +37,11 @@ abstract class FlutterNuveiSdkPlatform extends PlatformInterface {
   Future<String?> checkout(Map<String, dynamic> args) {
     throw UnimplementedError('checkout() has not been implemented.');
   }
+
+  Future<void> onHandleNuveiField({
+    required Function(bool) onInputUpdated,
+    required Function(bool) onInputValidated,
+  }) {
+    throw UnimplementedError('onHandleNuveiField() has not been implemented.');
+  }
 }

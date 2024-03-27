@@ -26,6 +26,14 @@ class MockFlutterNuveiSdkPlatform
   Future<String?> checkout(Map<String, dynamic> args) {
     throw UnimplementedError();
   }
+
+  @override
+  Future<void> onHandleNuveiField({
+    required Function(bool p1) onInputUpdated,
+    required Function(bool p1) onInputValidated,
+  }) async {
+    // TODO: implement onHandleNuveiField
+  }
 }
 
 void main() {
