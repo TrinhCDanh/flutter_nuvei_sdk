@@ -4,6 +4,7 @@ import android.app.Activity
 import android.content.Context
 import com.google.gson.Gson
 import android.util.Log
+import android.widget.EditText
 import androidx.annotation.NonNull
 import com.nuvei.sdk.Callback
 import com.nuvei.sdk.Error
@@ -29,7 +30,12 @@ class FlutterNuveiSdkPlugin: FlutterPlugin, MethodCallHandler, ActivityAware {
   private lateinit var channel : MethodChannel
   private lateinit var context: Context
   private lateinit var activity: Activity
+  private lateinit var cardNumberEditText: EditText
+  private lateinit var cardHolderNameEditText: EditText
+  private lateinit var expiryDateEditText: EditText
+  private lateinit var cvvEditText: EditText
   private val gson = Gson()
+
 
   override fun onAttachedToEngine(@NonNull flutterPluginBinding: FlutterPlugin.FlutterPluginBinding) {
     channel = MethodChannel(flutterPluginBinding.binaryMessenger, "flutter_nuvei_sdk")
@@ -39,7 +45,14 @@ class FlutterNuveiSdkPlugin: FlutterPlugin, MethodCallHandler, ActivityAware {
     // Register PlatformViewFactory here
     flutterPluginBinding.platformViewRegistry.registerViewFactory(
       "flutter_nuvei_fields",
-      NativeViewFactory()
+      NativeViewFactory(channel, object : CardDataCallback {
+        override fun invoke(cardNumber: EditText, cardHolderName: EditText, expiryDate: EditText, cvv: EditText) {
+          cardNumberEditText = cardNumber
+          cardHolderNameEditText = cardHolderName
+          expiryDateEditText = expiryDate
+          cvvEditText = cvv
+        }
+      })
     )
   }
 
@@ -147,11 +160,12 @@ class FlutterNuveiSdkPlugin: FlutterPlugin, MethodCallHandler, ActivityAware {
     val merchantSiteId: String = call.argument("merchantSiteId")!!
     val currency: String = "USD"
     val amount: String = "0"
-    val cardHolderName: String = call.argument("cardHolderName")!!
-    val cardNumber: String = call.argument("cardNumber")!!
-    val cvv: String = call.argument("cvv")!!
-    val monthExpiry: String = call.argument("monthExpiry")!!
-    val yearExpiry: String = call.argument("yearExpiry")!!
+    val cardHolderName: String = cardNumberEditText.text.toString()
+    val cardNumber: String = cardNumberEditText.text.toString()
+    val cvv: String = cvvEditText.text.toString()
+    val expiryDate = expiryDateEditText.text
+    val monthExpiry: String = expiryDate.substring(0, 2)
+    val yearExpiry: String = "20${expiryDate.substring(2)}"
 
     val paymentOption = PaymentOption(
       card = CardDetails(
@@ -276,6 +290,9 @@ class FlutterNuveiSdkPlugin: FlutterPlugin, MethodCallHandler, ActivityAware {
     TODO("Not yet implemented")
   }
 }
+
+
+typealias CardDataCallback = (cardNumber: EditText, cardHolderName: EditText, expiryDate: EditText, cvv: EditText) -> Unit
 
 class PackageEnvironment {
   companion object {

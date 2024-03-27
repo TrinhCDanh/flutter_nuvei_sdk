@@ -32,4 +32,25 @@ class MethodChannelFlutterNuveiSdk extends FlutterNuveiSdkPlatform {
     final data = await methodChannel.invokeMethod<String>('checkout', args);
     return data;
   }
+
+  @override
+  Future<void> onHandleNuveiField({
+    required Function(bool) onInputUpdated,
+    required Function(bool) onInputValidated,
+  }) async {
+    methodChannel.setMethodCallHandler((handler) async {
+      switch (handler.method) {
+        case 'onInputUpdated':
+          final String dataFromKotlin = handler.arguments as String;
+          onInputUpdated(dataFromKotlin.toLowerCase() != "false");
+          break;
+        case 'onInputValidated':
+          final String dataFromKotlin = handler.arguments as String;
+          onInputValidated(dataFromKotlin.toLowerCase() != "false");
+          break;
+        default:
+          throw UnimplementedError("Method ${handler.method} not implemented");
+      }
+    });
+  }
 }

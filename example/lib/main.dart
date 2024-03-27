@@ -18,7 +18,7 @@ class MyApp extends StatefulWidget {
 }
 
 class _MyAppState extends State<MyApp> {
-  final String sessionToken = "a03b2619-917f-4d38-9fc4-061fb3a28208";
+  final String sessionToken = "aa64f516-9386-4eba-b248-bae9aa9f5a10";
   final String merchantId = "4099004892638267996";
   final String merchantSiteId = "250858";
   final String currency = 'USD';
@@ -29,7 +29,7 @@ class _MyAppState extends State<MyApp> {
   final String monthExpiry = "12";
   final String yearExpiry = "2026";
   final String userTokenId = "117";
-  final String clientRequestId = "20240326105518";
+  final String clientRequestId = "20240327151451";
 
   @override
   void initState() {
