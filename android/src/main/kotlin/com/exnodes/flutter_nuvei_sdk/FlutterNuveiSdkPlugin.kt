@@ -5,7 +5,6 @@ import android.content.Context
 import com.google.gson.Gson
 import android.util.Log
 import androidx.annotation.NonNull
-import com.exnodes.flutter_nuvei_sdk.plugins.platform.PlatformView.PlatformViewFactory.NativeViewFactory
 import com.nuvei.sdk.Callback
 import com.nuvei.sdk.Error
 
@@ -20,8 +19,6 @@ import com.nuvei.sdk.TokenizeCallback
 import com.nuvei.sdk.model.*
 import io.flutter.embedding.engine.plugins.activity.ActivityAware
 import io.flutter.embedding.engine.plugins.activity.ActivityPluginBinding
-import com.nuvei.sdk.model.CheckoutTransactionDetails
-import com.nuvei.sdk.views.nuveifields.NuveiCreditCardField
 
 /** FlutterNuveiSdkPlugin */
 class FlutterNuveiSdkPlugin: FlutterPlugin, MethodCallHandler, ActivityAware {
@@ -38,9 +35,10 @@ class FlutterNuveiSdkPlugin: FlutterPlugin, MethodCallHandler, ActivityAware {
     channel = MethodChannel(flutterPluginBinding.binaryMessenger, "flutter_nuvei_sdk")
     channel.setMethodCallHandler(this)
     context = flutterPluginBinding.applicationContext
+
     // Register PlatformViewFactory here
     flutterPluginBinding.platformViewRegistry.registerViewFactory(
-      "PaymentFragment",
+      "flutter_nuvei_fields",
       NativeViewFactory()
     )
   }

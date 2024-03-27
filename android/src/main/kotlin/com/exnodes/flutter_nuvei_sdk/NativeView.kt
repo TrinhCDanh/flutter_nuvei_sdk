@@ -1,4 +1,4 @@
-    package com.exnodes.flutter_nuvei_sdk.plugins.platform.PlatformView
+    package com.exnodes.flutter_nuvei_sdk
 
     import android.content.Context
     import android.view.LayoutInflater
@@ -9,11 +9,10 @@
     import com.nuvei.sdk.views.nuveifields.NuveiCreditCardField
     import io.flutter.plugin.platform.PlatformView
 
-    internal class NativeView(private val context: Context) : PlatformView {
+    internal class NativeView(private val context: Context, id: Int, creationParams: Map<String?, Any?>?) : PlatformView {
         private val view: View = LayoutInflater.from(context).inflate(R.layout.fragment_payment, null)
 
         override fun getView(): View {
-
             return view
         }
 
@@ -47,6 +46,4 @@
                 }
             }
         }
-
-
     }
