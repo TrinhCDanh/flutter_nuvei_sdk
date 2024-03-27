@@ -3,13 +3,31 @@ import UIKit
 import NuveiSimplyConnectSDK
 
 public class FlutterNuveiSdkPlugin: NSObject, FlutterPlugin {
+  var cardDataCallback: CardDataCallback?
+  var creditCardField : NuveiCreditCardField?
+  var cardNumberEditText: UITextField?
+  var cardHolderNameEditText: UITextField?
+  var expiryDateEditText: UITextField?
+  var cvvEditText: UITextField?
+    
   public static func register(with registrar: FlutterPluginRegistrar) {
     let channel = FlutterMethodChannel(name: "flutter_nuvei_sdk", binaryMessenger: registrar.messenger())
     let instance = FlutterNuveiSdkPlugin()
     registrar.addMethodCallDelegate(instance, channel: channel)
       
     // Register the platform view
-    let factory = FLNativeViewFactory(messenger: registrar.messenger())
+    instance.cardDataCallback = { creditCardField, cardNumber, cardHolderName, expiryDate, cvv in
+        instance.creditCardField = creditCardField
+        instance.cardNumberEditText = cardNumber
+        instance.cardHolderNameEditText = cardHolderName
+        instance.expiryDateEditText = expiryDate
+        instance.cvvEditText = cvv
+    }
+    let factory = FLNativeViewFactory(
+        messenger: registrar.messenger(),
+        methodChannel: channel,
+        cardDataCallback: instance.cardDataCallback
+    )
     registrar.register(factory, withId: "flutter_nuvei_fields")
   }
 
@@ -34,6 +52,9 @@ public class FlutterNuveiSdkPlugin: NSObject, FlutterPlugin {
         guard let args = call.arguments as? [String : Any] else {return}
         self.checkout(result: result, args: args, controller: viewController)
         break
+      case "validateFields":
+        self.validateFields(result: result)
+        break
       default:
         result(FlutterMethodNotImplemented)
         break
@@ -43,14 +64,44 @@ public class FlutterNuveiSdkPlugin: NSObject, FlutterPlugin {
     /* Set environment */
      private func setup(result: FlutterResult, args: [String : Any]) {
        let environment = args["environment"] as! String
+       // Nuvei field UI Customization
+       let customization = NuveiFieldCustomization (
+         labelCustomization: .init(
+             textFont: UIFont.systemFont(ofSize: 12),
+             textColor: UIColor(hex: "#49516F"),
+             headingTextFont: UIFont.systemFont(ofSize: 12),
+             headingTextColor: .white
+         ),
+         textBoxCustomization: .init (
+             backgroundColor: .white,
+             textFont: UIFont.systemFont(ofSize: 14),
+             textColor: .black,
+             borderColor: .black,
+             cornerRadius: 0,
+             borderWidth: 1
+         ),
+         errorLabelCustomization: .init (
+             textFont: UIFont.systemFont(ofSize: 12),
+             textColor: UIColor(hex: "#E02D3C")
+         ),
+         placeholderCustomization: .init (
+             textFont: UIFont.systemFont(ofSize: 14),
+             textColor: .gray
+         ),
+         backgroundColor: .white,
+         borderColor: .white,
+         cornerRadius: 0,
+         borderWidth: 1
+       )
+         
        switch environment {
         case PackageEnvironment.stating:
             NuveiSimplyConnect.setup(environment: NuveiSimplyConnect.Environment.integration)
-            NuveiFields.setup(environment: NuveiSimplyConnect.Environment.integration)
+            NuveiFields.setup(environment: NuveiSimplyConnect.Environment.integration, customization: customization)
             break
         default:
             NuveiSimplyConnect.setup(environment: NuveiSimplyConnect.Environment.production)
-            NuveiFields.setup(environment: NuveiSimplyConnect.Environment.production)
+            NuveiFields.setup(environment: NuveiSimplyConnect.Environment.production, customization: customization)
             break
        }
          
@@ -108,18 +159,19 @@ public class FlutterNuveiSdkPlugin: NSObject, FlutterPlugin {
        }        
      }
     
-    /* Authenticate 3D */
+    /* Tokenize */
     private func tokenize(result: @escaping FlutterResult, args: [String : Any]) {
       let sessionToken = args["sessionToken"] as! String
       let merchantId = args["merchantId"] as! String
       let merchantSiteId = args["merchantSiteId"] as! String
       let currency = "USD"
       let amount = "0"
-      let cardHolderName = args["cardHolderName"] as! String
-      let cardNumber = args["cardNumber"] as! String
-      let cvv = args["cvv"] as! String
-      let monthExpiry = args["monthExpiry"] as! String
-      let yearExpiry = args["yearExpiry"] as! String
+      let cardHolderName = self.cardHolderNameEditText?.text
+      let cardNumber = self.cardNumberEditText?.text
+      let cvv = self.cvvEditText?.text
+      let expiryDate = self.expiryDateEditText?.text
+      let monthExpiry = String(expiryDate?.prefix(2) ?? "00")
+      let yearExpiry = "20" + (expiryDate?.suffix(2) ?? "00")
      
       let paymentOption = try! NVPaymentOption(
         card: NVCardDetails(
@@ -147,6 +199,13 @@ public class FlutterNuveiSdkPlugin: NSObject, FlutterPlugin {
         let tokenizeResponseToJson = self.convertToJson(data: tokenizeResponse)
         result(tokenizeResponseToJson)
       }
+    }
+    
+    private func validateFields(result: @escaping FlutterResult) {
+        self.creditCardField!.validate() { error, errors in
+            print(self.cardHolderNameEditText?.text ?? "")
+            result(!(errors?.isEmpty ?? false))
+        }
     }
     
     /* checkout */
@@ -254,5 +313,31 @@ struct CheckoutResponse: Codable {
   var errCode: Int?
   var errorDescription: String?
 }
+
+extension UIColor {
+    convenience init(hex: String) {
+        var hexSanitized = hex.trimmingCharacters(in: .whitespacesAndNewlines)
+        hexSanitized = hexSanitized.replacingOccurrences(of: "#", with: "")
+        
+        var rgb: UInt64 = 0
+        
+        Scanner(string: hexSanitized).scanHexInt64(&rgb)
+        
+        let red = CGFloat((rgb & 0xFF0000) >> 16) / 255.0
+        let green = CGFloat((rgb & 0x00FF00) >> 8) / 255.0
+        let blue = CGFloat(rgb & 0x0000FF) / 255.0
+        
+        self.init(red: red, green: green, blue: blue, alpha: 1.0)
+    }
+}
+
+typealias CardDataCallback = (
+    _ creditCardField : NuveiCreditCardField,
+    _ cardNumber: UITextField,
+    _ cardHolderName: UITextField,
+    _ expiryDate: UITextField,
+    _ cvv: UITextField
+) -> Void
+
 
 

@@ -55,13 +55,7 @@
 
             with(creditCardField) {
                 creditCardField.onInputUpdated = { hasFocus ->
-                    val cardNumber = findViewById<EditText>(R.id.numberEditText)
-                    val cardHolderName = findViewById<EditText>(R.id.holderNameEditText)
-                    val expiryDate = findViewById<EditText>(R.id.expiryEditText)
-                    val cvv = findViewById<EditText>(R.id.cvvEditText)
-
                     methodChannel.invokeMethod("onInputUpdated", hasFocus.toString())
-                    cardDataCallback.invoke(cardNumber, cardHolderName, expiryDate, cvv)
                 }
 
                 creditCardField.onInputValidated = { errors ->
@@ -73,5 +67,11 @@
                     methodChannel.invokeMethod("onInputValidated", hasError.toString())
                 }
             }
+
+            val cardNumber = view.findViewById<EditText>(R.id.numberEditText)
+            val cardHolderName = view.findViewById<EditText>(R.id.holderNameEditText)
+            val expiryDate = view.findViewById<EditText>(R.id.expiryEditText)
+            val cvv = view.findViewById<EditText>(R.id.cvvEditText)
+            cardDataCallback.invoke(creditCardField, cardNumber, cardHolderName, expiryDate, cvv)
         }
     }

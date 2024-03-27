@@ -62,6 +62,11 @@ class FlutterNuveiSdk {
     return NVOutput.fromJson(outputToJson);
   }
 
+  static Future<bool> validateFields() async {
+    final bool output = await FlutterNuveiSdkPlatform.instance.validateFields();
+    return output;
+  }
+
   static Future<void> onHandleNuveiField({
     required Function(bool) onInputUpdated,
     required Function(bool) onInputValidated,

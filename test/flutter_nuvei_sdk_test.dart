@@ -34,6 +34,12 @@ class MockFlutterNuveiSdkPlatform
   }) async {
     // TODO: implement onHandleNuveiField
   }
+
+  @override
+  Future<bool> validateFields() {
+    // TODO: implement validateFields
+    throw UnimplementedError();
+  }
 }
 
 void main() {

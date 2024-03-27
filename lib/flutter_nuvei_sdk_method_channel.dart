@@ -34,6 +34,12 @@ class MethodChannelFlutterNuveiSdk extends FlutterNuveiSdkPlatform {
   }
 
   @override
+  Future<bool> validateFields() async {
+    final data = await methodChannel.invokeMethod<bool>('validateFields');
+    return data ?? false;
+  }
+
+  @override
   Future<void> onHandleNuveiField({
     required Function(bool) onInputUpdated,
     required Function(bool) onInputValidated,

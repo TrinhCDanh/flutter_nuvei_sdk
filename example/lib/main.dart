@@ -19,9 +19,9 @@ class MyApp extends StatefulWidget {
 }
 
 class _MyAppState extends State<MyApp> {
-  final String sessionToken = "aa64f516-9386-4eba-b248-bae9aa9f5a10";
-  final String merchantId = "4099004892638267996";
-  final String merchantSiteId = "250858";
+  final String sessionToken = "";
+  final String merchantId = "";
+  final String merchantSiteId = "";
   final String currency = 'USD';
   final String amount = "151";
   final String cardHolderName = "CL-BRW2";
@@ -30,7 +30,7 @@ class _MyAppState extends State<MyApp> {
   final String monthExpiry = "12";
   final String yearExpiry = "2026";
   final String userTokenId = "117";
-  final String clientRequestId = "20240327151451";
+  final String clientRequestId = "20240327180853";
 
   @override
   void initState() {
@@ -166,6 +166,9 @@ class _MyAppState extends State<MyApp> {
                   child: const Text('checkout()'),
                 ),
               ),
+              const SizedBox(
+                height: 10,
+              ),
               GestureDetector(
                 onTap: () {
                   Navigator.push(
@@ -179,14 +182,9 @@ class _MyAppState extends State<MyApp> {
                     vertical: 10,
                     horizontal: 20,
                   ),
-                  child: const Text('payment()'),
+                  child: const Text('Nuvei Field Demo'),
                 ),
               ),
-              // Container(
-              //   width: double.infinity,
-              //   height: 300,
-              //   child: const FlutterNuveiCardField(),
-              // ),
             ],
           ),
         ),

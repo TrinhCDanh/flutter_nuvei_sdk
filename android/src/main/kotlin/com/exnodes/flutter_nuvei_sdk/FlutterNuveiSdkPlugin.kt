@@ -4,7 +4,9 @@ import android.app.Activity
 import android.content.Context
 import com.google.gson.Gson
 import android.util.Log
+import android.view.inputmethod.InputMethodManager
 import android.widget.EditText
+import android.widget.TextView
 import androidx.annotation.NonNull
 import com.nuvei.sdk.Callback
 import com.nuvei.sdk.Error
@@ -18,6 +20,7 @@ import io.flutter.plugin.common.MethodChannel.Result
 import com.nuvei.sdk.NuveiSimplyConnect
 import com.nuvei.sdk.TokenizeCallback
 import com.nuvei.sdk.model.*
+import com.nuvei.sdk.views.nuveifields.NuveiCreditCardField
 import io.flutter.embedding.engine.plugins.activity.ActivityAware
 import io.flutter.embedding.engine.plugins.activity.ActivityPluginBinding
 
@@ -30,6 +33,7 @@ class FlutterNuveiSdkPlugin: FlutterPlugin, MethodCallHandler, ActivityAware {
   private lateinit var channel : MethodChannel
   private lateinit var context: Context
   private lateinit var activity: Activity
+  private lateinit var creditCardField : NuveiCreditCardField
   private lateinit var cardNumberEditText: EditText
   private lateinit var cardHolderNameEditText: EditText
   private lateinit var expiryDateEditText: EditText
@@ -46,7 +50,8 @@ class FlutterNuveiSdkPlugin: FlutterPlugin, MethodCallHandler, ActivityAware {
     flutterPluginBinding.platformViewRegistry.registerViewFactory(
       "flutter_nuvei_fields",
       NativeViewFactory(channel, object : CardDataCallback {
-        override fun invoke(cardNumber: EditText, cardHolderName: EditText, expiryDate: EditText, cvv: EditText) {
+        override fun invoke(creditCardField : NuveiCreditCardField, cardNumber: EditText, cardHolderName: EditText, expiryDate: EditText, cvv: EditText) {
+          this@FlutterNuveiSdkPlugin.creditCardField = creditCardField
           cardNumberEditText = cardNumber
           cardHolderNameEditText = cardHolderName
           expiryDateEditText = expiryDate
@@ -72,6 +77,9 @@ class FlutterNuveiSdkPlugin: FlutterPlugin, MethodCallHandler, ActivityAware {
       }
       "checkout" -> {
         checkout(result, call)
+      }
+      "validateFields" -> {
+        validateFields(result)
       }
       else -> {
         result.notImplemented()
@@ -203,6 +211,28 @@ class FlutterNuveiSdkPlugin: FlutterPlugin, MethodCallHandler, ActivityAware {
     )
   }
 
+  private fun validateFields(result: MethodChannel.Result) {
+    // Un-focus and dismiss keyboard
+    cardNumberEditText.clearFocus()
+    cardHolderNameEditText.clearFocus()
+    expiryDateEditText.clearFocus()
+    cvvEditText.clearFocus()
+
+    val imm = context.getSystemService(Context.INPUT_METHOD_SERVICE) as InputMethodManager
+    imm.hideSoftInputFromWindow(cardNumberEditText.windowToken, 0)
+    imm.hideSoftInputFromWindow(cardHolderNameEditText.windowToken, 0)
+    imm.hideSoftInputFromWindow(expiryDateEditText.windowToken, 0)
+    imm.hideSoftInputFromWindow(cvvEditText.windowToken, 0)
+
+    // Validate fields
+    creditCardField.validate()
+    val numberErrorTextView = creditCardField.findViewById<TextView>(R.id.numberErrorTextView)
+    val cardHolderNameErrorTextView = creditCardField.findViewById<TextView>(R.id.holderNameErrorTextView)
+    val expiryDateErrorTextView = creditCardField.findViewById<TextView>(R.id.expiryErrorTextView)
+    val cvvErrorTextView = creditCardField.findViewById<TextView>(R.id.cvvErrorTextView)
+    val hasError: Boolean = numberErrorTextView.text.isNotEmpty() || cardHolderNameErrorTextView.text.isNotEmpty() || expiryDateErrorTextView.text.isNotEmpty() || cvvErrorTextView.text.isNotEmpty()
+    result.success(hasError)
+  }
   private fun checkout(result: MethodChannel.Result, call: MethodCall) {
     val sessionToken: String = call.argument("sessionToken")!!
     val merchantId: String = call.argument("merchantId")!!
@@ -291,9 +321,6 @@ class FlutterNuveiSdkPlugin: FlutterPlugin, MethodCallHandler, ActivityAware {
   }
 }
 
-
-typealias CardDataCallback = (cardNumber: EditText, cardHolderName: EditText, expiryDate: EditText, cvv: EditText) -> Unit
-
 class PackageEnvironment {
   companion object {
     const val stating = "STAGING"
@@ -324,3 +351,11 @@ data class CheckoutResponse(
   val errCode: Int?,
   val errorDescription: String?,
 )
+
+typealias CardDataCallback = (
+  creditCardField : NuveiCreditCardField,
+  cardNumber: EditText,
+  cardHolderName: EditText,
+  expiryDate: EditText,
+  cvv: EditText
+) -> Unit
