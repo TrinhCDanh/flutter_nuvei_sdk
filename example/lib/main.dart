@@ -1,6 +1,7 @@
 import 'dart:async';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import 'package:flutter_nuvei_sdk/flutter_nuvei_card_field.dart';
 import 'package:flutter_nuvei_sdk/flutter_nuvei_sdk.dart';
 
 void main() {
@@ -162,11 +163,11 @@ class _MyAppState extends State<MyApp> {
                   child: const Text('checkout()'),
                 ),
               ),
-              // Container(
-              //   width: double.infinity,
-              //   height: 300,
-              //   child: const FlutterNuveiCardField(),
-              // ),
+              Container(
+                width: double.infinity,
+                height: 300,
+                child: const FlutterNuveiCardField(),
+              ),
             ],
           ),
         ),

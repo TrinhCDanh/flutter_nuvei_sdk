@@ -64,17 +64,73 @@ class FLNativeView: NSObject, FlutterPlatformView {
         
         do {
             let creditCardField = try NuveiFields.createCreditCardField()
+            var allTextFields = [UITextField]()
+            var allLabels = [UILabel]()
             creditCardField.onInputUpdated = { hasFocus in
                 print(hasFocus)
+                print(allTextFields[0].text ?? "")
+                print(allTextFields[1].text ?? "")
+                print(allTextFields[2].text ?? "")
+                print(allTextFields[3].text ?? "")
                 // TODO: Implement input update callback
             }
             creditCardField.onInputValidated = { errors in
                 // TODO: Implement validations callback
+                print(allLabels[1].text ?? "")
+                print(allLabels[3].text ?? "")
+                print(allLabels[5].text ?? "")
+                print(allLabels[7].text ?? "")
             }
             _view.addSubview(creditCardField)
+            allTextFields = _view.findTextFields()
+            allLabels = _view.findLabels()
+            print("tesstttt")
         } catch {
             print("Error info: \(error)")
             // TODO: Handle exception
         }
+        
+        let textFieldsWithTags = _view.findTextFieldsWithTags()
+        for (textField, tagID) in textFieldsWithTags {
+            print("Tag ID của UITextField là: \(tagID)")
+        }
     }
+}
+
+extension UIView {
+    func findTextFields() -> [UITextField] {
+        var textFields = [UITextField]()
+        for subview in subviews {
+            if let textField = subview as? UITextField {
+                textFields.append(textField)
+            } else {
+                textFields += subview.findTextFields()
+            }
+        }
+        return textFields
+    }
+    
+    func findLabels() -> [UILabel] {
+        var textFields = [UILabel]()
+        for subview in subviews {
+            if let textField = subview as? UILabel {
+                textFields.append(textField)
+            } else {
+                textFields += subview.findLabels()
+            }
+        }
+        return textFields
+    }
+    
+    func findTextFieldsWithTags() -> [(textField: UITextField, tagID: Int)] {
+            var textFieldsWithTags = [(UITextField, Int)]()
+            for subview in subviews {
+                if let textField = subview as? UITextField {
+                    textFieldsWithTags.append((textField, textField.tag))
+                } else {
+                    textFieldsWithTags += subview.findTextFieldsWithTags()
+                }
+            }
+            return textFieldsWithTags
+        }
 }
