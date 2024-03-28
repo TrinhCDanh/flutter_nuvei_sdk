@@ -2,7 +2,7 @@ import 'dart:async';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_nuvei_sdk/flutter_nuvei_sdk.dart';
-import 'package:flutter_nuvei_sdk_example/native_view_example.dart';
+import 'package:flutter_nuvei_sdk_example/nuvei_field_example.dart';
 
 void main() {
   runApp(const MaterialApp(
@@ -172,7 +172,9 @@ class _MyAppState extends State<MyApp> {
                 onTap: () {
                   Navigator.push(
                     context,
-                    MaterialPageRoute(builder: (context) => MyNativeView()),
+                    MaterialPageRoute(
+                      builder: (context) => const NuveiFieldExample(),
+                    ),
                   );
                 },
                 child: Container(

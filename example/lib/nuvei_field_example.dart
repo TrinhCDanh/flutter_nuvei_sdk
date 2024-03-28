@@ -1,9 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_nuvei_sdk/flutter_nuvei_card_field.dart';
 import 'package:flutter_nuvei_sdk/flutter_nuvei_sdk.dart';
 
-class MyNativeView extends StatelessWidget {
-  const MyNativeView({super.key});
+class NuveiFieldExample extends StatelessWidget {
+  const NuveiFieldExample({super.key});
 
   @override
   Widget build(BuildContext context) {
