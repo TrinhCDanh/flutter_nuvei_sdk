@@ -14,15 +14,20 @@ class MyNativeView extends StatelessWidget {
       body: SingleChildScrollView(
         child: Column(
           children: [
-            const SizedBox(
+            FlutterNuveiCardField(
               width: 400,
-              height: 300,
-              child: FlutterNuveiCardField(),
+              height: 260,
+              onInputUpdated: (hasFocus) {
+                print("onInputUpdated: $hasFocus");
+              },
+              onInputValidated: (hasError) {
+                print("onInputValidated: $hasError");
+              },
             ),
             GestureDetector(
               onTap: () async {
                 final isError = await FlutterNuveiSdk.validateFields();
-                print(isError);
+                print("Form error: $isError");
               },
               child: Container(
                 width: 400,
@@ -32,7 +37,7 @@ class MyNativeView extends StatelessWidget {
                   child: Text("Submit"),
                 ),
               ),
-            )
+            ),
           ],
         ),
       ),

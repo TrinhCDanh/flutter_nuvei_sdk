@@ -30,13 +30,19 @@ class FLNativeViewFactory: NSObject, FlutterPlatformViewFactory {
         viewIdentifier viewId: Int64,
         arguments args: Any?
     ) -> FlutterPlatformView {
+        guard let argsDict = args as? [String: Any],
+                      let containerWidth = argsDict["containerWidth"] as? CGFloat else {
+            return UIView() as! FlutterPlatformView
+        }
+        
         return FLNativeView(
             frame: frame,
             viewIdentifier: viewId,
             arguments: args,
             binaryMessenger: messenger,
             methodChannel: methodChannel,
-            cardDataCallback: cardDataCallback
+            cardDataCallback: cardDataCallback,
+            containerWidth: containerWidth
         )
     }
 
@@ -48,6 +54,7 @@ class FLNativeViewFactory: NSObject, FlutterPlatformViewFactory {
 
 class FLNativeView: NSObject, FlutterPlatformView {
     private var _view: UIView
+    private var containerWidth: CGFloat
     private var methodChannel: FlutterMethodChannel
     private let cardDataCallback: CardDataCallback?
 
@@ -57,11 +64,13 @@ class FLNativeView: NSObject, FlutterPlatformView {
         arguments args: Any?,
         binaryMessenger messenger: FlutterBinaryMessenger?,
         methodChannel: FlutterMethodChannel,
-        cardDataCallback: CardDataCallback?
+        cardDataCallback: CardDataCallback?,
+        containerWidth: CGFloat?
     ) {
         _view = UIView()
         self.methodChannel = methodChannel
         self.cardDataCallback = cardDataCallback
+        self.containerWidth = containerWidth ?? 400
         super.init()
         // iOS views can be created here
         createNativeView(view: _view)
@@ -93,11 +102,12 @@ class FLNativeView: NSObject, FlutterPlatformView {
             _view.addSubview(creditCardField)
             
             // Set width for field
-            _view.subviews[0].width(400)
+            _view.subviews[0].width(self.containerWidth)
              
             // Find UITextField (input) and UILabel (error message)
-            allTextFields = _view.findTextFields()
-            allLabels = _view.findLabels()
+            let (textFields, labels) = _view.findTextFieldsAndLabels()
+            allTextFields = textFields
+            allLabels = labels
             
             let cardNumber: UITextField = allTextFields[1]
             let cardHolderName: UITextField = allTextFields[0]
@@ -106,8 +116,26 @@ class FLNativeView: NSObject, FlutterPlatformView {
             self.cardDataCallback!(creditCardField, cardNumber, cardHolderName, expiryDate, cvv)
         } catch {
             print("Error info: \(error)")
-            // TODO: Handle exception
         }
+    }
+}
+
+extension UIView {
+    func findTextFieldsAndLabels() -> (textFields: [UITextField], labels: [UILabel]) {
+        var textFields = [UITextField]()
+        var labels = [UILabel]()
+        for subview in subviews {
+            if let textField = subview as? UITextField {
+                textFields.append(textField)
+            } else if let label = subview as? UILabel {
+                labels.append(label)
+            } else {
+                let (subviewTextFields, subviewLabels) = subview.findTextFieldsAndLabels()
+                textFields += subviewTextFields
+                labels += subviewLabels
+            }
+        }
+        return (textFields, labels)
     }
 }
 

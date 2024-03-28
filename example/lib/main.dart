@@ -1,7 +1,6 @@
 import 'dart:async';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:flutter_nuvei_sdk/flutter_nuvei_card_field.dart';
 import 'package:flutter_nuvei_sdk/flutter_nuvei_sdk.dart';
 import 'package:flutter_nuvei_sdk_example/native_view_example.dart';
 
@@ -30,7 +29,7 @@ class _MyAppState extends State<MyApp> {
   final String monthExpiry = "12";
   final String yearExpiry = "2026";
   final String userTokenId = "117";
-  final String clientRequestId = "20240327180853";
+  final String clientRequestId = "20240328101732";
 
   @override
   void initState() {
