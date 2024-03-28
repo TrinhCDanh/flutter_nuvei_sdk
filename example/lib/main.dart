@@ -75,11 +75,6 @@ class _MyAppState extends State<MyApp> {
         sessionToken: sessionToken,
         merchantId: merchantId,
         merchantSiteId: merchantSiteId,
-        cardHolderName: cardHolderName,
-        cardNumber: cardNumber,
-        cvv: cvv,
-        monthExpiry: monthExpiry,
-        yearExpiry: yearExpiry,
       );
       final NVOutput? resultTokenize = await FlutterNuveiSdk.tokenize(input);
       print("=================");
