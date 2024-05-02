@@ -224,6 +224,11 @@ public class FlutterNuveiSdkPlugin: NSObject, FlutterPlugin {
       let customField1 = args["customField1"] as? String
       let customField2 = args["customField2"] as? String
       let customField3 = args["customField3"] as? String
+      let customField4 = args["customField4"] as? String
+      let customField5 = args["customField5"] as? String
+      let customField6 = args["customField6"] as? String
+      let customField7 = args["customField7"] as? String
+        
             
       let input = NVInput(
         sessionToken: sessionToken,
@@ -245,7 +250,11 @@ public class FlutterNuveiSdkPlugin: NSObject, FlutterPlugin {
         merchantDetails: NVMerchantDetails(
             customField1: customField1,
             customField2: customField2,
-            customField3: customField3
+            customField3: customField3,
+            customField4: customField4,
+            customField5: customField5,
+            customField6: customField6,
+            customField7: customField7
         )
       );
                  

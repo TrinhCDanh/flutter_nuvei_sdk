@@ -13,6 +13,10 @@ class NVCheckoutInput {
   late final String? customField1;
   late final String? customField2;
   late final String? customField3;
+  late final String? customField4;
+  late final String? customField5;
+  late final String? customField6;
+  late final String? customField7;
 
   NVCheckoutInput({
     required this.sessionToken,
@@ -29,6 +33,10 @@ class NVCheckoutInput {
     this.customField1,
     this.customField2,
     this.customField3,
+    this.customField4,
+    this.customField5,
+    this.customField6,
+    this.customField7,
   });
 
   NVCheckoutInput.fromJson(Map<String, dynamic> json) {
@@ -46,6 +54,10 @@ class NVCheckoutInput {
     customField1 = json['customField1'];
     customField2 = json['customField2'];
     customField3 = json['customField3'];
+    customField4 = json['customField4'];
+    customField5 = json['customField5'];
+    customField6 = json['customField6'];
+    customField7 = json['customField7'];
   }
 
   Map<String, dynamic> toJson() {
@@ -64,6 +76,10 @@ class NVCheckoutInput {
     data['customField1'] = customField1;
     data['customField2'] = customField2;
     data['customField3'] = customField3;
+    data['customField4'] = customField4;
+    data['customField5'] = customField5;
+    data['customField6'] = customField6;
+    data['customField7'] = customField7;
     return data;
   }
 }
