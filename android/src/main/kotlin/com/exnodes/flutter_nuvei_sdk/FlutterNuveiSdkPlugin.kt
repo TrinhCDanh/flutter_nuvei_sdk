@@ -285,19 +285,21 @@ class FlutterNuveiSdkPlugin: FlutterPlugin, MethodCallHandler, ActivityAware {
       forceWebChallenge = true,
       callback = object : Callback<NVOutput> {
         override fun onComplete(response: NVOutput) {
-          writeToLog(gson.toJson(response))
+          print("callback")
+//          writeToLog(gson.toJson(response))
 //          val checkoutResponse = CheckoutResponse(
 //            result = response.result.uppercase(),
 //            errCode = response.errorCode,
 //            errorDescription = response.errorDescription
 //          )
 //          val checkoutResponseToJson = gson.toJson(checkoutResponse)
-          result.success("")
+          result.success(null)
         }
       }
     ) { response, activity, declineFallback ->
+      print("not callback")
       println(response)
-      writeToLog(gson.toJson(response))
+//      writeToLog(gson.toJson(response))
 //      val checkoutResponse = CheckoutResponse(
 //        result = response.result.uppercase(),
 //        errCode = response.errorCode,
