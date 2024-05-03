@@ -268,15 +268,15 @@ class FlutterNuveiSdkPlugin: FlutterPlugin, MethodCallHandler, ActivityAware {
         country = country,
         email = email,
       ),
-      merchantDetails = MerchantDetails(
-        customField1,
-        customField2,
-        customField3,
-        customField4,
-        customField5,
-        customField6,
-        customField7,
-      ),
+//      merchantDetails = MerchantDetails(
+//        customField1,
+//        customField2,
+//        customField3,
+//        customField4,
+//        customField5,
+//        customField6,
+//        customField7,
+//      ),
     )
 
     NuveiSimplyConnect.checkout(
