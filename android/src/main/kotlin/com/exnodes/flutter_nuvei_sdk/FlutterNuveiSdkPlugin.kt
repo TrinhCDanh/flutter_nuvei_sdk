@@ -277,24 +277,24 @@ class FlutterNuveiSdkPlugin: FlutterPlugin, MethodCallHandler, ActivityAware {
       callback = object : Callback<NVOutput> {
         override fun onComplete(response: NVOutput) {
           writeToLog(gson.toJson(response))
-          val checkoutResponse = CheckoutResponse(
-            result = response.result.uppercase(),
-            errCode = response.errorCode,
-            errorDescription = response.errorDescription
-          )
-          val checkoutResponseToJson = gson.toJson(checkoutResponse)
-          result.success(checkoutResponseToJson)
+//          val checkoutResponse = CheckoutResponse(
+//            result = response.result.uppercase(),
+//            errCode = response.errorCode,
+//            errorDescription = response.errorDescription
+//          )
+//          val checkoutResponseToJson = gson.toJson(checkoutResponse)
+          result.success("")
         }
       }
     ) { response, activity, declineFallback ->
       writeToLog(gson.toJson(response))
-      val checkoutResponse = CheckoutResponse(
-        result = response.result.uppercase(),
-        errCode = response.errorCode,
-        errorDescription = response.errorDescription
-      )
-      val checkoutResponseToJson = gson.toJson(checkoutResponse)
-      result.success(checkoutResponseToJson)
+//      val checkoutResponse = CheckoutResponse(
+//        result = response.result.uppercase(),
+//        errCode = response.errorCode,
+//        errorDescription = response.errorDescription
+//      )
+//      val checkoutResponseToJson = gson.toJson(checkoutResponse)
+      result.success("")
       declineFallback(NuveiSimplyConnect.CheckoutCompletionAction.dismiss)
     }
   }
