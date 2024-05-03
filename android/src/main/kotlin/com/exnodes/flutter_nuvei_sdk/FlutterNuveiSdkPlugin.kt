@@ -245,13 +245,13 @@ class FlutterNuveiSdkPlugin: FlutterPlugin, MethodCallHandler, ActivityAware {
     val lastName: String = call.argument("lastName")!!
     val country: String = call.argument("country")!!
     val email: String = call.argument("email")!!
-    val customField1: String? = call.argument("customField1")
-    val customField2: String? = call.argument("customField2")
-    val customField3: String? = call.argument("customField3")
-    val customField4: String? = call.argument("customField4")
-    val customField5: String? = call.argument("customField5")
-    val customField6: String? = call.argument("customField6")
-    val customField7: String? = call.argument("customField7")
+//    val customField1: String? = call.argument("customField1")
+//    val customField2: String? = call.argument("customField2")
+//    val customField3: String? = call.argument("customField3")
+//    val customField4: String? = call.argument("customField4")
+//    val customField5: String? = call.argument("customField5")
+//    val customField6: String? = call.argument("customField6")
+//    val customField7: String? = call.argument("customField7")
 
     val input = NVPayment(
       sessionToken,
@@ -267,16 +267,7 @@ class FlutterNuveiSdkPlugin: FlutterPlugin, MethodCallHandler, ActivityAware {
         lastName = lastName,
         country = country,
         email = email,
-      ),
-//      merchantDetails = MerchantDetails(
-//        customField1,
-//        customField2,
-//        customField3,
-//        customField4,
-//        customField5,
-//        customField6,
-//        customField7,
-//      ),
+      )
     )
 
     NuveiSimplyConnect.checkout(
