@@ -295,7 +295,7 @@ class FlutterNuveiSdkPlugin: FlutterPlugin, MethodCallHandler, ActivityAware {
 //      )
 //      val checkoutResponseToJson = gson.toJson(checkoutResponse)
       result.success("")
-      declineFallback(NuveiSimplyConnect.CheckoutCompletionAction.dismiss)
+//      declineFallback(NuveiSimplyConnect.CheckoutCompletionAction.dismiss)
     }
   }
 
