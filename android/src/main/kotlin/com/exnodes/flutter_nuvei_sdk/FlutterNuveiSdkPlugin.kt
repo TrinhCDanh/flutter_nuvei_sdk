@@ -39,6 +39,10 @@ class FlutterNuveiSdkPlugin: FlutterPlugin, MethodCallHandler, ActivityAware {
   private lateinit var expiryDateEditText: EditText
   private lateinit var cvvEditText: EditText
   private val gson = Gson()
+  private val googlePayMerchantId: String = "BCR2DN6TZ6DP7P3X"
+  private val googlePayMerchantName: String = "Google Pay web SDK"
+  private val googlePayGateway: String = "nuveidigital"
+  private val googlePayGatewayMerchantId= "googletest"
 
 
   override fun onAttachedToEngine(@NonNull flutterPluginBinding: FlutterPlugin.FlutterPluginBinding) {
@@ -132,6 +136,10 @@ class FlutterNuveiSdkPlugin: FlutterPlugin, MethodCallHandler, ActivityAware {
       sessionToken,
       merchantId,
       merchantSiteId,
+      googlePayMerchantId,
+      googlePayMerchantName,
+      googlePayGateway,
+      googlePayGatewayMerchantId,
       currency,
       amount,
       paymentOption = paymentOption,
@@ -189,6 +197,10 @@ class FlutterNuveiSdkPlugin: FlutterPlugin, MethodCallHandler, ActivityAware {
       sessionToken,
       merchantId,
       merchantSiteId,
+      googlePayMerchantId,
+      googlePayMerchantName,
+      googlePayGateway,
+      googlePayGatewayMerchantId,
       currency,
       amount,
       paymentOption = paymentOption,
@@ -257,6 +269,10 @@ class FlutterNuveiSdkPlugin: FlutterPlugin, MethodCallHandler, ActivityAware {
       sessionToken,
       merchantId,
       merchantSiteId,
+      googlePayMerchantId,
+      googlePayMerchantName,
+      googlePayGateway,
+      googlePayGatewayMerchantId,
       currency,
       amount,
       PaymentOption(),
