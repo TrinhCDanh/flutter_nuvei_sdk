@@ -42,7 +42,7 @@ class FlutterNuveiSdkPlugin: FlutterPlugin, MethodCallHandler, ActivityAware {
   private val googlePayMerchantId: String = "BCR2DN6TZ6DP7P3X"
   private val googlePayMerchantName: String = "Google Pay web SDK"
   private val googlePayGateway: String = "nuveidigital"
-  private var googlePayGatewayMerchantId: String = "googletest"
+  private lateinit var googlePayGatewayMerchantId: String
 
 
   override fun onAttachedToEngine(@NonNull flutterPluginBinding: FlutterPlugin.FlutterPluginBinding) {
