@@ -42,7 +42,7 @@ class FlutterNuveiSdkPlugin: FlutterPlugin, MethodCallHandler, ActivityAware {
   private val googlePayMerchantId: String = "BCR2DN6TZ6DP7P3X"
   private val googlePayMerchantName: String = "Google Pay web SDK"
   private val googlePayGateway: String = "nuveidigital"
-  private val googlePayGatewayMerchantId= "googletest"
+  private var googlePayGatewayMerchantId: String = "googletest"
 
 
   override fun onAttachedToEngine(@NonNull flutterPluginBinding: FlutterPlugin.FlutterPluginBinding) {
@@ -99,11 +99,13 @@ class FlutterNuveiSdkPlugin: FlutterPlugin, MethodCallHandler, ActivityAware {
         NuveiSimplyConnect.setup(
           environment = NuveiSimplyConnect.Environment.STAGING,
         );
+        googlePayGatewayMerchantId = "googletest"
       }
       else -> {
         NuveiSimplyConnect.setup(
           environment = NuveiSimplyConnect.Environment.PROD,
         );
+        googlePayGatewayMerchantId = "nuveidigital"
       }
     }
 
