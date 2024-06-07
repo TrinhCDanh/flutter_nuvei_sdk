@@ -9,6 +9,7 @@ public class FlutterNuveiSdkPlugin: NSObject, FlutterPlugin {
   var cardHolderNameEditText: UITextField?
   var expiryDateEditText: UITextField?
   var cvvEditText: UITextField?
+  var applePayMerchantId: String = "merchant.com.nuveidigital.test"
     
   public static func register(with registrar: FlutterPluginRegistrar) {
     let channel = FlutterMethodChannel(name: "flutter_nuvei_sdk", binaryMessenger: registrar.messenger())
@@ -98,10 +99,12 @@ public class FlutterNuveiSdkPlugin: NSObject, FlutterPlugin {
         case PackageEnvironment.stating:
             NuveiSimplyConnect.setup(environment: NuveiSimplyConnect.Environment.integration)
             NuveiFields.setup(environment: NuveiSimplyConnect.Environment.integration, customization: customization)
+            applePayMerchantId = "merchant.com.nuveidigital.test"
             break
         default:
             NuveiSimplyConnect.setup(environment: NuveiSimplyConnect.Environment.production)
             NuveiFields.setup(environment: NuveiSimplyConnect.Environment.production, customization: customization)
+            applePayMerchantId = "merchant.com.nuveidigital"
             break
        }
          
@@ -133,6 +136,7 @@ public class FlutterNuveiSdkPlugin: NSObject, FlutterPlugin {
        let input = NVInput(
          sessionToken: sessionToken,
          merchantId: merchantId,
+         applePayMerchantId: applePayMerchantId,
          merchantSiteId: merchantSiteId,
          currency: currency,
          amount: amount,
@@ -185,6 +189,7 @@ public class FlutterNuveiSdkPlugin: NSObject, FlutterPlugin {
       let input = NVInput(
         sessionToken: sessionToken,
         merchantId: merchantId,
+        applePayMerchantId: applePayMerchantId,
         merchantSiteId: merchantSiteId,
         currency: currency,
         amount: amount,
@@ -233,6 +238,7 @@ public class FlutterNuveiSdkPlugin: NSObject, FlutterPlugin {
       let input = NVInput(
         sessionToken: sessionToken,
         merchantId: merchantId,
+        applePayMerchantId: applePayMerchantId,
         merchantSiteId: merchantSiteId,
         currency: currency,
         amount: amount,
