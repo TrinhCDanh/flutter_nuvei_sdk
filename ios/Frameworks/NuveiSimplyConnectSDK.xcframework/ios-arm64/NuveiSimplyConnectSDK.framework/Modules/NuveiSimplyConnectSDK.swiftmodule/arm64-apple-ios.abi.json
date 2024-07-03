@@ -9133,7 +9133,10 @@
         "name": "TinyConstraints",
         "printedName": "TinyConstraints",
         "declKind": "Import",
-        "moduleName": "NuveiSimplyConnectSDK"
+        "moduleName": "NuveiSimplyConnectSDK",
+        "declAttributes": [
+          "ImplementationOnly"
+        ]
       },
       {
         "kind": "TypeDecl",
@@ -13405,7 +13408,10 @@
         "name": "TinyConstraints",
         "printedName": "TinyConstraints",
         "declKind": "Import",
-        "moduleName": "NuveiSimplyConnectSDK"
+        "moduleName": "NuveiSimplyConnectSDK",
+        "declAttributes": [
+          "ImplementationOnly"
+        ]
       },
       {
         "kind": "TypeDecl",
@@ -15788,6 +15794,16 @@
         "name": "TinyConstraints",
         "printedName": "TinyConstraints",
         "declKind": "Import",
+        "moduleName": "NuveiSimplyConnectSDK",
+        "declAttributes": [
+          "ImplementationOnly"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
         "moduleName": "NuveiSimplyConnectSDK"
       },
       {
@@ -17365,6 +17381,7 @@
         "declKind": "Import",
         "moduleName": "NuveiSimplyConnectSDK",
         "declAttributes": [
+          "ImplementationOnly",
           "RawDocComment"
         ]
       },
@@ -17603,6 +17620,16 @@
         "name": "TinyConstraints",
         "printedName": "TinyConstraints",
         "declKind": "Import",
+        "moduleName": "NuveiSimplyConnectSDK",
+        "declAttributes": [
+          "ImplementationOnly"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
         "moduleName": "NuveiSimplyConnectSDK"
       },
       {
@@ -17736,6 +17763,7 @@
         "declKind": "Import",
         "moduleName": "NuveiSimplyConnectSDK",
         "declAttributes": [
+          "ImplementationOnly",
           "RawDocComment"
         ]
       },
@@ -19253,14 +19281,20 @@
         "name": "TinyConstraints",
         "printedName": "TinyConstraints",
         "declKind": "Import",
-        "moduleName": "NuveiSimplyConnectSDK"
+        "moduleName": "NuveiSimplyConnectSDK",
+        "declAttributes": [
+          "ImplementationOnly"
+        ]
       },
       {
         "kind": "Import",
         "name": "SDWebImage",
         "printedName": "SDWebImage",
         "declKind": "Import",
-        "moduleName": "NuveiSimplyConnectSDK"
+        "moduleName": "NuveiSimplyConnectSDK",
+        "declAttributes": [
+          "ImplementationOnly"
+        ]
       },
       {
         "kind": "Import",
@@ -28497,63 +28531,63 @@
     {
       "filePath": "\/Users\/andrejavorskij\/Projects\/Hut\/safechargemobilesdk-ios\/NuveiMobileSDK\/NuveiFields\/NuveiField.swift",
       "kind": "BooleanLiteral",
-      "offset": 593,
+      "offset": 614,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/andrejavorskij\/Projects\/Hut\/safechargemobilesdk-ios\/NuveiMobileSDK\/NuveiFields\/NuveiField.swift",
       "kind": "IntegerLiteral",
-      "offset": 725,
+      "offset": 746,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/andrejavorskij\/Projects\/Hut\/safechargemobilesdk-ios\/NuveiMobileSDK\/NuveiFields\/NuveiField.swift",
       "kind": "BooleanLiteral",
-      "offset": 779,
+      "offset": 800,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/andrejavorskij\/Projects\/Hut\/safechargemobilesdk-ios\/NuveiMobileSDK\/NuveiFields\/NuveiField.swift",
       "kind": "BooleanLiteral",
-      "offset": 1381,
+      "offset": 1402,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/andrejavorskij\/Projects\/Hut\/safechargemobilesdk-ios\/NuveiMobileSDK\/NuveiFields\/NuveiField.swift",
       "kind": "BooleanLiteral",
-      "offset": 1422,
+      "offset": 1443,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/andrejavorskij\/Projects\/Hut\/safechargemobilesdk-ios\/NuveiMobileSDK\/NuveiFields\/NuveiField.swift",
       "kind": "IntegerLiteral",
-      "offset": 1527,
+      "offset": 1548,
       "length": 2,
       "value": "10"
     },
     {
       "filePath": "\/Users\/andrejavorskij\/Projects\/Hut\/safechargemobilesdk-ios\/NuveiMobileSDK\/NuveiFields\/NuveiField.swift",
       "kind": "IntegerLiteral",
-      "offset": 1537,
+      "offset": 1558,
       "length": 2,
       "value": "10"
     },
     {
       "filePath": "\/Users\/andrejavorskij\/Projects\/Hut\/safechargemobilesdk-ios\/NuveiMobileSDK\/NuveiFields\/NuveiField.swift",
       "kind": "IntegerLiteral",
-      "offset": 1549,
+      "offset": 1570,
       "length": 2,
       "value": "10"
     },
     {
       "filePath": "\/Users\/andrejavorskij\/Projects\/Hut\/safechargemobilesdk-ios\/NuveiMobileSDK\/NuveiFields\/NuveiField.swift",
       "kind": "IntegerLiteral",
-      "offset": 1560,
+      "offset": 1581,
       "length": 2,
       "value": "10"
     },
@@ -31619,301 +31653,301 @@
     {
       "filePath": "\/Users\/andrejavorskij\/Projects\/Hut\/safechargemobilesdk-ios\/NuveiMobileSDK\/NuveiFields\/NuveiCreditCardField.swift",
       "kind": "BooleanLiteral",
-      "offset": 670,
+      "offset": 691,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/andrejavorskij\/Projects\/Hut\/safechargemobilesdk-ios\/NuveiMobileSDK\/NuveiFields\/NuveiCreditCardField.swift",
       "kind": "StringLiteral",
-      "offset": 792,
+      "offset": 813,
       "length": 17,
       "value": "\"Cardholder Name\""
     },
     {
       "filePath": "\/Users\/andrejavorskij\/Projects\/Hut\/safechargemobilesdk-ios\/NuveiMobileSDK\/NuveiFields\/NuveiCreditCardField.swift",
       "kind": "StringLiteral",
-      "offset": 874,
+      "offset": 895,
       "length": 12,
       "value": "\"John Smith\""
     },
     {
       "filePath": "\/Users\/andrejavorskij\/Projects\/Hut\/safechargemobilesdk-ios\/NuveiMobileSDK\/NuveiFields\/NuveiCreditCardField.swift",
       "kind": "StringLiteral",
-      "offset": 1110,
+      "offset": 1131,
       "length": 13,
       "value": "\"Card Number\""
     },
     {
       "filePath": "\/Users\/andrejavorskij\/Projects\/Hut\/safechargemobilesdk-ios\/NuveiMobileSDK\/NuveiFields\/NuveiCreditCardField.swift",
       "kind": "StringLiteral",
-      "offset": 1191,
+      "offset": 1212,
       "length": 21,
       "value": "\"1234-5678-1234-5678\""
     },
     {
       "filePath": "\/Users\/andrejavorskij\/Projects\/Hut\/safechargemobilesdk-ios\/NuveiMobileSDK\/NuveiFields\/NuveiCreditCardField.swift",
       "kind": "StringLiteral",
-      "offset": 1436,
+      "offset": 1457,
       "length": 13,
       "value": "\"Expiry Date\""
     },
     {
       "filePath": "\/Users\/andrejavorskij\/Projects\/Hut\/safechargemobilesdk-ios\/NuveiMobileSDK\/NuveiFields\/NuveiCreditCardField.swift",
       "kind": "StringLiteral",
-      "offset": 1517,
+      "offset": 1538,
       "length": 7,
       "value": "\"12\/23\""
     },
     {
       "filePath": "\/Users\/andrejavorskij\/Projects\/Hut\/safechargemobilesdk-ios\/NuveiMobileSDK\/NuveiFields\/NuveiCreditCardField.swift",
       "kind": "StringLiteral",
-      "offset": 1739,
+      "offset": 1760,
       "length": 5,
       "value": "\"CVV\""
     },
     {
       "filePath": "\/Users\/andrejavorskij\/Projects\/Hut\/safechargemobilesdk-ios\/NuveiMobileSDK\/NuveiFields\/NuveiCreditCardField.swift",
       "kind": "StringLiteral",
-      "offset": 1809,
+      "offset": 1830,
       "length": 5,
       "value": "\"123\""
     },
     {
       "filePath": "\/Users\/andrejavorskij\/Projects\/Hut\/safechargemobilesdk-ios\/NuveiMobileSDK\/NuveiFields\/NuveiCreditCardField.swift",
       "kind": "BooleanLiteral",
-      "offset": 1869,
+      "offset": 1890,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/andrejavorskij\/Projects\/Hut\/safechargemobilesdk-ios\/NuveiMobileSDK\/NuveiFields\/NuveiCreditCardField.swift",
       "kind": "IntegerLiteral",
-      "offset": 1924,
+      "offset": 1945,
       "length": 1,
       "value": "3"
     },
     {
       "filePath": "\/Users\/andrejavorskij\/Projects\/Hut\/safechargemobilesdk-ios\/NuveiMobileSDK\/NuveiFields\/NuveiCreditCardField.swift",
       "kind": "BooleanLiteral",
-      "offset": 2169,
+      "offset": 2190,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/andrejavorskij\/Projects\/Hut\/safechargemobilesdk-ios\/NuveiMobileSDK\/NuveiFields\/NuveiCreditCardField.swift",
       "kind": "FloatLiteral",
-      "offset": 2365,
+      "offset": 2386,
       "length": 4,
       "value": "30.0"
     },
     {
       "filePath": "\/Users\/andrejavorskij\/Projects\/Hut\/safechargemobilesdk-ios\/NuveiMobileSDK\/NuveiFields\/NuveiCreditCardField.swift",
       "kind": "FloatLiteral",
-      "offset": 2404,
+      "offset": 2425,
       "length": 4,
       "value": "30.0"
     },
     {
       "filePath": "\/Users\/andrejavorskij\/Projects\/Hut\/safechargemobilesdk-ios\/NuveiMobileSDK\/NuveiFields\/NuveiCreditCardField.swift",
       "kind": "FloatLiteral",
-      "offset": 2562,
+      "offset": 2583,
       "length": 4,
       "value": "0.45"
     },
     {
       "filePath": "\/Users\/andrejavorskij\/Projects\/Hut\/safechargemobilesdk-ios\/NuveiMobileSDK\/NuveiFields\/NuveiCreditCardField.swift",
       "kind": "IntegerLiteral",
-      "offset": 3352,
+      "offset": 3373,
       "length": 1,
       "value": "4"
     },
     {
       "filePath": "\/Users\/andrejavorskij\/Projects\/Hut\/safechargemobilesdk-ios\/NuveiMobileSDK\/NuveiFields\/NuveiCreditCardField.swift",
       "kind": "BooleanLiteral",
-      "offset": 3771,
+      "offset": 3792,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/andrejavorskij\/Projects\/Hut\/safechargemobilesdk-ios\/NuveiMobileSDK\/NuveiFields\/NuveiCreditCardField.swift",
       "kind": "BooleanLiteral",
-      "offset": 4127,
+      "offset": 4148,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/andrejavorskij\/Projects\/Hut\/safechargemobilesdk-ios\/NuveiMobileSDK\/NuveiFields\/NuveiCreditCardField.swift",
       "kind": "BooleanLiteral",
-      "offset": 4472,
+      "offset": 4493,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/andrejavorskij\/Projects\/Hut\/safechargemobilesdk-ios\/NuveiMobileSDK\/NuveiFields\/NuveiCreditCardField.swift",
       "kind": "BooleanLiteral",
-      "offset": 4823,
+      "offset": 4844,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/andrejavorskij\/Projects\/Hut\/safechargemobilesdk-ios\/NuveiMobileSDK\/NuveiFields\/NuveiCreditCardField.swift",
       "kind": "BooleanLiteral",
-      "offset": 4972,
+      "offset": 4993,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/andrejavorskij\/Projects\/Hut\/safechargemobilesdk-ios\/NuveiMobileSDK\/NuveiFields\/NuveiCreditCardField.swift",
       "kind": "BooleanLiteral",
-      "offset": 5270,
+      "offset": 5291,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/andrejavorskij\/Projects\/Hut\/safechargemobilesdk-ios\/NuveiMobileSDK\/NuveiFields\/NuveiCreditCardField.swift",
       "kind": "Dictionary",
-      "offset": 5509,
+      "offset": 5530,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/andrejavorskij\/Projects\/Hut\/safechargemobilesdk-ios\/NuveiMobileSDK\/NuveiFields\/NuveiCreditCardField.swift",
       "kind": "BooleanLiteral",
-      "offset": 5612,
+      "offset": 5633,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/andrejavorskij\/Projects\/Hut\/safechargemobilesdk-ios\/NuveiMobileSDK\/NuveiFields\/NuveiCreditCardField.swift",
       "kind": "BooleanLiteral",
-      "offset": 5805,
+      "offset": 5826,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/andrejavorskij\/Projects\/Hut\/safechargemobilesdk-ios\/NuveiMobileSDK\/NuveiFields\/NuveiCreditCardField.swift",
       "kind": "BooleanLiteral",
-      "offset": 6108,
+      "offset": 6129,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/andrejavorskij\/Projects\/Hut\/safechargemobilesdk-ios\/NuveiMobileSDK\/NuveiFields\/NuveiCreditCardField.swift",
       "kind": "Dictionary",
-      "offset": 6300,
+      "offset": 6321,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/andrejavorskij\/Projects\/Hut\/safechargemobilesdk-ios\/NuveiMobileSDK\/NuveiFields\/NuveiCreditCardField.swift",
       "kind": "BooleanLiteral",
-      "offset": 6339,
+      "offset": 6360,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/andrejavorskij\/Projects\/Hut\/safechargemobilesdk-ios\/NuveiMobileSDK\/NuveiFields\/NuveiCreditCardField.swift",
       "kind": "BooleanLiteral",
-      "offset": 6543,
+      "offset": 6564,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/andrejavorskij\/Projects\/Hut\/safechargemobilesdk-ios\/NuveiMobileSDK\/NuveiFields\/NuveiCreditCardField.swift",
       "kind": "BooleanLiteral",
-      "offset": 6917,
+      "offset": 6938,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/andrejavorskij\/Projects\/Hut\/safechargemobilesdk-ios\/NuveiMobileSDK\/NuveiFields\/NuveiCreditCardField.swift",
       "kind": "BooleanLiteral",
-      "offset": 7747,
+      "offset": 7768,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/andrejavorskij\/Projects\/Hut\/safechargemobilesdk-ios\/NuveiMobileSDK\/NuveiFields\/NuveiCreditCardField.swift",
       "kind": "StringLiteral",
-      "offset": 8053,
+      "offset": 8074,
       "length": 36,
       "value": "\"Please fill the credit card number\""
     },
     {
       "filePath": "\/Users\/andrejavorskij\/Projects\/Hut\/safechargemobilesdk-ios\/NuveiMobileSDK\/NuveiFields\/NuveiCreditCardField.swift",
       "kind": "StringLiteral",
-      "offset": 8233,
+      "offset": 8254,
       "length": 34,
       "value": "\"Please enter a valid card number\""
     },
     {
       "filePath": "\/Users\/andrejavorskij\/Projects\/Hut\/safechargemobilesdk-ios\/NuveiMobileSDK\/NuveiFields\/NuveiCreditCardField.swift",
       "kind": "StringLiteral",
-      "offset": 8405,
+      "offset": 8426,
       "length": 29,
       "value": "\"Please fill the expiry date\""
     },
     {
       "filePath": "\/Users\/andrejavorskij\/Projects\/Hut\/safechargemobilesdk-ios\/NuveiMobileSDK\/NuveiFields\/NuveiCreditCardField.swift",
       "kind": "StringLiteral",
-      "offset": 8574,
+      "offset": 8595,
       "length": 25,
       "value": "\"Invalid expiration date\""
     },
     {
       "filePath": "\/Users\/andrejavorskij\/Projects\/Hut\/safechargemobilesdk-ios\/NuveiMobileSDK\/NuveiFields\/NuveiCreditCardField.swift",
       "kind": "StringLiteral",
-      "offset": 8731,
+      "offset": 8752,
       "length": 21,
       "value": "\"Please fill the CVV\""
     },
     {
       "filePath": "\/Users\/andrejavorskij\/Projects\/Hut\/safechargemobilesdk-ios\/NuveiMobileSDK\/NuveiFields\/NuveiCreditCardField.swift",
       "kind": "StringLiteral",
-      "offset": 8883,
+      "offset": 8904,
       "length": 16,
       "value": "\"CVV is invalid\""
     },
     {
       "filePath": "\/Users\/andrejavorskij\/Projects\/Hut\/safechargemobilesdk-ios\/NuveiMobileSDK\/NuveiFields\/NuveiCreditCardField.swift",
       "kind": "StringLiteral",
-      "offset": 9042,
+      "offset": 9063,
       "length": 34,
       "value": "\"Please fill the card holder name\""
     },
     {
       "filePath": "\/Users\/andrejavorskij\/Projects\/Hut\/safechargemobilesdk-ios\/NuveiMobileSDK\/NuveiFields\/NuveiCreditCardField.swift",
       "kind": "StringLiteral",
-      "offset": 9228,
+      "offset": 9249,
       "length": 25,
       "value": "\"Invalid cardholder name\""
     },
     {
       "filePath": "\/Users\/andrejavorskij\/Projects\/Hut\/safechargemobilesdk-ios\/NuveiMobileSDK\/NuveiFields\/NuveiCreditCardField.swift",
       "kind": "BooleanLiteral",
-      "offset": 9997,
+      "offset": 10018,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/andrejavorskij\/Projects\/Hut\/safechargemobilesdk-ios\/NuveiMobileSDK\/NuveiFields\/NuveiCreditCardField.swift",
       "kind": "BooleanLiteral",
-      "offset": 10530,
+      "offset": 10551,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/andrejavorskij\/Projects\/Hut\/safechargemobilesdk-ios\/NuveiMobileSDK\/NuveiFields\/NuveiCreditCardField.swift",
       "kind": "BooleanLiteral",
-      "offset": 10554,
+      "offset": 10575,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/andrejavorskij\/Projects\/Hut\/safechargemobilesdk-ios\/NuveiMobileSDK\/NuveiFields\/NuveiCreditCardField.swift",
       "kind": "BooleanLiteral",
-      "offset": 10587,
+      "offset": 10608,
       "length": 5,
       "value": "false"
     },
@@ -32424,777 +32458,777 @@
     {
       "filePath": "\/Users\/andrejavorskij\/Projects\/Hut\/safechargemobilesdk-ios\/NuveiMobileSDK\/Internal\/Utils\/ViewUtils.swift",
       "kind": "IntegerLiteral",
-      "offset": 1382,
+      "offset": 1416,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/andrejavorskij\/Projects\/Hut\/safechargemobilesdk-ios\/NuveiMobileSDK\/Internal\/Utils\/ViewUtils.swift",
       "kind": "BooleanLiteral",
-      "offset": 1444,
+      "offset": 1478,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/andrejavorskij\/Projects\/Hut\/safechargemobilesdk-ios\/NuveiMobileSDK\/Internal\/Utils\/ViewUtils.swift",
       "kind": "BooleanLiteral",
-      "offset": 1771,
+      "offset": 1805,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/andrejavorskij\/Projects\/Hut\/safechargemobilesdk-ios\/NuveiMobileSDK\/Internal\/Utils\/ViewUtils.swift",
       "kind": "BooleanLiteral",
-      "offset": 2144,
+      "offset": 2178,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/andrejavorskij\/Projects\/Hut\/safechargemobilesdk-ios\/NuveiMobileSDK\/Internal\/Utils\/ViewUtils.swift",
       "kind": "IntegerLiteral",
-      "offset": 2250,
+      "offset": 2284,
       "length": 3,
       "value": "999"
     },
     {
       "filePath": "\/Users\/andrejavorskij\/Projects\/Hut\/safechargemobilesdk-ios\/NuveiMobileSDK\/Internal\/Utils\/ViewUtils.swift",
       "kind": "IntegerLiteral",
-      "offset": 2328,
+      "offset": 2362,
       "length": 3,
       "value": "999"
     },
     {
       "filePath": "\/Users\/andrejavorskij\/Projects\/Hut\/safechargemobilesdk-ios\/NuveiMobileSDK\/Internal\/Utils\/ViewUtils.swift",
       "kind": "IntegerLiteral",
-      "offset": 2438,
+      "offset": 2472,
       "length": 3,
       "value": "999"
     },
     {
       "filePath": "\/Users\/andrejavorskij\/Projects\/Hut\/safechargemobilesdk-ios\/NuveiMobileSDK\/Internal\/Utils\/ViewUtils.swift",
       "kind": "IntegerLiteral",
-      "offset": 2514,
+      "offset": 2548,
       "length": 3,
       "value": "999"
     },
     {
       "filePath": "\/Users\/andrejavorskij\/Projects\/Hut\/safechargemobilesdk-ios\/NuveiMobileSDK\/Internal\/Utils\/ViewUtils.swift",
       "kind": "IntegerLiteral",
-      "offset": 2609,
+      "offset": 2643,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/andrejavorskij\/Projects\/Hut\/safechargemobilesdk-ios\/NuveiMobileSDK\/Internal\/Utils\/ViewUtils.swift",
       "kind": "IntegerLiteral",
-      "offset": 2685,
+      "offset": 2719,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/andrejavorskij\/Projects\/Hut\/safechargemobilesdk-ios\/NuveiMobileSDK\/Internal\/Utils\/ViewUtils.swift",
       "kind": "StringLiteral",
-      "offset": 3291,
+      "offset": 3325,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/andrejavorskij\/Projects\/Hut\/safechargemobilesdk-ios\/NuveiMobileSDK\/Internal\/Utils\/ViewUtils.swift",
       "kind": "IntegerLiteral",
-      "offset": 3414,
+      "offset": 3448,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/andrejavorskij\/Projects\/Hut\/safechargemobilesdk-ios\/NuveiMobileSDK\/Internal\/Utils\/ViewUtils.swift",
       "kind": "IntegerLiteral",
-      "offset": 3418,
+      "offset": 3452,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/andrejavorskij\/Projects\/Hut\/safechargemobilesdk-ios\/NuveiMobileSDK\/Internal\/Utils\/ViewUtils.swift",
       "kind": "BooleanLiteral",
-      "offset": 3952,
+      "offset": 3986,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/andrejavorskij\/Projects\/Hut\/safechargemobilesdk-ios\/NuveiMobileSDK\/Internal\/Utils\/ViewUtils.swift",
       "kind": "BooleanLiteral",
-      "offset": 4165,
+      "offset": 4199,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/andrejavorskij\/Projects\/Hut\/safechargemobilesdk-ios\/NuveiMobileSDK\/Internal\/Utils\/ViewUtils.swift",
       "kind": "IntegerLiteral",
-      "offset": 4349,
+      "offset": 4383,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/andrejavorskij\/Projects\/Hut\/safechargemobilesdk-ios\/NuveiMobileSDK\/Internal\/Utils\/ViewUtils.swift",
       "kind": "IntegerLiteral",
-      "offset": 4527,
+      "offset": 4561,
       "length": 2,
       "value": "44"
     },
     {
       "filePath": "\/Users\/andrejavorskij\/Projects\/Hut\/safechargemobilesdk-ios\/NuveiMobileSDK\/Internal\/Utils\/ViewUtils.swift",
       "kind": "IntegerLiteral",
-      "offset": 4557,
+      "offset": 4591,
       "length": 2,
       "value": "16"
     },
     {
       "filePath": "\/Users\/andrejavorskij\/Projects\/Hut\/safechargemobilesdk-ios\/NuveiMobileSDK\/Internal\/Utils\/ViewUtils.swift",
       "kind": "IntegerLiteral",
-      "offset": 4592,
+      "offset": 4626,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/andrejavorskij\/Projects\/Hut\/safechargemobilesdk-ios\/NuveiMobileSDK\/Internal\/Utils\/ViewUtils.swift",
       "kind": "BooleanLiteral",
-      "offset": 4666,
+      "offset": 4700,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/andrejavorskij\/Projects\/Hut\/safechargemobilesdk-ios\/NuveiMobileSDK\/Internal\/Utils\/ViewUtils.swift",
       "kind": "IntegerLiteral",
-      "offset": 4962,
+      "offset": 4996,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/andrejavorskij\/Projects\/Hut\/safechargemobilesdk-ios\/NuveiMobileSDK\/Internal\/Utils\/ViewUtils.swift",
       "kind": "IntegerLiteral",
-      "offset": 5003,
+      "offset": 5037,
       "length": 1,
       "value": "4"
     },
     {
       "filePath": "\/Users\/andrejavorskij\/Projects\/Hut\/safechargemobilesdk-ios\/NuveiMobileSDK\/Internal\/Utils\/ViewUtils.swift",
       "kind": "BooleanLiteral",
-      "offset": 6104,
+      "offset": 6138,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/andrejavorskij\/Projects\/Hut\/safechargemobilesdk-ios\/NuveiMobileSDK\/Internal\/Utils\/ViewUtils.swift",
       "kind": "BooleanLiteral",
-      "offset": 6350,
+      "offset": 6384,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/andrejavorskij\/Projects\/Hut\/safechargemobilesdk-ios\/NuveiMobileSDK\/Internal\/Utils\/ViewUtils.swift",
       "kind": "IntegerLiteral",
-      "offset": 6497,
+      "offset": 6531,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/andrejavorskij\/Projects\/Hut\/safechargemobilesdk-ios\/NuveiMobileSDK\/Internal\/Utils\/ViewUtils.swift",
       "kind": "IntegerLiteral",
-      "offset": 6533,
+      "offset": 6567,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/andrejavorskij\/Projects\/Hut\/safechargemobilesdk-ios\/NuveiMobileSDK\/Internal\/Utils\/ViewUtils.swift",
       "kind": "BooleanLiteral",
-      "offset": 6642,
+      "offset": 6676,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/andrejavorskij\/Projects\/Hut\/safechargemobilesdk-ios\/NuveiMobileSDK\/Internal\/Utils\/ViewUtils.swift",
       "kind": "StringLiteral",
-      "offset": 6714,
+      "offset": 6748,
       "length": 39,
       "value": "\"init(coder:) has not been implemented\""
     },
     {
       "filePath": "\/Users\/andrejavorskij\/Projects\/Hut\/safechargemobilesdk-ios\/NuveiMobileSDK\/Internal\/Utils\/ViewUtils.swift",
       "kind": "BooleanLiteral",
-      "offset": 6949,
+      "offset": 6983,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/andrejavorskij\/Projects\/Hut\/safechargemobilesdk-ios\/NuveiMobileSDK\/Internal\/Utils\/ViewUtils.swift",
       "kind": "StringLiteral",
-      "offset": 7204,
+      "offset": 7238,
       "length": 20,
       "value": "\"Checkout\/LightGrey\""
     },
     {
       "filePath": "\/Users\/andrejavorskij\/Projects\/Hut\/safechargemobilesdk-ios\/NuveiMobileSDK\/Internal\/Utils\/ViewUtils.swift",
       "kind": "IntegerLiteral",
-      "offset": 7313,
+      "offset": 7347,
       "length": 2,
       "value": "14"
     },
     {
       "filePath": "\/Users\/andrejavorskij\/Projects\/Hut\/safechargemobilesdk-ios\/NuveiMobileSDK\/Internal\/Utils\/ViewUtils.swift",
       "kind": "StringLiteral",
-      "offset": 7428,
+      "offset": 7462,
       "length": 21,
       "value": "\"Checkout\/FieldWhite\""
     },
     {
       "filePath": "\/Users\/andrejavorskij\/Projects\/Hut\/safechargemobilesdk-ios\/NuveiMobileSDK\/Internal\/Utils\/ViewUtils.swift",
       "kind": "StringLiteral",
-      "offset": 7542,
+      "offset": 7576,
       "length": 15,
       "value": "\"Checkout\/Grey\""
     },
     {
       "filePath": "\/Users\/andrejavorskij\/Projects\/Hut\/safechargemobilesdk-ios\/NuveiMobileSDK\/Internal\/Utils\/ViewUtils.swift",
       "kind": "StringLiteral",
-      "offset": 7736,
+      "offset": 7770,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/andrejavorskij\/Projects\/Hut\/safechargemobilesdk-ios\/NuveiMobileSDK\/Internal\/Utils\/ViewUtils.swift",
       "kind": "StringLiteral",
-      "offset": 7892,
+      "offset": 7926,
       "length": 20,
       "value": "\"Checkout\/LightGrey\""
     },
     {
       "filePath": "\/Users\/andrejavorskij\/Projects\/Hut\/safechargemobilesdk-ios\/NuveiMobileSDK\/Internal\/Utils\/ViewUtils.swift",
       "kind": "StringLiteral",
-      "offset": 8050,
+      "offset": 8084,
       "length": 14,
       "value": "\"Checkout\/Red\""
     },
     {
       "filePath": "\/Users\/andrejavorskij\/Projects\/Hut\/safechargemobilesdk-ios\/NuveiMobileSDK\/Internal\/Utils\/ViewUtils.swift",
       "kind": "IntegerLiteral",
-      "offset": 8163,
+      "offset": 8197,
       "length": 2,
       "value": "12"
     },
     {
       "filePath": "\/Users\/andrejavorskij\/Projects\/Hut\/safechargemobilesdk-ios\/NuveiMobileSDK\/Internal\/Utils\/ViewUtils.swift",
       "kind": "IntegerLiteral",
-      "offset": 8817,
+      "offset": 8851,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/andrejavorskij\/Projects\/Hut\/safechargemobilesdk-ios\/NuveiMobileSDK\/Internal\/Utils\/ViewUtils.swift",
       "kind": "BooleanLiteral",
-      "offset": 9476,
+      "offset": 9510,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/andrejavorskij\/Projects\/Hut\/safechargemobilesdk-ios\/NuveiMobileSDK\/Internal\/Utils\/ViewUtils.swift",
       "kind": "StringLiteral",
-      "offset": 8444,
+      "offset": 8478,
       "length": 13,
       "value": "\"NuveiSimplyConnectSDK.PickerHandler\""
     },
     {
       "filePath": "\/Users\/andrejavorskij\/Projects\/Hut\/safechargemobilesdk-ios\/NuveiMobileSDK\/Internal\/Utils\/ViewUtils.swift",
       "kind": "BooleanLiteral",
-      "offset": 9616,
+      "offset": 9650,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/andrejavorskij\/Projects\/Hut\/safechargemobilesdk-ios\/NuveiMobileSDK\/Internal\/Utils\/ViewUtils.swift",
       "kind": "BooleanLiteral",
-      "offset": 9657,
+      "offset": 9691,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/andrejavorskij\/Projects\/Hut\/safechargemobilesdk-ios\/NuveiMobileSDK\/Internal\/Utils\/ViewUtils.swift",
       "kind": "BooleanLiteral",
-      "offset": 9840,
+      "offset": 9874,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/andrejavorskij\/Projects\/Hut\/safechargemobilesdk-ios\/NuveiMobileSDK\/Internal\/Utils\/ViewUtils.swift",
       "kind": "BooleanLiteral",
-      "offset": 10283,
+      "offset": 10317,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/andrejavorskij\/Projects\/Hut\/safechargemobilesdk-ios\/NuveiMobileSDK\/Internal\/Utils\/ViewUtils.swift",
       "kind": "BooleanLiteral",
-      "offset": 10478,
+      "offset": 10512,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/andrejavorskij\/Projects\/Hut\/safechargemobilesdk-ios\/NuveiMobileSDK\/Internal\/Utils\/ViewUtils.swift",
       "kind": "BooleanLiteral",
-      "offset": 10810,
+      "offset": 10844,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/andrejavorskij\/Projects\/Hut\/safechargemobilesdk-ios\/NuveiMobileSDK\/Internal\/Utils\/ViewUtils.swift",
       "kind": "StringLiteral",
-      "offset": 2899,
+      "offset": 2933,
       "length": 16,
       "value": "\"NuveiSimplyConnectSDK.LabeledTextField\""
     },
     {
       "filePath": "\/Users\/andrejavorskij\/Projects\/Hut\/safechargemobilesdk-ios\/NuveiMobileSDK\/Internal\/Utils\/ViewUtils.swift",
       "kind": "BooleanLiteral",
-      "offset": 11185,
+      "offset": 11219,
       "length": 5,
       "value": "false"
-    },
-    {
-      "filePath": "\/Users\/andrejavorskij\/Projects\/Hut\/safechargemobilesdk-ios\/NuveiMobileSDK\/Internal\/Utils\/ViewUtils.swift",
-      "kind": "IntegerLiteral",
-      "offset": 11388,
-      "length": 2,
-      "value": "10"
     },
     {
       "filePath": "\/Users\/andrejavorskij\/Projects\/Hut\/safechargemobilesdk-ios\/NuveiMobileSDK\/Internal\/Utils\/ViewUtils.swift",
       "kind": "IntegerLiteral",
       "offset": 11422,
       "length": 2,
+      "value": "10"
+    },
+    {
+      "filePath": "\/Users\/andrejavorskij\/Projects\/Hut\/safechargemobilesdk-ios\/NuveiMobileSDK\/Internal\/Utils\/ViewUtils.swift",
+      "kind": "IntegerLiteral",
+      "offset": 11456,
+      "length": 2,
       "value": "32"
     },
     {
       "filePath": "\/Users\/andrejavorskij\/Projects\/Hut\/safechargemobilesdk-ios\/NuveiMobileSDK\/Internal\/Utils\/ViewUtils.swift",
       "kind": "IntegerLiteral",
-      "offset": 11454,
+      "offset": 11488,
       "length": 2,
       "value": "32"
     },
     {
       "filePath": "\/Users\/andrejavorskij\/Projects\/Hut\/safechargemobilesdk-ios\/NuveiMobileSDK\/Internal\/Utils\/ViewUtils.swift",
       "kind": "BooleanLiteral",
-      "offset": 11988,
+      "offset": 12022,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/andrejavorskij\/Projects\/Hut\/safechargemobilesdk-ios\/NuveiMobileSDK\/Internal\/Utils\/ViewUtils.swift",
       "kind": "BooleanLiteral",
-      "offset": 12098,
+      "offset": 12132,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/andrejavorskij\/Projects\/Hut\/safechargemobilesdk-ios\/NuveiMobileSDK\/Internal\/Utils\/ViewUtils.swift",
       "kind": "BooleanLiteral",
-      "offset": 12266,
+      "offset": 12300,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/andrejavorskij\/Projects\/Hut\/safechargemobilesdk-ios\/NuveiMobileSDK\/Internal\/Utils\/ViewUtils.swift",
       "kind": "BooleanLiteral",
-      "offset": 12335,
+      "offset": 12369,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/andrejavorskij\/Projects\/Hut\/safechargemobilesdk-ios\/NuveiMobileSDK\/Internal\/Utils\/ViewUtils.swift",
       "kind": "StringLiteral",
-      "offset": 12373,
+      "offset": 12407,
       "length": 3,
       "value": "\" \""
     },
     {
       "filePath": "\/Users\/andrejavorskij\/Projects\/Hut\/safechargemobilesdk-ios\/NuveiMobileSDK\/Internal\/Utils\/ViewUtils.swift",
       "kind": "IntegerLiteral",
-      "offset": 12411,
+      "offset": 12445,
       "length": 2,
       "value": "20"
     },
     {
       "filePath": "\/Users\/andrejavorskij\/Projects\/Hut\/safechargemobilesdk-ios\/NuveiMobileSDK\/Internal\/Utils\/ViewUtils.swift",
       "kind": "BooleanLiteral",
-      "offset": 12595,
+      "offset": 12629,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/andrejavorskij\/Projects\/Hut\/safechargemobilesdk-ios\/NuveiMobileSDK\/Internal\/Utils\/ViewUtils.swift",
       "kind": "StringLiteral",
-      "offset": 12907,
+      "offset": 12941,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/andrejavorskij\/Projects\/Hut\/safechargemobilesdk-ios\/NuveiMobileSDK\/Internal\/Utils\/ViewUtils.swift",
       "kind": "BooleanLiteral",
-      "offset": 12976,
+      "offset": 13010,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/andrejavorskij\/Projects\/Hut\/safechargemobilesdk-ios\/NuveiMobileSDK\/Internal\/Utils\/ViewUtils.swift",
       "kind": "IntegerLiteral",
-      "offset": 13076,
+      "offset": 13110,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/andrejavorskij\/Projects\/Hut\/safechargemobilesdk-ios\/NuveiMobileSDK\/Internal\/Utils\/ViewUtils.swift",
       "kind": "IntegerLiteral",
-      "offset": 13191,
+      "offset": 13225,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/andrejavorskij\/Projects\/Hut\/safechargemobilesdk-ios\/NuveiMobileSDK\/Internal\/Utils\/ViewUtils.swift",
       "kind": "IntegerLiteral",
-      "offset": 13231,
+      "offset": 13265,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/andrejavorskij\/Projects\/Hut\/safechargemobilesdk-ios\/NuveiMobileSDK\/Internal\/Utils\/ViewUtils.swift",
       "kind": "BooleanLiteral",
-      "offset": 13504,
+      "offset": 13538,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/andrejavorskij\/Projects\/Hut\/safechargemobilesdk-ios\/NuveiMobileSDK\/Internal\/Utils\/ViewUtils.swift",
       "kind": "BooleanLiteral",
-      "offset": 13696,
+      "offset": 13730,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/andrejavorskij\/Projects\/Hut\/safechargemobilesdk-ios\/NuveiMobileSDK\/Internal\/Utils\/ViewUtils.swift",
       "kind": "IntegerLiteral",
-      "offset": 13952,
+      "offset": 13986,
       "length": 1,
       "value": "4"
     },
     {
       "filePath": "\/Users\/andrejavorskij\/Projects\/Hut\/safechargemobilesdk-ios\/NuveiMobileSDK\/Internal\/Utils\/ViewUtils.swift",
       "kind": "BooleanLiteral",
-      "offset": 14004,
+      "offset": 14038,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/andrejavorskij\/Projects\/Hut\/safechargemobilesdk-ios\/NuveiMobileSDK\/Internal\/Utils\/ViewUtils.swift",
       "kind": "BooleanLiteral",
-      "offset": 14366,
+      "offset": 14400,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/andrejavorskij\/Projects\/Hut\/safechargemobilesdk-ios\/NuveiMobileSDK\/Internal\/Utils\/ViewUtils.swift",
       "kind": "StringLiteral",
-      "offset": 14449,
+      "offset": 14483,
       "length": 39,
       "value": "\"init(coder:) has not been implemented\""
     },
     {
       "filePath": "\/Users\/andrejavorskij\/Projects\/Hut\/safechargemobilesdk-ios\/NuveiMobileSDK\/Internal\/Utils\/ViewUtils.swift",
       "kind": "StringLiteral",
-      "offset": 10854,
+      "offset": 10888,
       "length": 19,
       "value": "\"NuveiSimplyConnectSDK.CreditCardTextField\""
     },
     {
       "filePath": "\/Users\/andrejavorskij\/Projects\/Hut\/safechargemobilesdk-ios\/NuveiMobileSDK\/Internal\/Utils\/ViewUtils.swift",
       "kind": "BooleanLiteral",
-      "offset": 14894,
+      "offset": 14928,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/andrejavorskij\/Projects\/Hut\/safechargemobilesdk-ios\/NuveiMobileSDK\/Internal\/Utils\/ViewUtils.swift",
       "kind": "BooleanLiteral",
-      "offset": 15004,
+      "offset": 15038,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/andrejavorskij\/Projects\/Hut\/safechargemobilesdk-ios\/NuveiMobileSDK\/Internal\/Utils\/ViewUtils.swift",
       "kind": "BooleanLiteral",
-      "offset": 15172,
+      "offset": 15206,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/andrejavorskij\/Projects\/Hut\/safechargemobilesdk-ios\/NuveiMobileSDK\/Internal\/Utils\/ViewUtils.swift",
       "kind": "BooleanLiteral",
-      "offset": 15247,
+      "offset": 15281,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/andrejavorskij\/Projects\/Hut\/safechargemobilesdk-ios\/NuveiMobileSDK\/Internal\/Utils\/ViewUtils.swift",
       "kind": "IntegerLiteral",
-      "offset": 15290,
+      "offset": 15324,
       "length": 1,
       "value": "4"
     },
     {
       "filePath": "\/Users\/andrejavorskij\/Projects\/Hut\/safechargemobilesdk-ios\/NuveiMobileSDK\/Internal\/Utils\/ViewUtils.swift",
       "kind": "BooleanLiteral",
-      "offset": 15465,
+      "offset": 15499,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/andrejavorskij\/Projects\/Hut\/safechargemobilesdk-ios\/NuveiMobileSDK\/Internal\/Utils\/ViewUtils.swift",
       "kind": "BooleanLiteral",
-      "offset": 15829,
+      "offset": 15863,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/andrejavorskij\/Projects\/Hut\/safechargemobilesdk-ios\/NuveiMobileSDK\/Internal\/Utils\/ViewUtils.swift",
       "kind": "IntegerLiteral",
-      "offset": 15929,
+      "offset": 15963,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/andrejavorskij\/Projects\/Hut\/safechargemobilesdk-ios\/NuveiMobileSDK\/Internal\/Utils\/ViewUtils.swift",
       "kind": "StringLiteral",
-      "offset": 15957,
+      "offset": 15991,
       "length": 3,
       "value": "\"\/\""
     },
     {
       "filePath": "\/Users\/andrejavorskij\/Projects\/Hut\/safechargemobilesdk-ios\/NuveiMobileSDK\/Internal\/Utils\/ViewUtils.swift",
       "kind": "IntegerLiteral",
-      "offset": 16032,
+      "offset": 16066,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/andrejavorskij\/Projects\/Hut\/safechargemobilesdk-ios\/NuveiMobileSDK\/Internal\/Utils\/ViewUtils.swift",
       "kind": "IntegerLiteral",
-      "offset": 16072,
+      "offset": 16106,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/andrejavorskij\/Projects\/Hut\/safechargemobilesdk-ios\/NuveiMobileSDK\/Internal\/Utils\/ViewUtils.swift",
       "kind": "BooleanLiteral",
-      "offset": 16345,
+      "offset": 16379,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/andrejavorskij\/Projects\/Hut\/safechargemobilesdk-ios\/NuveiMobileSDK\/Internal\/Utils\/ViewUtils.swift",
       "kind": "BooleanLiteral",
-      "offset": 16532,
+      "offset": 16566,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/andrejavorskij\/Projects\/Hut\/safechargemobilesdk-ios\/NuveiMobileSDK\/Internal\/Utils\/ViewUtils.swift",
       "kind": "StringLiteral",
-      "offset": 16687,
+      "offset": 16721,
       "length": 3,
       "value": "\"\/\""
     },
     {
       "filePath": "\/Users\/andrejavorskij\/Projects\/Hut\/safechargemobilesdk-ios\/NuveiMobileSDK\/Internal\/Utils\/ViewUtils.swift",
       "kind": "IntegerLiteral",
-      "offset": 16699,
+      "offset": 16733,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/andrejavorskij\/Projects\/Hut\/safechargemobilesdk-ios\/NuveiMobileSDK\/Internal\/Utils\/ViewUtils.swift",
       "kind": "IntegerLiteral",
-      "offset": 16868,
+      "offset": 16902,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/andrejavorskij\/Projects\/Hut\/safechargemobilesdk-ios\/NuveiMobileSDK\/Internal\/Utils\/ViewUtils.swift",
       "kind": "StringLiteral",
-      "offset": 16905,
+      "offset": 16939,
       "length": 3,
       "value": "\"0\""
     },
     {
       "filePath": "\/Users\/andrejavorskij\/Projects\/Hut\/safechargemobilesdk-ios\/NuveiMobileSDK\/Internal\/Utils\/ViewUtils.swift",
       "kind": "StringLiteral",
-      "offset": 16921,
+      "offset": 16955,
       "length": 3,
       "value": "\"1\""
     },
     {
       "filePath": "\/Users\/andrejavorskij\/Projects\/Hut\/safechargemobilesdk-ios\/NuveiMobileSDK\/Internal\/Utils\/ViewUtils.swift",
       "kind": "StringLiteral",
-      "offset": 16958,
+      "offset": 16992,
       "length": 12,
       "value": "\"0\""
     },
     {
       "filePath": "\/Users\/andrejavorskij\/Projects\/Hut\/safechargemobilesdk-ios\/NuveiMobileSDK\/Internal\/Utils\/ViewUtils.swift",
       "kind": "StringLiteral",
-      "offset": 16968,
+      "offset": 17002,
       "length": 1,
       "value": "\"\/\""
     },
     {
       "filePath": "\/Users\/andrejavorskij\/Projects\/Hut\/safechargemobilesdk-ios\/NuveiMobileSDK\/Internal\/Utils\/ViewUtils.swift",
       "kind": "IntegerLiteral",
-      "offset": 17114,
+      "offset": 17148,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/andrejavorskij\/Projects\/Hut\/safechargemobilesdk-ios\/NuveiMobileSDK\/Internal\/Utils\/ViewUtils.swift",
       "kind": "IntegerLiteral",
-      "offset": 17255,
+      "offset": 17289,
       "length": 2,
       "value": "-1"
     },
     {
       "filePath": "\/Users\/andrejavorskij\/Projects\/Hut\/safechargemobilesdk-ios\/NuveiMobileSDK\/Internal\/Utils\/ViewUtils.swift",
       "kind": "BooleanLiteral",
-      "offset": 17527,
+      "offset": 17561,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/andrejavorskij\/Projects\/Hut\/safechargemobilesdk-ios\/NuveiMobileSDK\/Internal\/Utils\/ViewUtils.swift",
       "kind": "StringLiteral",
-      "offset": 17610,
+      "offset": 17644,
       "length": 39,
       "value": "\"init(coder:) has not been implemented\""
     },
     {
       "filePath": "\/Users\/andrejavorskij\/Projects\/Hut\/safechargemobilesdk-ios\/NuveiMobileSDK\/Internal\/Utils\/ViewUtils.swift",
       "kind": "StringLiteral",
-      "offset": 14505,
+      "offset": 14539,
       "length": 19,
       "value": "\"NuveiSimplyConnectSDK.ExpiryDateTextField\""
     },
     {
       "filePath": "\/Users\/andrejavorskij\/Projects\/Hut\/safechargemobilesdk-ios\/NuveiMobileSDK\/Internal\/Utils\/ViewUtils.swift",
       "kind": "StringLiteral",
-      "offset": 17779,
+      "offset": 17813,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/andrejavorskij\/Projects\/Hut\/safechargemobilesdk-ios\/NuveiMobileSDK\/Internal\/Utils\/ViewUtils.swift",
       "kind": "IntegerLiteral",
-      "offset": 17867,
+      "offset": 17901,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/andrejavorskij\/Projects\/Hut\/safechargemobilesdk-ios\/NuveiMobileSDK\/Internal\/Utils\/ViewUtils.swift",
       "kind": "StringLiteral",
-      "offset": 18344,
+      "offset": 18378,
       "length": 6,
       "value": "\"%02d\""
     },
     {
       "filePath": "\/Users\/andrejavorskij\/Projects\/Hut\/safechargemobilesdk-ios\/NuveiMobileSDK\/Internal\/Utils\/ViewUtils.swift",
       "kind": "StringLiteral",
-      "offset": 18522,
+      "offset": 18556,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/andrejavorskij\/Projects\/Hut\/safechargemobilesdk-ios\/NuveiMobileSDK\/Internal\/Utils\/ViewUtils.swift",
       "kind": "IntegerLiteral",
-      "offset": 18582,
+      "offset": 18616,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/andrejavorskij\/Projects\/Hut\/safechargemobilesdk-ios\/NuveiMobileSDK\/Internal\/Utils\/ViewUtils.swift",
       "kind": "StringLiteral",
-      "offset": 18899,
+      "offset": 18933,
       "length": 12,
       "value": "\"0123456789\""
     },
     {
       "filePath": "\/Users\/andrejavorskij\/Projects\/Hut\/safechargemobilesdk-ios\/NuveiMobileSDK\/Internal\/Utils\/ViewUtils.swift",
       "kind": "StringLiteral",
-      "offset": 18974,
+      "offset": 19008,
       "length": 9,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/andrejavorskij\/Projects\/Hut\/safechargemobilesdk-ios\/NuveiMobileSDK\/Internal\/Utils\/ViewUtils.swift",
       "kind": "StringLiteral",
-      "offset": 18982,
+      "offset": 19016,
       "length": 3,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/andrejavorskij\/Projects\/Hut\/safechargemobilesdk-ios\/NuveiMobileSDK\/Internal\/Utils\/ViewUtils.swift",
       "kind": "IntegerLiteral",
-      "offset": 19273,
+      "offset": 19307,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/andrejavorskij\/Projects\/Hut\/safechargemobilesdk-ios\/NuveiMobileSDK\/Internal\/Utils\/ViewUtils.swift",
       "kind": "IntegerLiteral",
-      "offset": 19593,
+      "offset": 19627,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/andrejavorskij\/Projects\/Hut\/safechargemobilesdk-ios\/NuveiMobileSDK\/Internal\/Utils\/ViewUtils.swift",
       "kind": "BooleanLiteral",
-      "offset": 19637,
+      "offset": 19671,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/andrejavorskij\/Projects\/Hut\/safechargemobilesdk-ios\/NuveiMobileSDK\/Internal\/Utils\/ViewUtils.swift",
       "kind": "BooleanLiteral",
-      "offset": 19935,
+      "offset": 19969,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/andrejavorskij\/Projects\/Hut\/safechargemobilesdk-ios\/NuveiMobileSDK\/Internal\/Utils\/ViewUtils.swift",
       "kind": "BooleanLiteral",
-      "offset": 20281,
+      "offset": 20315,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/andrejavorskij\/Projects\/Hut\/safechargemobilesdk-ios\/NuveiMobileSDK\/Internal\/Utils\/ViewUtils.swift",
       "kind": "BooleanLiteral",
-      "offset": 20338,
+      "offset": 20372,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/andrejavorskij\/Projects\/Hut\/safechargemobilesdk-ios\/NuveiMobileSDK\/Internal\/Utils\/ViewUtils.swift",
       "kind": "IntegerLiteral",
-      "offset": 20608,
+      "offset": 20642,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/andrejavorskij\/Projects\/Hut\/safechargemobilesdk-ios\/NuveiMobileSDK\/Internal\/Utils\/ViewUtils.swift",
       "kind": "IntegerLiteral",
-      "offset": 20624,
+      "offset": 20658,
       "length": 1,
       "value": "0"
     },
@@ -34566,84 +34600,84 @@
     {
       "filePath": "\/Users\/andrejavorskij\/Projects\/Hut\/safechargemobilesdk-ios\/NuveiMobileSDK\/Internal\/UI\/Views\/HeaderView.swift",
       "kind": "IntegerLiteral",
-      "offset": 399,
+      "offset": 433,
       "length": 2,
       "value": "50"
     },
     {
       "filePath": "\/Users\/andrejavorskij\/Projects\/Hut\/safechargemobilesdk-ios\/NuveiMobileSDK\/Internal\/UI\/Views\/HeaderView.swift",
       "kind": "IntegerLiteral",
-      "offset": 683,
+      "offset": 717,
       "length": 2,
       "value": "17"
     },
     {
       "filePath": "\/Users\/andrejavorskij\/Projects\/Hut\/safechargemobilesdk-ios\/NuveiMobileSDK\/Internal\/UI\/Views\/HeaderView.swift",
       "kind": "IntegerLiteral",
-      "offset": 697,
+      "offset": 731,
       "length": 2,
       "value": "17"
     },
     {
       "filePath": "\/Users\/andrejavorskij\/Projects\/Hut\/safechargemobilesdk-ios\/NuveiMobileSDK\/Internal\/UI\/Views\/HeaderView.swift",
       "kind": "IntegerLiteral",
-      "offset": 709,
+      "offset": 743,
       "length": 2,
       "value": "24"
     },
     {
       "filePath": "\/Users\/andrejavorskij\/Projects\/Hut\/safechargemobilesdk-ios\/NuveiMobileSDK\/Internal\/UI\/Views\/HeaderView.swift",
       "kind": "IntegerLiteral",
-      "offset": 722,
+      "offset": 756,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/andrejavorskij\/Projects\/Hut\/safechargemobilesdk-ios\/NuveiMobileSDK\/Internal\/UI\/Views\/HeaderView.swift",
       "kind": "IntegerLiteral",
-      "offset": 1440,
+      "offset": 1474,
       "length": 2,
       "value": "62"
     },
     {
       "filePath": "\/Users\/andrejavorskij\/Projects\/Hut\/safechargemobilesdk-ios\/NuveiMobileSDK\/Internal\/UI\/Views\/HeaderView.swift",
       "kind": "IntegerLiteral",
-      "offset": 1465,
+      "offset": 1499,
       "length": 2,
       "value": "62"
     },
     {
       "filePath": "\/Users\/andrejavorskij\/Projects\/Hut\/safechargemobilesdk-ios\/NuveiMobileSDK\/Internal\/UI\/Views\/HeaderView.swift",
       "kind": "StringLiteral",
-      "offset": 1512,
+      "offset": 1546,
       "length": 16,
       "value": "\"Checkout\/Close\""
     },
     {
       "filePath": "\/Users\/andrejavorskij\/Projects\/Hut\/safechargemobilesdk-ios\/NuveiMobileSDK\/Internal\/UI\/Views\/HeaderView.swift",
       "kind": "StringLiteral",
-      "offset": 2685,
+      "offset": 2719,
       "length": 28,
       "value": "\"Checkout\/Header\/Background\""
     },
     {
       "filePath": "\/Users\/andrejavorskij\/Projects\/Hut\/safechargemobilesdk-ios\/NuveiMobileSDK\/Internal\/UI\/Views\/HeaderView.swift",
       "kind": "IntegerLiteral",
-      "offset": 3003,
+      "offset": 3037,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/andrejavorskij\/Projects\/Hut\/safechargemobilesdk-ios\/NuveiMobileSDK\/Internal\/UI\/Views\/HeaderView.swift",
       "kind": "StringLiteral",
-      "offset": 3322,
+      "offset": 3356,
       "length": 39,
       "value": "\"init(coder:) has not been implemented\""
     },
     {
       "filePath": "\/Users\/andrejavorskij\/Projects\/Hut\/safechargemobilesdk-ios\/NuveiMobileSDK\/Internal\/UI\/Views\/HeaderView.swift",
       "kind": "StringLiteral",
-      "offset": 141,
+      "offset": 175,
       "length": 10,
       "value": "\"NuveiSimplyConnectSDK.HeaderView\""
     },
@@ -36694,21 +36728,21 @@
     {
       "filePath": "\/Users\/andrejavorskij\/Projects\/Hut\/safechargemobilesdk-ios\/NuveiMobileSDK\/Internal\/Nuvei3DSSDK\/Internal\/Encryption\/Classes\/JWA\/AesCbcHmacSha2.swift",
       "kind": "StringLiteral",
-      "offset": 952,
+      "offset": 973,
       "length": 36,
       "value": "\"Authentication tag validation fail\""
     },
     {
       "filePath": "\/Users\/andrejavorskij\/Projects\/Hut\/safechargemobilesdk-ios\/NuveiMobileSDK\/Internal\/Nuvei3DSSDK\/Internal\/Encryption\/Classes\/JWA\/AesCbcHmacSha2.swift",
       "kind": "IntegerLiteral",
-      "offset": 1261,
+      "offset": 1282,
       "length": 1,
       "value": "8"
     },
     {
       "filePath": "\/Users\/andrejavorskij\/Projects\/Hut\/safechargemobilesdk-ios\/NuveiMobileSDK\/Internal\/Nuvei3DSSDK\/Internal\/Encryption\/Classes\/JWA\/AesCbcHmacSha2.swift",
       "kind": "IntegerLiteral",
-      "offset": 1340,
+      "offset": 1361,
       "length": 1,
       "value": "0"
     },
@@ -38227,105 +38261,98 @@
     {
       "filePath": "\/Users\/andrejavorskij\/Projects\/Hut\/safechargemobilesdk-ios\/NuveiMobileSDK\/Internal\/UI\/CheckoutViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 593,
+      "offset": 635,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/andrejavorskij\/Projects\/Hut\/safechargemobilesdk-ios\/NuveiMobileSDK\/Internal\/UI\/CheckoutViewController.swift",
       "kind": "FloatLiteral",
-      "offset": 789,
+      "offset": 831,
       "length": 4,
       "value": "30.0"
     },
     {
       "filePath": "\/Users\/andrejavorskij\/Projects\/Hut\/safechargemobilesdk-ios\/NuveiMobileSDK\/Internal\/UI\/CheckoutViewController.swift",
       "kind": "FloatLiteral",
-      "offset": 828,
+      "offset": 870,
       "length": 4,
       "value": "30.0"
     },
     {
       "filePath": "\/Users\/andrejavorskij\/Projects\/Hut\/safechargemobilesdk-ios\/NuveiMobileSDK\/Internal\/UI\/CheckoutViewController.swift",
       "kind": "FloatLiteral",
-      "offset": 986,
+      "offset": 1028,
       "length": 4,
       "value": "0.45"
     },
     {
       "filePath": "\/Users\/andrejavorskij\/Projects\/Hut\/safechargemobilesdk-ios\/NuveiMobileSDK\/Internal\/UI\/CheckoutViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 1309,
+      "offset": 1351,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/andrejavorskij\/Projects\/Hut\/safechargemobilesdk-ios\/NuveiMobileSDK\/Internal\/UI\/CheckoutViewController.swift",
       "kind": "StringLiteral",
-      "offset": 1837,
+      "offset": 1879,
       "length": 39,
       "value": "\"init(coder:) has not been implemented\""
     },
     {
       "filePath": "\/Users\/andrejavorskij\/Projects\/Hut\/safechargemobilesdk-ios\/NuveiMobileSDK\/Internal\/UI\/CheckoutViewController.swift",
       "kind": "StringLiteral",
-      "offset": 2008,
+      "offset": 2050,
       "length": 21,
       "value": "\"Checkout\/Background\""
     },
     {
       "filePath": "\/Users\/andrejavorskij\/Projects\/Hut\/safechargemobilesdk-ios\/NuveiMobileSDK\/Internal\/UI\/CheckoutViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 2084,
+      "offset": 2126,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/andrejavorskij\/Projects\/Hut\/safechargemobilesdk-ios\/NuveiMobileSDK\/Internal\/UI\/CheckoutViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 2100,
+      "offset": 2142,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/andrejavorskij\/Projects\/Hut\/safechargemobilesdk-ios\/NuveiMobileSDK\/Internal\/UI\/CheckoutViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 3020,
+      "offset": 3062,
       "length": 3,
       "value": "200"
     },
     {
       "filePath": "\/Users\/andrejavorskij\/Projects\/Hut\/safechargemobilesdk-ios\/NuveiMobileSDK\/Internal\/UI\/CheckoutViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 3060,
+      "offset": 3102,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/andrejavorskij\/Projects\/Hut\/safechargemobilesdk-ios\/NuveiMobileSDK\/Internal\/UI\/CheckoutViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 3109,
+      "offset": 3151,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/andrejavorskij\/Projects\/Hut\/safechargemobilesdk-ios\/NuveiMobileSDK\/Internal\/UI\/CheckoutViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 3953,
+      "offset": 3995,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/andrejavorskij\/Projects\/Hut\/safechargemobilesdk-ios\/NuveiMobileSDK\/Internal\/UI\/CheckoutViewController.swift",
       "kind": "FloatLiteral",
-      "offset": 4269,
-      "length": 3,
-      "value": "0.0"
-    },
-    {
-      "filePath": "\/Users\/andrejavorskij\/Projects\/Hut\/safechargemobilesdk-ios\/NuveiMobileSDK\/Internal\/UI\/CheckoutViewController.swift",
-      "kind": "FloatLiteral",
-      "offset": 4280,
+      "offset": 4311,
       "length": 3,
       "value": "0.0"
     },
@@ -38339,1491 +38366,1498 @@
     {
       "filePath": "\/Users\/andrejavorskij\/Projects\/Hut\/safechargemobilesdk-ios\/NuveiMobileSDK\/Internal\/UI\/CheckoutViewController.swift",
       "kind": "FloatLiteral",
-      "offset": 4551,
+      "offset": 4364,
       "length": 3,
       "value": "0.0"
     },
     {
       "filePath": "\/Users\/andrejavorskij\/Projects\/Hut\/safechargemobilesdk-ios\/NuveiMobileSDK\/Internal\/UI\/CheckoutViewController.swift",
       "kind": "FloatLiteral",
-      "offset": 4562,
+      "offset": 4593,
       "length": 3,
       "value": "0.0"
     },
     {
       "filePath": "\/Users\/andrejavorskij\/Projects\/Hut\/safechargemobilesdk-ios\/NuveiMobileSDK\/Internal\/UI\/CheckoutViewController.swift",
       "kind": "FloatLiteral",
-      "offset": 4575,
+      "offset": 4604,
       "length": 3,
       "value": "0.0"
     },
     {
       "filePath": "\/Users\/andrejavorskij\/Projects\/Hut\/safechargemobilesdk-ios\/NuveiMobileSDK\/Internal\/UI\/CheckoutViewController.swift",
       "kind": "FloatLiteral",
-      "offset": 4587,
+      "offset": 4617,
+      "length": 3,
+      "value": "0.0"
+    },
+    {
+      "filePath": "\/Users\/andrejavorskij\/Projects\/Hut\/safechargemobilesdk-ios\/NuveiMobileSDK\/Internal\/UI\/CheckoutViewController.swift",
+      "kind": "FloatLiteral",
+      "offset": 4629,
       "length": 3,
       "value": "0.0"
     },
     {
       "filePath": "\/Users\/andrejavorskij\/Projects\/Hut\/safechargemobilesdk-ios\/NuveiMobileSDK\/Internal\/UI\/CheckoutViewController.swift",
       "kind": "StringLiteral",
-      "offset": 207,
+      "offset": 249,
       "length": 22,
       "value": "\"NuveiSimplyConnectSDK.CheckoutViewController\""
     },
     {
       "filePath": "\/Users\/andrejavorskij\/Projects\/Hut\/safechargemobilesdk-ios\/NuveiMobileSDK\/Internal\/UI\/CheckoutViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 5147,
+      "offset": 5189,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/andrejavorskij\/Projects\/Hut\/safechargemobilesdk-ios\/NuveiMobileSDK\/Internal\/UI\/CheckoutViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 5506,
+      "offset": 5548,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/andrejavorskij\/Projects\/Hut\/safechargemobilesdk-ios\/NuveiMobileSDK\/Internal\/UI\/CheckoutViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 6018,
+      "offset": 6060,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/andrejavorskij\/Projects\/Hut\/safechargemobilesdk-ios\/NuveiMobileSDK\/Internal\/UI\/CheckoutViewController.swift",
       "kind": "StringLiteral",
-      "offset": 6468,
+      "offset": 6510,
       "length": 32,
       "value": "\"merchant.com.nuveidigital.test\""
     },
     {
       "filePath": "\/Users\/andrejavorskij\/Projects\/Hut\/safechargemobilesdk-ios\/NuveiMobileSDK\/Internal\/UI\/CheckoutViewController.swift",
       "kind": "StringLiteral",
-      "offset": 6739,
+      "offset": 6781,
       "length": 10,
       "value": "\"Checkout\""
     },
     {
       "filePath": "\/Users\/andrejavorskij\/Projects\/Hut\/safechargemobilesdk-ios\/NuveiMobileSDK\/Internal\/UI\/CheckoutViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 7040,
+      "offset": 7082,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/andrejavorskij\/Projects\/Hut\/safechargemobilesdk-ios\/NuveiMobileSDK\/Internal\/UI\/CheckoutViewController.swift",
       "kind": "StringLiteral",
-      "offset": 8157,
+      "offset": 8199,
       "length": 23,
       "value": "\"Remove payment method\""
     },
     {
       "filePath": "\/Users\/andrejavorskij\/Projects\/Hut\/safechargemobilesdk-ios\/NuveiMobileSDK\/Internal\/UI\/CheckoutViewController.swift",
       "kind": "StringLiteral",
-      "offset": 8257,
+      "offset": 8299,
       "length": 78,
       "value": "\"Once removed, this payment method will no longer be available. Are you sure?\""
     },
     {
       "filePath": "\/Users\/andrejavorskij\/Projects\/Hut\/safechargemobilesdk-ios\/NuveiMobileSDK\/Internal\/UI\/CheckoutViewController.swift",
       "kind": "StringLiteral",
-      "offset": 8493,
+      "offset": 8535,
       "length": 8,
       "value": "\"Remove\""
     },
     {
       "filePath": "\/Users\/andrejavorskij\/Projects\/Hut\/safechargemobilesdk-ios\/NuveiMobileSDK\/Internal\/UI\/CheckoutViewController.swift",
       "kind": "StringLiteral",
-      "offset": 8739,
+      "offset": 8781,
       "length": 8,
       "value": "\"Cancel\""
     },
     {
       "filePath": "\/Users\/andrejavorskij\/Projects\/Hut\/safechargemobilesdk-ios\/NuveiMobileSDK\/Internal\/UI\/CheckoutViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 8829,
+      "offset": 8871,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/andrejavorskij\/Projects\/Hut\/safechargemobilesdk-ios\/NuveiMobileSDK\/Internal\/UI\/CheckoutViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 9420,
+      "offset": 9462,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/andrejavorskij\/Projects\/Hut\/safechargemobilesdk-ios\/NuveiMobileSDK\/Internal\/UI\/CheckoutViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 9850,
+      "offset": 9892,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/andrejavorskij\/Projects\/Hut\/safechargemobilesdk-ios\/NuveiMobileSDK\/Internal\/UI\/CheckoutViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 10062,
+      "offset": 10104,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/andrejavorskij\/Projects\/Hut\/safechargemobilesdk-ios\/NuveiMobileSDK\/Internal\/UI\/CheckoutViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 10229,
+      "offset": 10271,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/andrejavorskij\/Projects\/Hut\/safechargemobilesdk-ios\/NuveiMobileSDK\/Internal\/UI\/CheckoutViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 10427,
+      "offset": 10469,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/andrejavorskij\/Projects\/Hut\/safechargemobilesdk-ios\/NuveiMobileSDK\/Internal\/UI\/CheckoutViewController.swift",
       "kind": "Array",
-      "offset": 10697,
+      "offset": 10739,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/andrejavorskij\/Projects\/Hut\/safechargemobilesdk-ios\/NuveiMobileSDK\/Internal\/UI\/CheckoutViewController.swift",
       "kind": "StringLiteral",
-      "offset": 10803,
+      "offset": 10845,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/andrejavorskij\/Projects\/Hut\/safechargemobilesdk-ios\/NuveiMobileSDK\/Internal\/UI\/CheckoutViewController.swift",
       "kind": "StringLiteral",
-      "offset": 10875,
+      "offset": 10917,
       "length": 11,
       "value": "\"Apple Pay\""
     },
     {
       "filePath": "\/Users\/andrejavorskij\/Projects\/Hut\/safechargemobilesdk-ios\/NuveiMobileSDK\/Internal\/UI\/CheckoutViewController.swift",
       "kind": "StringLiteral",
-      "offset": 10999,
+      "offset": 11041,
       "length": 27,
       "value": "\"Checkout\/Methods\/ApplePay\""
     },
     {
       "filePath": "\/Users\/andrejavorskij\/Projects\/Hut\/safechargemobilesdk-ios\/NuveiMobileSDK\/Internal\/UI\/CheckoutViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 11309,
+      "offset": 11351,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/andrejavorskij\/Projects\/Hut\/safechargemobilesdk-ios\/NuveiMobileSDK\/Internal\/UI\/CheckoutViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 11375,
+      "offset": 11417,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/andrejavorskij\/Projects\/Hut\/safechargemobilesdk-ios\/NuveiMobileSDK\/Internal\/UI\/CheckoutViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 11379,
+      "offset": 11421,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/andrejavorskij\/Projects\/Hut\/safechargemobilesdk-ios\/NuveiMobileSDK\/Internal\/UI\/CheckoutViewController.swift",
       "kind": "StringLiteral",
-      "offset": 11452,
+      "offset": 11494,
       "length": 20,
       "value": "\"My payment methods\""
     },
     {
       "filePath": "\/Users\/andrejavorskij\/Projects\/Hut\/safechargemobilesdk-ios\/NuveiMobileSDK\/Internal\/UI\/CheckoutViewController.swift",
       "kind": "Array",
-      "offset": 11502,
+      "offset": 11544,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/andrejavorskij\/Projects\/Hut\/safechargemobilesdk-ios\/NuveiMobileSDK\/Internal\/UI\/CheckoutViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 11564,
+      "offset": 11606,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/andrejavorskij\/Projects\/Hut\/safechargemobilesdk-ios\/NuveiMobileSDK\/Internal\/UI\/CheckoutViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 11568,
+      "offset": 11610,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/andrejavorskij\/Projects\/Hut\/safechargemobilesdk-ios\/NuveiMobileSDK\/Internal\/UI\/CheckoutViewController.swift",
       "kind": "StringLiteral",
-      "offset": 11641,
+      "offset": 11683,
       "length": 28,
       "value": "\"Select your payment method\""
     },
     {
       "filePath": "\/Users\/andrejavorskij\/Projects\/Hut\/safechargemobilesdk-ios\/NuveiMobileSDK\/Internal\/UI\/CheckoutViewController.swift",
       "kind": "Array",
-      "offset": 11699,
+      "offset": 11741,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/andrejavorskij\/Projects\/Hut\/safechargemobilesdk-ios\/NuveiMobileSDK\/Internal\/UI\/CheckoutViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 12514,
+      "offset": 12556,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/andrejavorskij\/Projects\/Hut\/safechargemobilesdk-ios\/NuveiMobileSDK\/Internal\/UI\/CheckoutViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 12690,
+      "offset": 12732,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/andrejavorskij\/Projects\/Hut\/safechargemobilesdk-ios\/NuveiMobileSDK\/Internal\/UI\/CheckoutViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 13012,
+      "offset": 13054,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/andrejavorskij\/Projects\/Hut\/safechargemobilesdk-ios\/NuveiMobileSDK\/Internal\/UI\/CheckoutViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 13156,
+      "offset": 13198,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/andrejavorskij\/Projects\/Hut\/safechargemobilesdk-ios\/NuveiMobileSDK\/Internal\/UI\/CheckoutViewController.swift",
       "kind": "StringLiteral",
-      "offset": 14600,
+      "offset": 14642,
       "length": 23,
       "value": "\"Checkout\/Header\/Title\""
     },
     {
       "filePath": "\/Users\/andrejavorskij\/Projects\/Hut\/safechargemobilesdk-ios\/NuveiMobileSDK\/Internal\/UI\/CheckoutViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 16689,
+      "offset": 16731,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/andrejavorskij\/Projects\/Hut\/safechargemobilesdk-ios\/NuveiMobileSDK\/Internal\/UI\/CheckoutViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 16735,
+      "offset": 16777,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/andrejavorskij\/Projects\/Hut\/safechargemobilesdk-ios\/NuveiMobileSDK\/Internal\/UI\/CheckoutViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 17188,
+      "offset": 17230,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/andrejavorskij\/Projects\/Hut\/safechargemobilesdk-ios\/NuveiMobileSDK\/Internal\/UI\/CheckoutViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 17533,
+      "offset": 17575,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/andrejavorskij\/Projects\/Hut\/safechargemobilesdk-ios\/NuveiMobileSDK\/Internal\/UI\/CheckoutViewController.swift",
       "kind": "StringLiteral",
-      "offset": 13723,
+      "offset": 13765,
       "length": 16,
       "value": "\"NuveiSimplyConnectSDK.TableViewHandler\""
     },
     {
       "filePath": "\/Users\/andrejavorskij\/Projects\/Hut\/safechargemobilesdk-ios\/NuveiMobileSDK\/Internal\/UI\/CheckoutViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 18485,
+      "offset": 18527,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/andrejavorskij\/Projects\/Hut\/safechargemobilesdk-ios\/NuveiMobileSDK\/Internal\/UI\/CheckoutViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 18708,
+      "offset": 18750,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/andrejavorskij\/Projects\/Hut\/safechargemobilesdk-ios\/NuveiMobileSDK\/Internal\/UI\/CheckoutViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 18768,
+      "offset": 18810,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/andrejavorskij\/Projects\/Hut\/safechargemobilesdk-ios\/NuveiMobileSDK\/Internal\/UI\/CheckoutViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 19499,
+      "offset": 19541,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/andrejavorskij\/Projects\/Hut\/safechargemobilesdk-ios\/NuveiMobileSDK\/Internal\/UI\/CheckoutViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 19798,
+      "offset": 19840,
       "length": 2,
       "value": "10"
     },
     {
       "filePath": "\/Users\/andrejavorskij\/Projects\/Hut\/safechargemobilesdk-ios\/NuveiMobileSDK\/Internal\/UI\/CheckoutViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 19814,
+      "offset": 19856,
       "length": 1,
       "value": "5"
     },
     {
       "filePath": "\/Users\/andrejavorskij\/Projects\/Hut\/safechargemobilesdk-ios\/NuveiMobileSDK\/Internal\/UI\/CheckoutViewController.swift",
       "kind": "StringLiteral",
-      "offset": 19870,
+      "offset": 19912,
       "length": 20,
       "value": "\"Checkout\/ListWhite\""
     },
     {
       "filePath": "\/Users\/andrejavorskij\/Projects\/Hut\/safechargemobilesdk-ios\/NuveiMobileSDK\/Internal\/UI\/CheckoutViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 19928,
+      "offset": 19970,
       "length": 1,
       "value": "8"
     },
     {
       "filePath": "\/Users\/andrejavorskij\/Projects\/Hut\/safechargemobilesdk-ios\/NuveiMobileSDK\/Internal\/UI\/CheckoutViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 20326,
+      "offset": 20368,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/andrejavorskij\/Projects\/Hut\/safechargemobilesdk-ios\/NuveiMobileSDK\/Internal\/UI\/CheckoutViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 20380,
+      "offset": 20422,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/andrejavorskij\/Projects\/Hut\/safechargemobilesdk-ios\/NuveiMobileSDK\/Internal\/UI\/CheckoutViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 20438,
+      "offset": 20480,
       "length": 2,
       "value": "10"
     },
     {
       "filePath": "\/Users\/andrejavorskij\/Projects\/Hut\/safechargemobilesdk-ios\/NuveiMobileSDK\/Internal\/UI\/CheckoutViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 20451,
+      "offset": 20493,
       "length": 2,
       "value": "10"
     },
     {
       "filePath": "\/Users\/andrejavorskij\/Projects\/Hut\/safechargemobilesdk-ios\/NuveiMobileSDK\/Internal\/UI\/CheckoutViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 20463,
+      "offset": 20505,
       "length": 2,
       "value": "10"
     },
     {
       "filePath": "\/Users\/andrejavorskij\/Projects\/Hut\/safechargemobilesdk-ios\/NuveiMobileSDK\/Internal\/UI\/CheckoutViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 20477,
+      "offset": 20519,
       "length": 2,
       "value": "10"
     },
     {
       "filePath": "\/Users\/andrejavorskij\/Projects\/Hut\/safechargemobilesdk-ios\/NuveiMobileSDK\/Internal\/UI\/CheckoutViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 20884,
+      "offset": 20926,
       "length": 2,
       "value": "18"
     },
     {
       "filePath": "\/Users\/andrejavorskij\/Projects\/Hut\/safechargemobilesdk-ios\/NuveiMobileSDK\/Internal\/UI\/CheckoutViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 20915,
+      "offset": 20957,
       "length": 2,
       "value": "18"
     },
     {
       "filePath": "\/Users\/andrejavorskij\/Projects\/Hut\/safechargemobilesdk-ios\/NuveiMobileSDK\/Internal\/UI\/CheckoutViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 20947,
+      "offset": 20989,
       "length": 2,
       "value": "16"
     },
     {
       "filePath": "\/Users\/andrejavorskij\/Projects\/Hut\/safechargemobilesdk-ios\/NuveiMobileSDK\/Internal\/UI\/CheckoutViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 20980,
+      "offset": 21022,
       "length": 2,
       "value": "18"
     },
     {
       "filePath": "\/Users\/andrejavorskij\/Projects\/Hut\/safechargemobilesdk-ios\/NuveiMobileSDK\/Internal\/UI\/CheckoutViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 21005,
+      "offset": 21047,
       "length": 2,
       "value": "40"
     },
     {
       "filePath": "\/Users\/andrejavorskij\/Projects\/Hut\/safechargemobilesdk-ios\/NuveiMobileSDK\/Internal\/UI\/CheckoutViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 21192,
+      "offset": 21234,
       "length": 2,
       "value": "10"
     },
     {
       "filePath": "\/Users\/andrejavorskij\/Projects\/Hut\/safechargemobilesdk-ios\/NuveiMobileSDK\/Internal\/UI\/CheckoutViewController.swift",
       "kind": "StringLiteral",
-      "offset": 21245,
+      "offset": 21287,
       "length": 19,
       "value": "\"Checkout\/Checkbox\""
     },
     {
       "filePath": "\/Users\/andrejavorskij\/Projects\/Hut\/safechargemobilesdk-ios\/NuveiMobileSDK\/Internal\/UI\/CheckoutViewController.swift",
       "kind": "StringLiteral",
-      "offset": 21330,
+      "offset": 21372,
       "length": 26,
       "value": "\"Checkout\/CheckboxChecked\""
     },
     {
       "filePath": "\/Users\/andrejavorskij\/Projects\/Hut\/safechargemobilesdk-ios\/NuveiMobileSDK\/Internal\/UI\/CheckoutViewController.swift",
       "kind": "StringLiteral",
-      "offset": 21407,
+      "offset": 21449,
       "length": 32,
       "value": "\"Save my details for future use\""
     },
     {
       "filePath": "\/Users\/andrejavorskij\/Projects\/Hut\/safechargemobilesdk-ios\/NuveiMobileSDK\/Internal\/UI\/CheckoutViewController.swift",
       "kind": "StringLiteral",
-      "offset": 21477,
+      "offset": 21519,
       "length": 20,
       "value": "\"Checkout\/LightGrey\""
     },
     {
       "filePath": "\/Users\/andrejavorskij\/Projects\/Hut\/safechargemobilesdk-ios\/NuveiMobileSDK\/Internal\/UI\/CheckoutViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 21540,
+      "offset": 21582,
       "length": 2,
       "value": "14"
     },
     {
       "filePath": "\/Users\/andrejavorskij\/Projects\/Hut\/safechargemobilesdk-ios\/NuveiMobileSDK\/Internal\/UI\/CheckoutViewController.swift",
       "kind": "StringLiteral",
-      "offset": 21584,
+      "offset": 21626,
       "length": 15,
       "value": "\"Checkout\/Lock\""
     },
     {
       "filePath": "\/Users\/andrejavorskij\/Projects\/Hut\/safechargemobilesdk-ios\/NuveiMobileSDK\/Internal\/UI\/CheckoutViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 21863,
+      "offset": 21905,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/andrejavorskij\/Projects\/Hut\/safechargemobilesdk-ios\/NuveiMobileSDK\/Internal\/UI\/CheckoutViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 21960,
+      "offset": 22002,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/andrejavorskij\/Projects\/Hut\/safechargemobilesdk-ios\/NuveiMobileSDK\/Internal\/UI\/CheckoutViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 22275,
+      "offset": 22317,
       "length": 2,
       "value": "19"
     },
     {
       "filePath": "\/Users\/andrejavorskij\/Projects\/Hut\/safechargemobilesdk-ios\/NuveiMobileSDK\/Internal\/UI\/CheckoutViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 22428,
+      "offset": 22470,
       "length": 2,
       "value": "16"
     },
     {
       "filePath": "\/Users\/andrejavorskij\/Projects\/Hut\/safechargemobilesdk-ios\/NuveiMobileSDK\/Internal\/UI\/CheckoutViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 22454,
+      "offset": 22496,
       "length": 2,
       "value": "18"
     },
     {
       "filePath": "\/Users\/andrejavorskij\/Projects\/Hut\/safechargemobilesdk-ios\/NuveiMobileSDK\/Internal\/UI\/CheckoutViewController.swift",
       "kind": "StringLiteral",
-      "offset": 22511,
+      "offset": 22553,
       "length": 17,
       "value": "\"Checkout\/Delete\""
     },
     {
       "filePath": "\/Users\/andrejavorskij\/Projects\/Hut\/safechargemobilesdk-ios\/NuveiMobileSDK\/Internal\/UI\/CheckoutViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 22939,
+      "offset": 22981,
       "length": 2,
       "value": "13"
     },
     {
       "filePath": "\/Users\/andrejavorskij\/Projects\/Hut\/safechargemobilesdk-ios\/NuveiMobileSDK\/Internal\/UI\/CheckoutViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 23135,
+      "offset": 23177,
       "length": 2,
       "value": "13"
     },
     {
       "filePath": "\/Users\/andrejavorskij\/Projects\/Hut\/safechargemobilesdk-ios\/NuveiMobileSDK\/Internal\/UI\/CheckoutViewController.swift",
       "kind": "Array",
-      "offset": 23240,
+      "offset": 23282,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/andrejavorskij\/Projects\/Hut\/safechargemobilesdk-ios\/NuveiMobileSDK\/Internal\/UI\/CheckoutViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 23274,
+      "offset": 23316,
       "length": 2,
       "value": "56"
     },
     {
       "filePath": "\/Users\/andrejavorskij\/Projects\/Hut\/safechargemobilesdk-ios\/NuveiMobileSDK\/Internal\/UI\/CheckoutViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 23307,
+      "offset": 23349,
       "length": 2,
       "value": "36"
     },
     {
       "filePath": "\/Users\/andrejavorskij\/Projects\/Hut\/safechargemobilesdk-ios\/NuveiMobileSDK\/Internal\/UI\/CheckoutViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 23588,
+      "offset": 23630,
       "length": 2,
       "value": "22"
     },
     {
       "filePath": "\/Users\/andrejavorskij\/Projects\/Hut\/safechargemobilesdk-ios\/NuveiMobileSDK\/Internal\/UI\/CheckoutViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 23889,
+      "offset": 23931,
       "length": 2,
       "value": "44"
     },
     {
       "filePath": "\/Users\/andrejavorskij\/Projects\/Hut\/safechargemobilesdk-ios\/NuveiMobileSDK\/Internal\/UI\/CheckoutViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 23948,
+      "offset": 23990,
       "length": 2,
       "value": "16"
     },
     {
       "filePath": "\/Users\/andrejavorskij\/Projects\/Hut\/safechargemobilesdk-ios\/NuveiMobileSDK\/Internal\/UI\/CheckoutViewController.swift",
       "kind": "StringLiteral",
-      "offset": 23993,
+      "offset": 24035,
       "length": 16,
       "value": "\"Checkout\/Black\""
     },
     {
       "filePath": "\/Users\/andrejavorskij\/Projects\/Hut\/safechargemobilesdk-ios\/NuveiMobileSDK\/Internal\/UI\/CheckoutViewController.swift",
       "kind": "StringLiteral",
-      "offset": 24057,
+      "offset": 24099,
       "length": 17,
       "value": "\"Checkout\/Purple\""
     },
     {
       "filePath": "\/Users\/andrejavorskij\/Projects\/Hut\/safechargemobilesdk-ios\/NuveiMobileSDK\/Internal\/UI\/CheckoutViewController.swift",
       "kind": "StringLiteral",
-      "offset": 24610,
+      "offset": 24652,
       "length": 26,
       "value": "\"Checkout\/Methods\/Default\""
     },
     {
       "filePath": "\/Users\/andrejavorskij\/Projects\/Hut\/safechargemobilesdk-ios\/NuveiMobileSDK\/Internal\/UI\/CheckoutViewController.swift",
       "kind": "StringLiteral",
-      "offset": 24714,
+      "offset": 24756,
       "length": 26,
       "value": "\"Checkout\/Methods\/Default\""
     },
     {
       "filePath": "\/Users\/andrejavorskij\/Projects\/Hut\/safechargemobilesdk-ios\/NuveiMobileSDK\/Internal\/UI\/CheckoutViewController.swift",
       "kind": "StringLiteral",
-      "offset": 24825,
+      "offset": 24867,
       "length": 5,
       "value": "\"Pay\""
     },
     {
       "filePath": "\/Users\/andrejavorskij\/Projects\/Hut\/safechargemobilesdk-ios\/NuveiMobileSDK\/Internal\/UI\/CheckoutViewController.swift",
       "kind": "StringLiteral",
-      "offset": 25639,
+      "offset": 25681,
       "length": 21,
       "value": "\"default_cc_card.svg\""
     },
     {
       "filePath": "\/Users\/andrejavorskij\/Projects\/Hut\/safechargemobilesdk-ios\/NuveiMobileSDK\/Internal\/UI\/CheckoutViewController.swift",
       "kind": "StringLiteral",
-      "offset": 25668,
+      "offset": 25710,
       "length": 20,
       "value": "\"default_cc_new.png\""
     },
     {
       "filePath": "\/Users\/andrejavorskij\/Projects\/Hut\/safechargemobilesdk-ios\/NuveiMobileSDK\/Internal\/UI\/CheckoutViewController.swift",
       "kind": "StringLiteral",
-      "offset": 25728,
+      "offset": 25770,
       "length": 14,
       "value": "\"solid_white\/\""
     },
     {
       "filePath": "\/Users\/andrejavorskij\/Projects\/Hut\/safechargemobilesdk-ios\/NuveiMobileSDK\/Internal\/UI\/CheckoutViewController.swift",
       "kind": "StringLiteral",
-      "offset": 25750,
+      "offset": 25792,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/andrejavorskij\/Projects\/Hut\/safechargemobilesdk-ios\/NuveiMobileSDK\/Internal\/UI\/CheckoutViewController.swift",
       "kind": "StringLiteral",
-      "offset": 25792,
+      "offset": 25834,
       "length": 7,
       "value": "\"\/svg\/\""
     },
     {
       "filePath": "\/Users\/andrejavorskij\/Projects\/Hut\/safechargemobilesdk-ios\/NuveiMobileSDK\/Internal\/UI\/CheckoutViewController.swift",
       "kind": "StringLiteral",
-      "offset": 25807,
+      "offset": 25849,
       "length": 7,
       "value": "\"\/png\/\""
     },
     {
       "filePath": "\/Users\/andrejavorskij\/Projects\/Hut\/safechargemobilesdk-ios\/NuveiMobileSDK\/Internal\/UI\/CheckoutViewController.swift",
       "kind": "StringLiteral",
-      "offset": 25854,
+      "offset": 25896,
       "length": 6,
       "value": "\".svg\""
     },
     {
       "filePath": "\/Users\/andrejavorskij\/Projects\/Hut\/safechargemobilesdk-ios\/NuveiMobileSDK\/Internal\/UI\/CheckoutViewController.swift",
       "kind": "StringLiteral",
-      "offset": 25868,
+      "offset": 25910,
       "length": 6,
       "value": "\".png\""
     },
     {
       "filePath": "\/Users\/andrejavorskij\/Projects\/Hut\/safechargemobilesdk-ios\/NuveiMobileSDK\/Internal\/UI\/CheckoutViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 26087,
+      "offset": 26129,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/andrejavorskij\/Projects\/Hut\/safechargemobilesdk-ios\/NuveiMobileSDK\/Internal\/UI\/CheckoutViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 26151,
+      "offset": 26193,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/andrejavorskij\/Projects\/Hut\/safechargemobilesdk-ios\/NuveiMobileSDK\/Internal\/UI\/CheckoutViewController.swift",
       "kind": "StringLiteral",
-      "offset": 26809,
+      "offset": 26851,
       "length": 39,
       "value": "\"init(coder:) has not been implemented\""
     },
     {
       "filePath": "\/Users\/andrejavorskij\/Projects\/Hut\/safechargemobilesdk-ios\/NuveiMobileSDK\/Internal\/UI\/CheckoutViewController.swift",
       "kind": "StringLiteral",
-      "offset": 27058,
+      "offset": 27100,
       "length": 17,
       "value": "\"Cardholder Name\""
     },
     {
       "filePath": "\/Users\/andrejavorskij\/Projects\/Hut\/safechargemobilesdk-ios\/NuveiMobileSDK\/Internal\/UI\/CheckoutViewController.swift",
       "kind": "StringLiteral",
-      "offset": 27140,
+      "offset": 27182,
       "length": 12,
       "value": "\"John Smith\""
     },
     {
       "filePath": "\/Users\/andrejavorskij\/Projects\/Hut\/safechargemobilesdk-ios\/NuveiMobileSDK\/Internal\/UI\/CheckoutViewController.swift",
       "kind": "StringLiteral",
-      "offset": 27348,
+      "offset": 27390,
       "length": 13,
       "value": "\"Card Number\""
     },
     {
       "filePath": "\/Users\/andrejavorskij\/Projects\/Hut\/safechargemobilesdk-ios\/NuveiMobileSDK\/Internal\/UI\/CheckoutViewController.swift",
       "kind": "StringLiteral",
-      "offset": 27429,
+      "offset": 27471,
       "length": 21,
       "value": "\"1234-5678-1234-5678\""
     },
     {
       "filePath": "\/Users\/andrejavorskij\/Projects\/Hut\/safechargemobilesdk-ios\/NuveiMobileSDK\/Internal\/UI\/CheckoutViewController.swift",
       "kind": "StringLiteral",
-      "offset": 27646,
+      "offset": 27688,
       "length": 13,
       "value": "\"Expiry Date\""
     },
     {
       "filePath": "\/Users\/andrejavorskij\/Projects\/Hut\/safechargemobilesdk-ios\/NuveiMobileSDK\/Internal\/UI\/CheckoutViewController.swift",
       "kind": "StringLiteral",
-      "offset": 27727,
+      "offset": 27769,
       "length": 7,
       "value": "\"12\/23\""
     },
     {
       "filePath": "\/Users\/andrejavorskij\/Projects\/Hut\/safechargemobilesdk-ios\/NuveiMobileSDK\/Internal\/UI\/CheckoutViewController.swift",
       "kind": "StringLiteral",
-      "offset": 27921,
+      "offset": 27963,
       "length": 5,
       "value": "\"CVV\""
     },
     {
       "filePath": "\/Users\/andrejavorskij\/Projects\/Hut\/safechargemobilesdk-ios\/NuveiMobileSDK\/Internal\/UI\/CheckoutViewController.swift",
       "kind": "StringLiteral",
-      "offset": 27991,
+      "offset": 28033,
       "length": 5,
       "value": "\"123\""
     },
     {
       "filePath": "\/Users\/andrejavorskij\/Projects\/Hut\/safechargemobilesdk-ios\/NuveiMobileSDK\/Internal\/UI\/CheckoutViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 28051,
+      "offset": 28093,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/andrejavorskij\/Projects\/Hut\/safechargemobilesdk-ios\/NuveiMobileSDK\/Internal\/UI\/CheckoutViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 28106,
+      "offset": 28148,
       "length": 1,
       "value": "3"
     },
     {
       "filePath": "\/Users\/andrejavorskij\/Projects\/Hut\/safechargemobilesdk-ios\/NuveiMobileSDK\/Internal\/UI\/CheckoutViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 28845,
+      "offset": 28887,
       "length": 1,
       "value": "4"
     },
     {
       "filePath": "\/Users\/andrejavorskij\/Projects\/Hut\/safechargemobilesdk-ios\/NuveiMobileSDK\/Internal\/UI\/CheckoutViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 29414,
+      "offset": 29456,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/andrejavorskij\/Projects\/Hut\/safechargemobilesdk-ios\/NuveiMobileSDK\/Internal\/UI\/CheckoutViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 29867,
+      "offset": 29909,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/andrejavorskij\/Projects\/Hut\/safechargemobilesdk-ios\/NuveiMobileSDK\/Internal\/UI\/CheckoutViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 30329,
+      "offset": 30371,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/andrejavorskij\/Projects\/Hut\/safechargemobilesdk-ios\/NuveiMobileSDK\/Internal\/UI\/CheckoutViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 31306,
+      "offset": 31348,
       "length": 1,
       "value": "3"
     },
     {
       "filePath": "\/Users\/andrejavorskij\/Projects\/Hut\/safechargemobilesdk-ios\/NuveiMobileSDK\/Internal\/UI\/CheckoutViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 31379,
+      "offset": 31421,
       "length": 1,
       "value": "4"
     },
     {
       "filePath": "\/Users\/andrejavorskij\/Projects\/Hut\/safechargemobilesdk-ios\/NuveiMobileSDK\/Internal\/UI\/CheckoutViewController.swift",
       "kind": "StringLiteral",
-      "offset": 31394,
+      "offset": 31436,
       "length": 6,
       "value": "\"1234\""
     },
     {
       "filePath": "\/Users\/andrejavorskij\/Projects\/Hut\/safechargemobilesdk-ios\/NuveiMobileSDK\/Internal\/UI\/CheckoutViewController.swift",
       "kind": "StringLiteral",
-      "offset": 31415,
+      "offset": 31457,
       "length": 5,
       "value": "\"123\""
     },
     {
       "filePath": "\/Users\/andrejavorskij\/Projects\/Hut\/safechargemobilesdk-ios\/NuveiMobileSDK\/Internal\/UI\/CheckoutViewController.swift",
       "kind": "StringLiteral",
-      "offset": 32229,
+      "offset": 32271,
       "length": 36,
       "value": "\"Please fill the credit card number\""
     },
     {
       "filePath": "\/Users\/andrejavorskij\/Projects\/Hut\/safechargemobilesdk-ios\/NuveiMobileSDK\/Internal\/UI\/CheckoutViewController.swift",
       "kind": "StringLiteral",
-      "offset": 32409,
+      "offset": 32451,
       "length": 34,
       "value": "\"Please enter a valid card number\""
     },
     {
       "filePath": "\/Users\/andrejavorskij\/Projects\/Hut\/safechargemobilesdk-ios\/NuveiMobileSDK\/Internal\/UI\/CheckoutViewController.swift",
       "kind": "StringLiteral",
-      "offset": 32581,
+      "offset": 32623,
       "length": 29,
       "value": "\"Please fill the expiry date\""
     },
     {
       "filePath": "\/Users\/andrejavorskij\/Projects\/Hut\/safechargemobilesdk-ios\/NuveiMobileSDK\/Internal\/UI\/CheckoutViewController.swift",
       "kind": "StringLiteral",
-      "offset": 32750,
+      "offset": 32792,
       "length": 25,
       "value": "\"Invalid expiration date\""
     },
     {
       "filePath": "\/Users\/andrejavorskij\/Projects\/Hut\/safechargemobilesdk-ios\/NuveiMobileSDK\/Internal\/UI\/CheckoutViewController.swift",
       "kind": "StringLiteral",
-      "offset": 32907,
+      "offset": 32949,
       "length": 21,
       "value": "\"Please fill the CVV\""
     },
     {
       "filePath": "\/Users\/andrejavorskij\/Projects\/Hut\/safechargemobilesdk-ios\/NuveiMobileSDK\/Internal\/UI\/CheckoutViewController.swift",
       "kind": "StringLiteral",
-      "offset": 33059,
+      "offset": 33101,
       "length": 16,
       "value": "\"CVV is invalid\""
     },
     {
       "filePath": "\/Users\/andrejavorskij\/Projects\/Hut\/safechargemobilesdk-ios\/NuveiMobileSDK\/Internal\/UI\/CheckoutViewController.swift",
       "kind": "StringLiteral",
-      "offset": 33218,
+      "offset": 33260,
       "length": 34,
       "value": "\"Please fill the card holder name\""
     },
     {
       "filePath": "\/Users\/andrejavorskij\/Projects\/Hut\/safechargemobilesdk-ios\/NuveiMobileSDK\/Internal\/UI\/CheckoutViewController.swift",
       "kind": "StringLiteral",
-      "offset": 33404,
+      "offset": 33446,
       "length": 25,
       "value": "\"Invalid cardholder name\""
     },
     {
       "filePath": "\/Users\/andrejavorskij\/Projects\/Hut\/safechargemobilesdk-ios\/NuveiMobileSDK\/Internal\/UI\/CheckoutViewController.swift",
       "kind": "StringLiteral",
-      "offset": 33658,
+      "offset": 33700,
       "length": 39,
       "value": "\"init(coder:) has not been implemented\""
     },
     {
       "filePath": "\/Users\/andrejavorskij\/Projects\/Hut\/safechargemobilesdk-ios\/NuveiMobileSDK\/Internal\/UI\/CheckoutViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 33956,
+      "offset": 33998,
       "length": 2,
       "value": "44"
     },
     {
       "filePath": "\/Users\/andrejavorskij\/Projects\/Hut\/safechargemobilesdk-ios\/NuveiMobileSDK\/Internal\/UI\/CheckoutViewController.swift",
       "kind": "StringLiteral",
-      "offset": 34630,
+      "offset": 34672,
       "length": 39,
       "value": "\"init(coder:) has not been implemented\""
     },
     {
       "filePath": "\/Users\/andrejavorskij\/Projects\/Hut\/safechargemobilesdk-ios\/NuveiMobileSDK\/Internal\/UI\/CheckoutViewController.swift",
       "kind": "StringLiteral",
-      "offset": 34963,
+      "offset": 35005,
       "length": 13,
       "value": "\"Expiry Date\""
     },
     {
       "filePath": "\/Users\/andrejavorskij\/Projects\/Hut\/safechargemobilesdk-ios\/NuveiMobileSDK\/Internal\/UI\/CheckoutViewController.swift",
       "kind": "StringLiteral",
-      "offset": 35044,
+      "offset": 35086,
       "length": 7,
       "value": "\"12\/23\""
     },
     {
       "filePath": "\/Users\/andrejavorskij\/Projects\/Hut\/safechargemobilesdk-ios\/NuveiMobileSDK\/Internal\/UI\/CheckoutViewController.swift",
       "kind": "StringLiteral",
-      "offset": 35238,
+      "offset": 35280,
       "length": 5,
       "value": "\"CVV\""
     },
     {
       "filePath": "\/Users\/andrejavorskij\/Projects\/Hut\/safechargemobilesdk-ios\/NuveiMobileSDK\/Internal\/UI\/CheckoutViewController.swift",
       "kind": "StringLiteral",
-      "offset": 35308,
+      "offset": 35350,
       "length": 5,
       "value": "\"123\""
     },
     {
       "filePath": "\/Users\/andrejavorskij\/Projects\/Hut\/safechargemobilesdk-ios\/NuveiMobileSDK\/Internal\/UI\/CheckoutViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 35368,
+      "offset": 35410,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/andrejavorskij\/Projects\/Hut\/safechargemobilesdk-ios\/NuveiMobileSDK\/Internal\/UI\/CheckoutViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 35423,
+      "offset": 35465,
       "length": 1,
       "value": "4"
     },
     {
       "filePath": "\/Users\/andrejavorskij\/Projects\/Hut\/safechargemobilesdk-ios\/NuveiMobileSDK\/Internal\/UI\/CheckoutViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 35990,
+      "offset": 36032,
       "length": 1,
       "value": "4"
     },
     {
       "filePath": "\/Users\/andrejavorskij\/Projects\/Hut\/safechargemobilesdk-ios\/NuveiMobileSDK\/Internal\/UI\/CheckoutViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 36522,
+      "offset": 36564,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/andrejavorskij\/Projects\/Hut\/safechargemobilesdk-ios\/NuveiMobileSDK\/Internal\/UI\/CheckoutViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 36578,
+      "offset": 36620,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/andrejavorskij\/Projects\/Hut\/safechargemobilesdk-ios\/NuveiMobileSDK\/Internal\/UI\/CheckoutViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 36681,
+      "offset": 36723,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/andrejavorskij\/Projects\/Hut\/safechargemobilesdk-ios\/NuveiMobileSDK\/Internal\/UI\/CheckoutViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 37147,
+      "offset": 37189,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/andrejavorskij\/Projects\/Hut\/safechargemobilesdk-ios\/NuveiMobileSDK\/Internal\/UI\/CheckoutViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 37622,
+      "offset": 37664,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/andrejavorskij\/Projects\/Hut\/safechargemobilesdk-ios\/NuveiMobileSDK\/Internal\/UI\/CheckoutViewController.swift",
       "kind": "StringLiteral",
-      "offset": 38524,
+      "offset": 38566,
       "length": 29,
       "value": "\"Please fill the expiry date\""
     },
     {
       "filePath": "\/Users\/andrejavorskij\/Projects\/Hut\/safechargemobilesdk-ios\/NuveiMobileSDK\/Internal\/UI\/CheckoutViewController.swift",
       "kind": "StringLiteral",
-      "offset": 38693,
+      "offset": 38735,
       "length": 25,
       "value": "\"Invalid expiration date\""
     },
     {
       "filePath": "\/Users\/andrejavorskij\/Projects\/Hut\/safechargemobilesdk-ios\/NuveiMobileSDK\/Internal\/UI\/CheckoutViewController.swift",
       "kind": "StringLiteral",
-      "offset": 38852,
+      "offset": 38894,
       "length": 16,
       "value": "\"CVV is invalid\""
     },
     {
       "filePath": "\/Users\/andrejavorskij\/Projects\/Hut\/safechargemobilesdk-ios\/NuveiMobileSDK\/Internal\/UI\/CheckoutViewController.swift",
       "kind": "StringLiteral",
-      "offset": 39090,
+      "offset": 39132,
       "length": 39,
       "value": "\"init(coder:) has not been implemented\""
     },
     {
       "filePath": "\/Users\/andrejavorskij\/Projects\/Hut\/safechargemobilesdk-ios\/NuveiMobileSDK\/Internal\/UI\/CheckoutViewController.swift",
       "kind": "StringLiteral",
-      "offset": 40498,
+      "offset": 40540,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/andrejavorskij\/Projects\/Hut\/safechargemobilesdk-ios\/NuveiMobileSDK\/Internal\/UI\/CheckoutViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 40707,
+      "offset": 40749,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/andrejavorskij\/Projects\/Hut\/safechargemobilesdk-ios\/NuveiMobileSDK\/Internal\/UI\/CheckoutViewController.swift",
       "kind": "StringLiteral",
-      "offset": 40779,
+      "offset": 40821,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/andrejavorskij\/Projects\/Hut\/safechargemobilesdk-ios\/NuveiMobileSDK\/Internal\/UI\/CheckoutViewController.swift",
       "kind": "StringLiteral",
-      "offset": 41469,
+      "offset": 41511,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/andrejavorskij\/Projects\/Hut\/safechargemobilesdk-ios\/NuveiMobileSDK\/Internal\/UI\/CheckoutViewController.swift",
       "kind": "StringLiteral",
-      "offset": 41884,
+      "offset": 41926,
       "length": 39,
       "value": "\"init(coder:) has not been implemented\""
     },
     {
       "filePath": "\/Users\/andrejavorskij\/Projects\/Hut\/safechargemobilesdk-ios\/NuveiMobileSDK\/Internal\/UI\/CheckoutViewController.swift",
       "kind": "StringLiteral",
-      "offset": 42077,
+      "offset": 42119,
       "length": 20,
       "value": "\"Checkout\/LightGrey\""
     },
     {
       "filePath": "\/Users\/andrejavorskij\/Projects\/Hut\/safechargemobilesdk-ios\/NuveiMobileSDK\/Internal\/UI\/CheckoutViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 42140,
+      "offset": 42182,
       "length": 2,
       "value": "14"
     },
     {
       "filePath": "\/Users\/andrejavorskij\/Projects\/Hut\/safechargemobilesdk-ios\/NuveiMobileSDK\/Internal\/UI\/CheckoutViewController.swift",
       "kind": "StringLiteral",
-      "offset": 42199,
+      "offset": 42241,
       "length": 21,
       "value": "\"Checkout\/FieldWhite\""
     },
     {
       "filePath": "\/Users\/andrejavorskij\/Projects\/Hut\/safechargemobilesdk-ios\/NuveiMobileSDK\/Internal\/UI\/CheckoutViewController.swift",
       "kind": "StringLiteral",
-      "offset": 42262,
+      "offset": 42304,
       "length": 15,
       "value": "\"Checkout\/Grey\""
     },
     {
       "filePath": "\/Users\/andrejavorskij\/Projects\/Hut\/safechargemobilesdk-ios\/NuveiMobileSDK\/Internal\/UI\/CheckoutViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 42324,
+      "offset": 42366,
       "length": 2,
       "value": "16"
     },
     {
       "filePath": "\/Users\/andrejavorskij\/Projects\/Hut\/safechargemobilesdk-ios\/NuveiMobileSDK\/Internal\/UI\/CheckoutViewController.swift",
       "kind": "StringLiteral",
-      "offset": 42435,
+      "offset": 42477,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/andrejavorskij\/Projects\/Hut\/safechargemobilesdk-ios\/NuveiMobileSDK\/Internal\/UI\/CheckoutViewController.swift",
       "kind": "StringLiteral",
-      "offset": 42521,
+      "offset": 42563,
       "length": 20,
       "value": "\"Checkout\/LightGrey\""
     },
     {
       "filePath": "\/Users\/andrejavorskij\/Projects\/Hut\/safechargemobilesdk-ios\/NuveiMobileSDK\/Internal\/UI\/CheckoutViewController.swift",
       "kind": "StringLiteral",
-      "offset": 42614,
+      "offset": 42656,
       "length": 14,
       "value": "\"Checkout\/Red\""
     },
     {
       "filePath": "\/Users\/andrejavorskij\/Projects\/Hut\/safechargemobilesdk-ios\/NuveiMobileSDK\/Internal\/UI\/CheckoutViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 42676,
+      "offset": 42718,
       "length": 2,
       "value": "12"
     },
     {
       "filePath": "\/Users\/andrejavorskij\/Projects\/Hut\/safechargemobilesdk-ios\/NuveiMobileSDK\/Internal\/UI\/CheckoutViewController.swift",
       "kind": "StringLiteral",
-      "offset": 43395,
+      "offset": 43437,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/andrejavorskij\/Projects\/Hut\/safechargemobilesdk-ios\/NuveiMobileSDK\/Internal\/UI\/CheckoutViewController.swift",
       "kind": "StringLiteral",
-      "offset": 43484,
+      "offset": 43526,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/andrejavorskij\/Projects\/Hut\/safechargemobilesdk-ios\/NuveiMobileSDK\/Internal\/UI\/CheckoutViewController.swift",
       "kind": "StringLiteral",
-      "offset": 45315,
+      "offset": 45357,
       "length": 6,
       "value": "\"Card\""
     },
     {
       "filePath": "\/Users\/andrejavorskij\/Projects\/Hut\/safechargemobilesdk-ios\/NuveiMobileSDK\/Internal\/UI\/CheckoutViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 45731,
+      "offset": 45773,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/andrejavorskij\/Projects\/Hut\/safechargemobilesdk-ios\/NuveiMobileSDK\/Internal\/UI\/CheckoutViewController.swift",
       "kind": "StringLiteral",
-      "offset": 45881,
+      "offset": 45923,
       "length": 15,
       "value": "\"Bank Transfer\""
     },
     {
       "filePath": "\/Users\/andrejavorskij\/Projects\/Hut\/safechargemobilesdk-ios\/NuveiMobileSDK\/Internal\/UI\/CheckoutViewController.swift",
       "kind": "StringLiteral",
-      "offset": 46477,
+      "offset": 46519,
       "length": 4,
       "value": "\"en\""
     },
     {
       "filePath": "\/Users\/andrejavorskij\/Projects\/Hut\/safechargemobilesdk-ios\/NuveiMobileSDK\/Internal\/UI\/CheckoutViewController.swift",
       "kind": "StringLiteral",
-      "offset": 46496,
+      "offset": 46538,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/andrejavorskij\/Projects\/Hut\/safechargemobilesdk-ios\/NuveiMobileSDK\/Internal\/UI\/CheckoutViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 46572,
+      "offset": 46614,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/andrejavorskij\/Projects\/Hut\/safechargemobilesdk-ios\/NuveiMobileSDK\/Internal\/UI\/CheckoutViewController.swift",
       "kind": "StringLiteral",
-      "offset": 47046,
+      "offset": 47088,
       "length": 20,
       "value": "\"My payment methods\""
     },
     {
       "filePath": "\/Users\/andrejavorskij\/Projects\/Hut\/safechargemobilesdk-ios\/NuveiMobileSDK\/Internal\/UI\/CheckoutViewController.swift",
       "kind": "StringLiteral",
-      "offset": 47099,
+      "offset": 47141,
       "length": 7,
       "value": "\"test1\""
     },
     {
       "filePath": "\/Users\/andrejavorskij\/Projects\/Hut\/safechargemobilesdk-ios\/NuveiMobileSDK\/Internal\/UI\/CheckoutViewController.swift",
       "kind": "StringLiteral",
-      "offset": 47204,
+      "offset": 47246,
       "length": 7,
       "value": "\"test2\""
     },
     {
       "filePath": "\/Users\/andrejavorskij\/Projects\/Hut\/safechargemobilesdk-ios\/NuveiMobileSDK\/Internal\/UI\/CheckoutViewController.swift",
       "kind": "StringLiteral",
-      "offset": 47323,
+      "offset": 47365,
       "length": 28,
       "value": "\"Select your payment method\""
     },
     {
       "filePath": "\/Users\/andrejavorskij\/Projects\/Hut\/safechargemobilesdk-ios\/NuveiMobileSDK\/Internal\/UI\/CheckoutViewController.swift",
       "kind": "StringLiteral",
-      "offset": 47384,
+      "offset": 47426,
       "length": 6,
       "value": "\"Card\""
     },
     {
       "filePath": "\/Users\/andrejavorskij\/Projects\/Hut\/safechargemobilesdk-ios\/NuveiMobileSDK\/Internal\/UI\/CheckoutViewController.swift",
       "kind": "StringLiteral",
-      "offset": 47485,
+      "offset": 47527,
       "length": 8,
       "value": "\"Klarna\""
     },
     {
       "filePath": "\/Users\/andrejavorskij\/Projects\/Hut\/safechargemobilesdk-ios\/NuveiMobileSDK\/Internal\/UI\/CheckoutViewController.swift",
       "kind": "StringLiteral",
-      "offset": 47620,
+      "offset": 47662,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/andrejavorskij\/Projects\/Hut\/safechargemobilesdk-ios\/NuveiMobileSDK\/Internal\/UI\/CheckoutViewController.swift",
       "kind": "StringLiteral",
-      "offset": 47692,
+      "offset": 47734,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/andrejavorskij\/Projects\/Hut\/safechargemobilesdk-ios\/NuveiMobileSDK\/Internal\/UI\/CheckoutViewController.swift",
       "kind": "StringLiteral",
-      "offset": 47746,
+      "offset": 47788,
       "length": 10,
       "value": "\"userName\""
     },
     {
       "filePath": "\/Users\/andrejavorskij\/Projects\/Hut\/safechargemobilesdk-ios\/NuveiMobileSDK\/Internal\/UI\/CheckoutViewController.swift",
       "kind": "StringLiteral",
-      "offset": 47764,
+      "offset": 47806,
       "length": 6,
       "value": "\"text\""
     },
     {
       "filePath": "\/Users\/andrejavorskij\/Projects\/Hut\/safechargemobilesdk-ios\/NuveiMobileSDK\/Internal\/UI\/CheckoutViewController.swift",
       "kind": "StringLiteral",
-      "offset": 47798,
+      "offset": 47840,
       "length": 4,
       "value": "\"en\""
     },
     {
       "filePath": "\/Users\/andrejavorskij\/Projects\/Hut\/safechargemobilesdk-ios\/NuveiMobileSDK\/Internal\/UI\/CheckoutViewController.swift",
       "kind": "StringLiteral",
-      "offset": 47813,
+      "offset": 47855,
       "length": 11,
       "value": "\"User Name\""
     },
     {
       "filePath": "\/Users\/andrejavorskij\/Projects\/Hut\/safechargemobilesdk-ios\/NuveiMobileSDK\/Internal\/UI\/CheckoutViewController.swift",
       "kind": "StringLiteral",
-      "offset": 47874,
+      "offset": 47916,
       "length": 10,
       "value": "\"bankType\""
     },
     {
       "filePath": "\/Users\/andrejavorskij\/Projects\/Hut\/safechargemobilesdk-ios\/NuveiMobileSDK\/Internal\/UI\/CheckoutViewController.swift",
       "kind": "StringLiteral",
-      "offset": 47892,
+      "offset": 47934,
       "length": 6,
       "value": "\"text\""
     },
     {
       "filePath": "\/Users\/andrejavorskij\/Projects\/Hut\/safechargemobilesdk-ios\/NuveiMobileSDK\/Internal\/UI\/CheckoutViewController.swift",
       "kind": "StringLiteral",
-      "offset": 47926,
+      "offset": 47968,
       "length": 4,
       "value": "\"en\""
     },
     {
       "filePath": "\/Users\/andrejavorskij\/Projects\/Hut\/safechargemobilesdk-ios\/NuveiMobileSDK\/Internal\/UI\/CheckoutViewController.swift",
       "kind": "StringLiteral",
-      "offset": 47941,
+      "offset": 47983,
       "length": 9,
       "value": "\"Bank ID\""
     },
     {
       "filePath": "\/Users\/andrejavorskij\/Projects\/Hut\/safechargemobilesdk-ios\/NuveiMobileSDK\/Internal\/UI\/CheckoutViewController.swift",
       "kind": "StringLiteral",
-      "offset": 48000,
+      "offset": 48042,
       "length": 5,
       "value": "\"b01\""
     },
     {
       "filePath": "\/Users\/andrejavorskij\/Projects\/Hut\/safechargemobilesdk-ios\/NuveiMobileSDK\/Internal\/UI\/CheckoutViewController.swift",
       "kind": "StringLiteral",
-      "offset": 48016,
+      "offset": 48058,
       "length": 7,
       "value": "\"Bank1\""
     },
     {
       "filePath": "\/Users\/andrejavorskij\/Projects\/Hut\/safechargemobilesdk-ios\/NuveiMobileSDK\/Internal\/UI\/CheckoutViewController.swift",
       "kind": "StringLiteral",
-      "offset": 48058,
+      "offset": 48100,
       "length": 5,
       "value": "\"b02\""
     },
     {
       "filePath": "\/Users\/andrejavorskij\/Projects\/Hut\/safechargemobilesdk-ios\/NuveiMobileSDK\/Internal\/UI\/CheckoutViewController.swift",
       "kind": "StringLiteral",
-      "offset": 48074,
+      "offset": 48116,
       "length": 7,
       "value": "\"Bank2\""
     },
     {
       "filePath": "\/Users\/andrejavorskij\/Projects\/Hut\/safechargemobilesdk-ios\/NuveiMobileSDK\/Internal\/UI\/CheckoutViewController.swift",
       "kind": "StringLiteral",
-      "offset": 48318,
+      "offset": 48360,
       "length": 60,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/andrejavorskij\/Projects\/Hut\/safechargemobilesdk-ios\/NuveiMobileSDK\/Internal\/UI\/CheckoutViewController.swift",
       "kind": "StringLiteral",
-      "offset": 48345,
+      "offset": 48387,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/andrejavorskij\/Projects\/Hut\/safechargemobilesdk-ios\/NuveiMobileSDK\/Internal\/UI\/CheckoutViewController.swift",
       "kind": "StringLiteral",
-      "offset": 48348,
+      "offset": 48390,
       "length": 1,
       "value": "\"\/\""
     },
     {
       "filePath": "\/Users\/andrejavorskij\/Projects\/Hut\/safechargemobilesdk-ios\/NuveiMobileSDK\/Internal\/UI\/CheckoutViewController.swift",
       "kind": "StringLiteral",
-      "offset": 48374,
+      "offset": 48416,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/andrejavorskij\/Projects\/Hut\/safechargemobilesdk-ios\/NuveiMobileSDK\/Internal\/UI\/CheckoutViewController.swift",
       "kind": "StringLiteral",
-      "offset": 48377,
+      "offset": 48419,
       "length": 1,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/andrejavorskij\/Projects\/Hut\/safechargemobilesdk-ios\/NuveiMobileSDK\/Internal\/UI\/CheckoutViewController.swift",
       "kind": "StringLiteral",
-      "offset": 48437,
+      "offset": 48479,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/andrejavorskij\/Projects\/Hut\/safechargemobilesdk-ios\/NuveiMobileSDK\/Internal\/UI\/CheckoutViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 48496,
+      "offset": 48538,
       "length": 1,
       "value": "5"
     },
     {
       "filePath": "\/Users\/andrejavorskij\/Projects\/Hut\/safechargemobilesdk-ios\/NuveiMobileSDK\/Internal\/UI\/CheckoutViewController.swift",
       "kind": "StringLiteral",
-      "offset": 48509,
+      "offset": 48551,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/andrejavorskij\/Projects\/Hut\/safechargemobilesdk-ios\/NuveiMobileSDK\/Internal\/UI\/CheckoutViewController.swift",
       "kind": "StringLiteral",
-      "offset": 48561,
+      "offset": 48603,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/andrejavorskij\/Projects\/Hut\/safechargemobilesdk-ios\/NuveiMobileSDK\/Internal\/UI\/CheckoutViewController.swift",
       "kind": "StringLiteral",
-      "offset": 48635,
+      "offset": 48677,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/andrejavorskij\/Projects\/Hut\/safechargemobilesdk-ios\/NuveiMobileSDK\/Internal\/UI\/CheckoutViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 48686,
+      "offset": 48728,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/andrejavorskij\/Projects\/Hut\/safechargemobilesdk-ios\/NuveiMobileSDK\/Internal\/UI\/CheckoutViewController.swift",
       "kind": "StringLiteral",
-      "offset": 48831,
+      "offset": 48873,
       "length": 48,
       "value": "\"https:\/\/devmobile.sccdev-qa.com\/autoclose.html\""
     },
     {
       "filePath": "\/Users\/andrejavorskij\/Projects\/Hut\/safechargemobilesdk-ios\/NuveiMobileSDK\/Internal\/UI\/CheckoutViewController.swift",
       "kind": "StringLiteral",
-      "offset": 48920,
+      "offset": 48962,
       "length": 74,
       "value": "\"https:\/\/cdn.safecharge.com\/safecharge_resources\/v1\/websdk\/autoclose.html\""
     },
     {
       "filePath": "\/Users\/andrejavorskij\/Projects\/Hut\/safechargemobilesdk-ios\/NuveiMobileSDK\/Internal\/UI\/CheckoutViewController.swift",
       "kind": "StringLiteral",
-      "offset": 49281,
+      "offset": 49323,
       "length": 39,
       "value": "\"init(coder:) has not been implemented\""
     },
     {
       "filePath": "\/Users\/andrejavorskij\/Projects\/Hut\/safechargemobilesdk-ios\/NuveiMobileSDK\/Internal\/UI\/CheckoutViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 49986,
+      "offset": 50028,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/andrejavorskij\/Projects\/Hut\/safechargemobilesdk-ios\/NuveiMobileSDK\/Internal\/UI\/CheckoutViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 50088,
+      "offset": 50130,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/andrejavorskij\/Projects\/Hut\/safechargemobilesdk-ios\/NuveiMobileSDK\/Internal\/UI\/CheckoutViewController.swift",
       "kind": "StringLiteral",
-      "offset": 48720,
+      "offset": 48762,
       "length": 25,
       "value": "\"NuveiSimplyConnectSDK.CheckoutWebViewController\""
     },
     {
       "filePath": "\/Users\/andrejavorskij\/Projects\/Hut\/safechargemobilesdk-ios\/NuveiMobileSDK\/Internal\/UI\/CheckoutViewController.swift",
       "kind": "StringLiteral",
-      "offset": 50359,
+      "offset": 50401,
       "length": 27,
       "value": "\"Checkout\/Methods\/ApplePay\""
     },
     {
       "filePath": "\/Users\/andrejavorskij\/Projects\/Hut\/safechargemobilesdk-ios\/NuveiMobileSDK\/Internal\/UI\/CheckoutViewController.swift",
       "kind": "StringLiteral",
-      "offset": 50506,
+      "offset": 50548,
       "length": 13,
       "value": "\"master_card\""
     },
     {
       "filePath": "\/Users\/andrejavorskij\/Projects\/Hut\/safechargemobilesdk-ios\/NuveiMobileSDK\/Internal\/UI\/CheckoutViewController.swift",
       "kind": "StringLiteral",
-      "offset": 50536,
+      "offset": 50578,
       "length": 12,
       "value": "\"masterCard\""
     },
     {
       "filePath": "\/Users\/andrejavorskij\/Projects\/Hut\/safechargemobilesdk-ios\/NuveiMobileSDK\/Internal\/UI\/CheckoutViewController.swift",
       "kind": "StringLiteral",
-      "offset": 50558,
+      "offset": 50600,
       "length": 15,
       "value": "\"discover_card\""
     },
     {
       "filePath": "\/Users\/andrejavorskij\/Projects\/Hut\/safechargemobilesdk-ios\/NuveiMobileSDK\/Internal\/UI\/CheckoutViewController.swift",
       "kind": "StringLiteral",
-      "offset": 50590,
+      "offset": 50632,
       "length": 10,
       "value": "\"discover\""
     },
     {
       "filePath": "\/Users\/andrejavorskij\/Projects\/Hut\/safechargemobilesdk-ios\/NuveiMobileSDK\/Internal\/UI\/CheckoutViewController.swift",
       "kind": "StringLiteral",
-      "offset": 50610,
+      "offset": 50652,
       "length": 27,
       "value": "\"diners_club_international\""
     },
     {
       "filePath": "\/Users\/andrejavorskij\/Projects\/Hut\/safechargemobilesdk-ios\/NuveiMobileSDK\/Internal\/UI\/CheckoutViewController.swift",
       "kind": "StringLiteral",
-      "offset": 50654,
+      "offset": 50696,
       "length": 8,
       "value": "\"diners\""
     },
     {
       "filePath": "\/Users\/andrejavorskij\/Projects\/Hut\/safechargemobilesdk-ios\/NuveiMobileSDK\/Internal\/UI\/CheckoutViewController.swift",
       "kind": "StringLiteral",
-      "offset": 50672,
+      "offset": 50714,
       "length": 13,
       "value": "\"china_union\""
     },
     {
       "filePath": "\/Users\/andrejavorskij\/Projects\/Hut\/safechargemobilesdk-ios\/NuveiMobileSDK\/Internal\/UI\/CheckoutViewController.swift",
       "kind": "StringLiteral",
-      "offset": 50702,
+      "offset": 50744,
       "length": 10,
       "value": "\"unionPay\""
     },
@@ -43157,7 +43191,7 @@
       "kind": "StringLiteral",
       "offset": 1228,
       "length": 7,
-      "value": "\"1.1.2\""
+      "value": "\"1.1.3\""
     },
     {
       "filePath": "\/Users\/andrejavorskij\/Projects\/Hut\/safechargemobilesdk-ios\/NuveiMobileSDK\/NuveiSimplyConnectSDK.swift",

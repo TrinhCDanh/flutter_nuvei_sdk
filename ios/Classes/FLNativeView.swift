@@ -102,7 +102,7 @@ class FLNativeView: NSObject, FlutterPlatformView {
             _view.addSubview(creditCardField)
             
             // Set width for field
-            _view.subviews[0].width(self.containerWidth)
+//            _view.subviews[0].width(self.containerWidth)
              
             // Find UITextField (input) and UILabel (error message)
             let (textFields, labels) = _view.findTextFieldsAndLabels()
