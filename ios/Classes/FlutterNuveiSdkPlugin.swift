@@ -2,6 +2,7 @@ import Flutter
 import UIKit
 import NuveiSimplyConnectSDK
 
+///// 1.1.3
 public class FlutterNuveiSdkPlugin: NSObject, FlutterPlugin {
   var cardDataCallback: CardDataCallback?
   var creditCardField : NuveiCreditCardField?
