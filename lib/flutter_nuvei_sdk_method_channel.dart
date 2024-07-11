@@ -10,8 +10,7 @@ class MethodChannelFlutterNuveiSdk extends FlutterNuveiSdkPlatform {
 
   @override
   Future<bool?> setup(Map<String, dynamic> args) async {
-    return await methodChannel
-        .invokeMethod<bool>('setup', {"environment": args});
+    return await methodChannel.invokeMethod<bool>('setup', args);
   }
 
   @override

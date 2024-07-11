@@ -1,12 +1,10 @@
-import 'package:flutter_nuvei_sdk/data/enums.dart';
-
 class NVSetupInput {
-  late final NVEnvironmentEnum environment;
-  late final String googlePayMerchantId;
-  late final String googlePayMerchantName;
-  late final String googlePayGateway;
-  late final String googlePayGatewayMerchantId;
-  late final String applePayMerchantId;
+  late String environment;
+  late String googlePayMerchantId;
+  late String googlePayMerchantName;
+  late String googlePayGateway;
+  late String googlePayGatewayMerchantId;
+  late String applePayMerchantId;
 
   NVSetupInput({
     required this.environment,

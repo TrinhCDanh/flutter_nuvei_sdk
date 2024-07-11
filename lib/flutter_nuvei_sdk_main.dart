@@ -11,9 +11,10 @@ class FlutterNuveiSdk {
   // Check SDK init success or fail
   static bool isReady = false;
 
-  static Future<void> setup(NVSetupInput input) async {
+  static Future<void> setup(
+    NVSetupInput input,
+  ) async {
     final Map<String, dynamic> args = input.toJson();
-    args['environment'] = nvEnvironmentText[input.environment];
     isReady = await FlutterNuveiSdkPlatform.instance.setup(args) ?? false;
   }
 
