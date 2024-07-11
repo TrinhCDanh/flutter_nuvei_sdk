@@ -22,7 +22,7 @@ abstract class FlutterNuveiSdkPlatform extends PlatformInterface {
     _instance = instance;
   }
 
-  Future<bool?> setup(String environment) {
+  Future<bool?> setup(Map<String, dynamic> args) {
     throw UnimplementedError('setup() has not been implemented.');
   }
 

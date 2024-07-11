@@ -13,7 +13,7 @@ class MockFlutterNuveiSdkPlatform
   }
 
   @override
-  Future<bool?> setup(String environment) {
+  Future<bool?> setup(Map<String, dynamic> args) {
     throw UnimplementedError();
   }
 

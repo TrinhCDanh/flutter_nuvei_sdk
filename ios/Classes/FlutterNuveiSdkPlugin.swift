@@ -2,6 +2,7 @@ import Flutter
 import UIKit
 import NuveiSimplyConnectSDK
 
+// 1.1.4
 public class FlutterNuveiSdkPlugin: NSObject, FlutterPlugin {
   var cardDataCallback: CardDataCallback?
   var creditCardField : NuveiCreditCardField?
@@ -9,7 +10,7 @@ public class FlutterNuveiSdkPlugin: NSObject, FlutterPlugin {
   var cardHolderNameEditText: UITextField?
   var expiryDateEditText: UITextField?
   var cvvEditText: UITextField?
-  var applePayMerchantId: String = "merchant.com.nuveidigital.test"
+  var applePayMerchantId: String = ""
     
   public static func register(with registrar: FlutterPluginRegistrar) {
     let channel = FlutterMethodChannel(name: "flutter_nuvei_sdk", binaryMessenger: registrar.messenger())
@@ -65,6 +66,8 @@ public class FlutterNuveiSdkPlugin: NSObject, FlutterPlugin {
     /* Set environment */
      private func setup(result: FlutterResult, args: [String : Any]) {
        let environment = args["environment"] as! String
+       applePayMerchantId = args["applePayMerchantId"] as! String
+       
        // Nuvei field UI Customization
        let customization = NuveiFieldCustomization (
          labelCustomization: .init(
@@ -99,12 +102,10 @@ public class FlutterNuveiSdkPlugin: NSObject, FlutterPlugin {
         case PackageEnvironment.stating:
             NuveiSimplyConnect.setup(environment: NuveiSimplyConnect.Environment.integration)
             NuveiFields.setup(environment: NuveiSimplyConnect.Environment.integration, customization: customization)
-            applePayMerchantId = "merchant.com.nuveidigital.test"
             break
         default:
             NuveiSimplyConnect.setup(environment: NuveiSimplyConnect.Environment.production)
             NuveiFields.setup(environment: NuveiSimplyConnect.Environment.production, customization: customization)
-            applePayMerchantId = "merchant.com.nuveidigital"
             break
        }
          

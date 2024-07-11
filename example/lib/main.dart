@@ -30,6 +30,11 @@ class _MyAppState extends State<MyApp> {
   final String yearExpiry = "2026";
   final String userTokenId = "117";
   final String clientRequestId = "20240328101732";
+  final String googlePayMerchantId = "BCR2DN6TZ6DP7P3X";
+  final String googlePayMerchantName = "Google Pay web SDK";
+  final String googlePayGateway = "nuveidigital";
+  final String googlePayGatewayMerchantId = "googletest"; // prod: nuveidigital
+  final String applePayMerchantId = "merchant.com.nuveidigital.test";
 
   @override
   void initState() {
@@ -39,7 +44,15 @@ class _MyAppState extends State<MyApp> {
 
   Future<void> initializer() async {
     try {
-      await FlutterNuveiSdk.setup(NVEnvironmentEnum.staging);
+      final NVSetupInput input = NVSetupInput(
+        environment: NVEnvironmentEnum.staging,
+        googlePayMerchantId: googlePayMerchantId,
+        googlePayMerchantName: googlePayMerchantName,
+        googlePayGateway: googlePayGateway,
+        googlePayGatewayMerchantId: googlePayGatewayMerchantId,
+        applePayMerchantId: applePayMerchantId,
+      );
+      await FlutterNuveiSdk.setup(input);
     } on PlatformException {
       print("initializer error");
     }

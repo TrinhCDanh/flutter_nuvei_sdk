@@ -39,9 +39,9 @@ class FlutterNuveiSdkPlugin: FlutterPlugin, MethodCallHandler, ActivityAware {
   private lateinit var expiryDateEditText: EditText
   private lateinit var cvvEditText: EditText
   private val gson = Gson()
-  private val googlePayMerchantId: String = "BCR2DN6TZ6DP7P3X"
-  private val googlePayMerchantName: String = "Google Pay web SDK"
-  private val googlePayGateway: String = "nuveidigital"
+  private lateinit var googlePayMerchantId: String
+  private lateinit var googlePayMerchantName: String
+  private lateinit var googlePayGateway: String
   private lateinit var googlePayGatewayMerchantId: String
 
 
@@ -94,18 +94,21 @@ class FlutterNuveiSdkPlugin: FlutterPlugin, MethodCallHandler, ActivityAware {
   private fun setup(result: MethodChannel.Result, call: MethodCall) {
     // Set environment
     val environment: String = call.argument("environment")!!
+    googlePayMerchantId = call.argument("googlePayMerchantId")!!
+    googlePayMerchantName = call.argument("googlePayMerchantName")!!
+    googlePayGateway = call.argument("googlePayGateway")!!
+    googlePayGatewayMerchantId = call.argument("googlePayGatewayMerchantId")!!
+
     when (environment) {
       PackageEnvironment.stating -> {
         NuveiSimplyConnect.setup(
           environment = NuveiSimplyConnect.Environment.STAGING,
         );
-        googlePayGatewayMerchantId = "googletest"
       }
       else -> {
         NuveiSimplyConnect.setup(
           environment = NuveiSimplyConnect.Environment.PROD,
         );
-        googlePayGatewayMerchantId = "nuveidigital"
       }
     }
 

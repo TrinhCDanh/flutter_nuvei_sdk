@@ -1,9 +1,9 @@
 import 'dart:convert';
 import 'package:flutter_nuvei_sdk/data/constants.dart';
-import 'package:flutter_nuvei_sdk/data/enums.dart';
 import 'package:flutter_nuvei_sdk/models/nv_authenticate3d_input.dart';
 import 'package:flutter_nuvei_sdk/models/nv_checkout_input.dart';
 import 'package:flutter_nuvei_sdk/models/nv_output.dart';
+import 'package:flutter_nuvei_sdk/models/nv_setup_input.dart';
 import 'package:flutter_nuvei_sdk/models/nv_tokenize_input.dart';
 import 'flutter_nuvei_sdk_platform_interface.dart';
 
@@ -11,10 +11,10 @@ class FlutterNuveiSdk {
   // Check SDK init success or fail
   static bool isReady = false;
 
-  static Future<void> setup(NVEnvironmentEnum environment) async {
-    isReady = await FlutterNuveiSdkPlatform.instance
-            .setup(nvEnvironmentText[environment]) ??
-        false;
+  static Future<void> setup(NVSetupInput input) async {
+    final Map<String, dynamic> args = input.toJson();
+    args['environment'] = nvEnvironmentText[input.environment];
+    isReady = await FlutterNuveiSdkPlatform.instance.setup(args) ?? false;
   }
 
   static Future<NVOutput?> authenticate3d(
