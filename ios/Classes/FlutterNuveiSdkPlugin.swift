@@ -262,7 +262,8 @@ public class FlutterNuveiSdkPlugin: NSObject, FlutterPlugin {
             customField5: customField5,
             customField6: customField6,
             customField7: customField7
-        )
+        ),
+        countryCode: country
       );
                  
       NuveiSimplyConnect.checkout(

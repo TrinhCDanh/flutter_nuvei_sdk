@@ -298,6 +298,7 @@ class FlutterNuveiSdkPlugin: FlutterPlugin, MethodCallHandler, ActivityAware {
         customField6,
         customField7,
       ),
+      countryCode = country,
     )
 
     NuveiSimplyConnect.checkout(

@@ -5,6 +5,7 @@ import AdSupport
 import CommonCrypto
 import Compression
 import CoreLocation
+import CoreTelephony
 import DeveloperToolsSupport
 import Foundation
 import JOSESwift
@@ -133,10 +134,11 @@ public struct NVInput : Swift.Encodable, Swift.Decodable {
   public let shippingAddress: NuveiSimplyConnectSDK.NVShippingAddress?
   public let userDetails: NuveiSimplyConnectSDK.NVUserDetails?
   public let merchantDetails: NuveiSimplyConnectSDK.NVMerchantDetails?
+  public let countryCode: Swift.String?
   public let dynamicDescriptor: NuveiSimplyConnectSDK.NVDynamicDescriptor?
   public let timeout: Swift.Int
   public let requestTimeout: Swift.Int
-  public init(sessionToken: Swift.String, merchantId: Swift.String, applePayMerchantId: Swift.String, merchantSiteId: Swift.String, currency: Swift.String, amount: Swift.String, paymentOption: NuveiSimplyConnectSDK.NVPaymentOption, userTokenId: Swift.String? = nil, clientUniqueId: Swift.String? = nil, clientRequestId: Swift.String? = nil, customData: Swift.String? = nil, billingAddress: NuveiSimplyConnectSDK.NVBillingAddress? = nil, shippingAddress: NuveiSimplyConnectSDK.NVShippingAddress? = nil, userDetails: NuveiSimplyConnectSDK.NVUserDetails? = nil, merchantDetails: NuveiSimplyConnectSDK.NVMerchantDetails? = nil, dynamicDescriptor: NuveiSimplyConnectSDK.NVDynamicDescriptor? = nil, timeout: Swift.Int = 10, requestTimeout: Swift.Int = 40)
+  public init(sessionToken: Swift.String, merchantId: Swift.String, applePayMerchantId: Swift.String, merchantSiteId: Swift.String, currency: Swift.String, amount: Swift.String, paymentOption: NuveiSimplyConnectSDK.NVPaymentOption, userTokenId: Swift.String? = nil, clientUniqueId: Swift.String? = nil, clientRequestId: Swift.String? = nil, customData: Swift.String? = nil, billingAddress: NuveiSimplyConnectSDK.NVBillingAddress? = nil, shippingAddress: NuveiSimplyConnectSDK.NVShippingAddress? = nil, userDetails: NuveiSimplyConnectSDK.NVUserDetails? = nil, merchantDetails: NuveiSimplyConnectSDK.NVMerchantDetails? = nil, countryCode: Swift.String? = nil, dynamicDescriptor: NuveiSimplyConnectSDK.NVDynamicDescriptor? = nil, timeout: Swift.Int = 10, requestTimeout: Swift.Int = 40)
   public func encode(to encoder: any Swift.Encoder) throws
   public init(from decoder: any Swift.Decoder) throws
 }
@@ -391,7 +393,7 @@ extension Swift.String {
   }
 }
 public struct CheckoutTransactionDetails : Swift.Codable {
-  public init(sessionToken: Swift.String, merchantId: Swift.String, applePayMerchantId: Swift.String, merchantSiteId: Swift.String, currency: Swift.String, amount: Swift.String, userTokenId: Swift.String?, clientUniqueId: Swift.String?, clientRequestId: Swift.String?, customData: Swift.String?, billingAddress: NuveiSimplyConnectSDK.NVBillingAddress?, shippingAddress: NuveiSimplyConnectSDK.NVShippingAddress?, userDetails: NuveiSimplyConnectSDK.NVUserDetails?, merchantDetails: NuveiSimplyConnectSDK.NVMerchantDetails?, dynamicDescriptor: NuveiSimplyConnectSDK.NVDynamicDescriptor?, paymentOption: NuveiSimplyConnectSDK.NVPaymentOption?, countryOverrde: Swift.String?, forceWebChallenge: Swift.Bool)
+  public init(sessionToken: Swift.String, merchantId: Swift.String, applePayMerchantId: Swift.String, merchantSiteId: Swift.String, currency: Swift.String, amount: Swift.String, userTokenId: Swift.String?, clientUniqueId: Swift.String?, clientRequestId: Swift.String?, customData: Swift.String?, billingAddress: NuveiSimplyConnectSDK.NVBillingAddress?, shippingAddress: NuveiSimplyConnectSDK.NVShippingAddress?, userDetails: NuveiSimplyConnectSDK.NVUserDetails?, merchantDetails: NuveiSimplyConnectSDK.NVMerchantDetails?, dynamicDescriptor: NuveiSimplyConnectSDK.NVDynamicDescriptor?, paymentOption: NuveiSimplyConnectSDK.NVPaymentOption?, countryCode: Swift.String?, forceWebChallenge: Swift.Bool)
   public static func transactionDetails(from object: NuveiSimplyConnectSDK.NVInput, additionalParams: [Swift.String : Any]?, forceWebChallenge: Swift.Bool) -> NuveiSimplyConnectSDK.CheckoutTransactionDetails
   public func encode(to encoder: any Swift.Encoder) throws
   public init(from decoder: any Swift.Decoder) throws
