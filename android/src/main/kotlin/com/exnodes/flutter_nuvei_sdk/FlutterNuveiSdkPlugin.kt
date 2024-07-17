@@ -24,7 +24,7 @@ import com.nuvei.sdk.views.nuveifields.NuveiCreditCardField
 import io.flutter.embedding.engine.plugins.activity.ActivityAware
 import io.flutter.embedding.engine.plugins.activity.ActivityPluginBinding
 
-/** FlutterNuveiSdkPlugin */
+/** FlutterNuveiSdkPlugin - 1.3.0 */
 class FlutterNuveiSdkPlugin: FlutterPlugin, MethodCallHandler, ActivityAware {
   /// The MethodChannel that will the communication between Flutter and native Android
   ///
