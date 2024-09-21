@@ -26,7 +26,7 @@ apply plugin: 'com.android.library'
 apply plugin: 'kotlin-android'
 
 android {
-    compileSdkVersion 34
+//    compileSdkVersion 34
 
     compileOptions {
         sourceCompatibility JavaVersion.VERSION_1_8
@@ -52,7 +52,7 @@ android {
     }
 
     dependencies {
-        implementation 'com.nuvei.mobile:simply-connect-sdk:1.3.0'
+        implementation 'com.nuvei.mobile:simply-connect-sdk:1.3.2'
         implementation 'com.google.code.gson:gson:2.8.9'
         implementation 'androidx.appcompat:appcompat:1.2.0'
         implementation "com.google.android.material:material:1.3.0"
