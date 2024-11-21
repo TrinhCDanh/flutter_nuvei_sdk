@@ -5,6 +5,7 @@ class NVSetupInput {
   late String googlePayGateway;
   late String googlePayGatewayMerchantId;
   late String applePayMerchantId;
+  late String applePayMerchantName;
 
   NVSetupInput({
     required this.environment,
@@ -13,6 +14,7 @@ class NVSetupInput {
     required this.googlePayGateway,
     required this.googlePayGatewayMerchantId,
     required this.applePayMerchantId,
+    this.applePayMerchantName = '',
   });
 
   NVSetupInput.fromJson(Map<String, dynamic> json) {
@@ -22,6 +24,7 @@ class NVSetupInput {
     googlePayGateway = json['googlePayGateway'];
     googlePayGatewayMerchantId = json['googlePayGatewayMerchantId'];
     applePayMerchantId = json['applePayMerchantId'];
+    applePayMerchantName = json['applePayMerchantName'];
   }
 
   Map<String, dynamic> toJson() {
@@ -32,6 +35,7 @@ class NVSetupInput {
     data['googlePayGateway'] = googlePayGateway;
     data['googlePayGatewayMerchantId'] = googlePayGatewayMerchantId;
     data['applePayMerchantId'] = applePayMerchantId;
+    data['applePayMerchantName'] = applePayMerchantName;
     return data;
   }
 }

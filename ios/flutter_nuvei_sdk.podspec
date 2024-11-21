@@ -4,7 +4,7 @@
 #
 Pod::Spec.new do |s|
   s.name             = 'flutter_nuvei_sdk'
-  s.version          = '1.3.0'
+  s.version          = '1.3.2'
   s.summary          = 'Nuvei Mobile SDK for flutter.'
   s.description      = <<-DESC
   Nuvei Mobile SDK for flutter.
