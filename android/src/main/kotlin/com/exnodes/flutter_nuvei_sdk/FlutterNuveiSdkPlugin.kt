@@ -181,7 +181,7 @@ class FlutterNuveiSdkPlugin: FlutterPlugin, MethodCallHandler, ActivityAware {
     val merchantSiteId: String = call.argument("merchantSiteId")!!
     val currency: String = "USD"
     val amount: String = "0"
-    val cardHolderName: String = cardNumberEditText.text.toString()
+    val cardHolderName: String = cardHolderNameEditText.text.toString()
     val cardNumber: String = cardNumberEditText.text.toString()
     val cvv: String = cvvEditText.text.toString()
     val expiryDate = expiryDateEditText.text
