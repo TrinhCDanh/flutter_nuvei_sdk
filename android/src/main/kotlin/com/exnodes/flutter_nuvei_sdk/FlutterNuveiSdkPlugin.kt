@@ -243,10 +243,10 @@ class FlutterNuveiSdkPlugin: FlutterPlugin, MethodCallHandler, ActivityAware {
 
     // Validate fields
     creditCardField.validate()
-    val numberErrorTextView = creditCardField.findViewById<TextView>(R.id.numberErrorTextView)
-    val cardHolderNameErrorTextView = creditCardField.findViewById<TextView>(R.id.holderNameErrorTextView)
-    val expiryDateErrorTextView = creditCardField.findViewById<TextView>(R.id.expiryErrorTextView)
-    val cvvErrorTextView = creditCardField.findViewById<TextView>(R.id.cvvErrorTextView)
+    val numberErrorTextView = creditCardField.findViewById<TextView>(com.nuvei.sdk.R.id.numberErrorTextView)
+    val cardHolderNameErrorTextView = creditCardField.findViewById<TextView>(com.nuvei.sdk.R.id.holderNameErrorTextView)
+    val expiryDateErrorTextView = creditCardField.findViewById<TextView>(com.nuvei.sdk.R.id.expiryErrorTextView)
+    val cvvErrorTextView = creditCardField.findViewById<TextView>(com.nuvei.sdk.R.id.cvvErrorTextView)
     val hasError: Boolean = numberErrorTextView.text.isNotEmpty() || cardHolderNameErrorTextView.text.isNotEmpty() || expiryDateErrorTextView.text.isNotEmpty() || cvvErrorTextView.text.isNotEmpty()
     result.success(hasError)
   }

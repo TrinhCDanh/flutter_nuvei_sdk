@@ -59,19 +59,19 @@
                 }
 
                 creditCardField.onInputValidated = { errors ->
-                    val numberErrorTextView = view.findViewById<TextView>(R.id.numberErrorTextView)
-                    val cardHolderNameErrorTextView = view.findViewById<TextView>(R.id.holderNameErrorTextView)
-                    val expiryDateErrorTextView = view.findViewById<TextView>(R.id.expiryErrorTextView)
-                    val cvvErrorTextView = view.findViewById<TextView>(R.id.cvvErrorTextView)
+                    val numberErrorTextView = view.findViewById<TextView>(com.nuvei.sdk.R.id.numberErrorTextView)
+                    val cardHolderNameErrorTextView = view.findViewById<TextView>(com.nuvei.sdk.R.id.holderNameErrorTextView)
+                    val expiryDateErrorTextView = view.findViewById<TextView>(com.nuvei.sdk.R.id.expiryErrorTextView)
+                    val cvvErrorTextView = view.findViewById<TextView>(com.nuvei.sdk.R.id.cvvErrorTextView)
                     val hasError: Boolean = numberErrorTextView.text.isNotEmpty() || cardHolderNameErrorTextView.text.isNotEmpty() || expiryDateErrorTextView.text.isNotEmpty() || cvvErrorTextView.text.isNotEmpty()
                     methodChannel.invokeMethod("onInputValidated", hasError.toString())
                 }
             }
 
-            val cardNumber = view.findViewById<EditText>(R.id.numberEditText)
-            val cardHolderName = view.findViewById<EditText>(R.id.holderNameEditText)
-            val expiryDate = view.findViewById<EditText>(R.id.expiryEditText)
-            val cvv = view.findViewById<EditText>(R.id.cvvEditText)
+            val cardNumber = view.findViewById<EditText>(com.nuvei.sdk.R.id.numberEditText)
+            val cardHolderName = view.findViewById<EditText>(com.nuvei.sdk.R.id.holderNameEditText)
+            val expiryDate = view.findViewById<EditText>(com.nuvei.sdk.R.id.expiryEditText)
+            val cvv = view.findViewById<EditText>(com.nuvei.sdk.R.id.cvvEditText)
             cardDataCallback.invoke(creditCardField, cardNumber, cardHolderName, expiryDate, cvv)
         }
     }
